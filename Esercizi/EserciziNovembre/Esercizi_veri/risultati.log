@@ -83,3 +83,25 @@ Addestrato Admission_Predict_Ver1.1 standardizzando i dati con un GaussianNB con
 Addestrato Admission_Predict_Ver1.1 standardizzando i dati con un GaussianNB con uno score di 0.8 e iperparametri: numero dimensioni 3
 Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 5
 Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 5
+Addestrato IRIS standardizzando i dati con una SVC con uno score di 0.9555555555555556 e iperparametri: C 0.2, gamma 0.1, kernel linear, numero dimensioni 3
+Addestrato IRIS standardizzando i dati con un RandomForestClassifier con uno score di 0.9111111111111111 e iperparametri: numero dimensioni 3, n_estimators: 50
+Addestrato IRIS standardizzando i dati con un RandomForestClassifier con uno score di 0.9111111111111111 e iperparametri: numero dimensioni 3, n_estimators: 500
+Addestrato IRIS standardizzando i dati con un RandomForestClassifier con uno score di 0.8888888888888888 e iperparametri: numero dimensioni 3, n_estimators: 50
+Addestrato IRIS standardizzando i dati con un DecisionTreeClassifier con uno score di 0.9333333333333333 e iperparametri: numero dimensioni 3, criterio: gini
+Addestrato IRIS standardizzando i dati con un GaussianNB con uno score di 0.8888888888888888 e iperparametri: numero dimensioni 3
+Addestrato IRIS standardizzando i dati con un LinearDiscriminantAnalysis con uno score di 0.9777777777777777 e iperparametri: numero dimensioni 3, solver: svd
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (500, 500, 500) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (10, 10) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: 10 e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: 1 e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: () e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: 1 e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: 500 e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: 50 e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: 500 e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (500, 500) e dimensione 3
