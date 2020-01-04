@@ -4,3 +4,82 @@ Addestrato Admission_Predict_Ver1 usando MLP come algoritmo di apprendimento con
 Addestrato Admission_Predict_Ver1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (5, 5) e dimensione 3
 Addestrato Admission_Predict_Ver1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (5, 5) e dimensione 2
 Addestrato Admission_Predict_Ver1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (5, 5) e dimensione 2
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 200 hidden_layer_sizes: (2, 10) e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 200 hidden_layer_sizes: (3, 10) e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 200 hidden_layer_sizes: 1 e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 200 hidden_layer_sizes: (1, 50) e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 200 hidden_layer_sizes: (1, 500) e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 200 hidden_layer_sizes: (1, 1, 500) e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 200 hidden_layer_sizes: (1, 500, 500) e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 200 hidden_layer_sizes: (2, 500, 500) e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (2, 500, 500) e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (2, 500, 500) e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (2, 500, 500) e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (2, 500, 500) e dimensione 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: () e dimensione 7
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: 10 e dimensione 7
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (10, 10) e dimensione 7
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 7
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (500, 500) e dimensione 7
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (500, 500) e dimensione 7
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (500, 500) e dimensione 7
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 600 hidden_layer_sizes: (500, 500) e dimensione 7
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic solver: lbfgs iterazioni massime: 600 hidden_layer_sizes: (500, 500) e dimensione 7
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.79 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 7
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.8 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic solver: lbfgs iterazioni massime: 600 hidden_layer_sizes: (500, 500) e dimensione 7
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu solver: lbfgs iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato iris con una SVC con uno score 0.8666666666666667 e iperparametri: C 0.2, gamma 0.1, kernel linear, numero dimensioni 3
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.79 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 7
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.8 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 6
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 300 hidden_layer_sizes: 10 e dimensione 5
+Addestrato Admission_Predict_ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 300 hidden_layer_sizes: 10 e dimensione 5
+Addestrato Admission_Predict_ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 300 hidden_layer_sizes: 10 e dimensione 5
+Addestrato Admission_Predict_ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 300 hidden_layer_sizes: (10, 10) e dimensione 5
+Addestrato Admission_Predict_ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 300 hidden_layer_sizes: 100 e dimensione 5
+Addestrato Admission_Predict_ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 300 hidden_layer_sizes: 1000 e dimensione 5
+Addestrato Admission_Predict_ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 300 hidden_layer_sizes: (200, 200) e dimensione 5
+Addestrato Admission_Predict_ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 300 hidden_layer_sizes: 210 e dimensione 5
+Addestrato Admission_Predict_ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 300 hidden_layer_sizes: 500 e dimensione 5
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 6
+Addestrato Admission_Predict_ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 300 hidden_layer_sizes: 500 e dimensione 5
+Addestrato Admission_Predict_ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 300 hidden_layer_sizes: (500, 500) e dimensione 5
+Addestrato cancer usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: 50 e dimensione 13
+Addestrato cancer usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: 50 e dimensione 13
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.79 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 7
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.79 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 7
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.8 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 6
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.8 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 6
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.79 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 5
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.79 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 5
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.79 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 7
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.79 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 7
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.8 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 6
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.8 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 6
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.8 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 6
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.8 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 6
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.79 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 7
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.79 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 7
+Addestrato Admission_Predict_Ver1 standardizzando i dati con un DecisionTreeClassifier con uno score di 0.66 e iperparametri: numero dimensioni 6, criterio: entropy
+Addestrato Admission_Predict_Ver1 standardizzando i dati con un DecisionTreeClassifier con uno score di 0.66 e iperparametri: numero dimensioni 6, criterio: entropy
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.7866666666666666 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 7
+Addestrato Admission_Predict_Ver1 standardizzando i dati con una SVC con uno score di 0.7866666666666666 e iperparametri: C 0.2, gamma 0.1, kernel rbf, numero dimensioni 7
+Addestrato Admission_Predict_Ver1 standardizzando i dati con un DecisionTreeClassifier con uno score di 0.6666666666666666 e iperparametri: numero dimensioni 3, criterio: entropy
+Addestrato Admission_Predict_Ver1 standardizzando i dati con un DecisionTreeClassifier con uno score di 0.6666666666666666 e iperparametri: numero dimensioni 3, criterio: entropy
+Addestrato Admission_Predict_Ver1.1 standardizzando i dati con un RandomForestClassifier con uno score di 0.7533333333333333 e iperparametri: numero dimensioni 3, n_estimators: 50
+Addestrato Admission_Predict_Ver1.1 standardizzando i dati con un RandomForestClassifier con uno score di 0.7533333333333333 e iperparametri: numero dimensioni 3, n_estimators: 50
+Addestrato Admission_Predict_Ver1.1 standardizzando i dati con un LinearDiscriminantAnalysis con uno score di 0.7733333333333333 e iperparametri: numero dimensioni 3, solver: svd
+Addestrato Admission_Predict_Ver1.1 standardizzando i dati con un LinearDiscriminantAnalysis con uno score di 0.7733333333333333 e iperparametri: numero dimensioni 3, solver: svd
+Addestrato Admission_Predict_Ver1.1 standardizzando i dati con un GaussianNB con uno score di 0.8 e iperparametri: numero dimensioni 3
+Addestrato Admission_Predict_Ver1.1 standardizzando i dati con un GaussianNB con uno score di 0.8 e iperparametri: numero dimensioni 3
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 5
+Addestrato Admission_Predict_Ver1.1 usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 5
