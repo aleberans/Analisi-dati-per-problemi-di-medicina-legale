@@ -1,0 +1,8 @@
+Addestrato Incidenti usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 26 score: 0.5897435897435898
+Addestrato Incidenti usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (500, 500) e dimensione 26 score: 0.5128205128205128
+Addestrato Incidenti usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (5, 5, 5) e dimensione 26 score: 0.48717948717948717
+Addestrato Incidenti usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (5, 5) e dimensione 26 score: 0.5897435897435898
+Addestrato Incidenti usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 4 score: 0.5384615384615384
+Addestrato Incidenti usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: (50, 50) e dimensione 4 score: 0.5641025641025641
+Addestrato Incidenti usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: (5, 5) e dimensione 4 score: 0.46153846153846156
+Addestrato Incidenti usando MLP come algoritmo di apprendimento con funzione di attivazione: logistic iterazioni massime: 500 hidden_layer_sizes: (50, 50, 50) e dimensione 4 score: 0.5384615384615384
