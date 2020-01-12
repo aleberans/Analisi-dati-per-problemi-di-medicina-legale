@@ -27,3 +27,5 @@ Addestrato Incidenti standardizzando i dati con una SVC con uno score di 0.56410
 Addestrato Incidenti standardizzando i dati con un RandomForestClassifier con uno score di 0.5128205128205128 e iperparametri: numero dimensioni 6, n_estimators: 30
 Addestrato Incidenti standardizzando i dati con un RandomForestClassifier con uno score di 0.5897435897435898 e iperparametri: numero dimensioni 19, n_estimators: 80
 Addestrato Incidenti standardizzando i dati con un LinearDiscriminantAnalysis con uno score di 0.7948717948717948 e iperparametri: numero dimensioni 1, solver: svd
+Addestrato Incidenti usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50, 50) e dimensione 8 score: 0.6153846153846154
+Addestrato Incidenti usando MLP come algoritmo di apprendimento con funzione di attivazione: relu iterazioni massime: 500 hidden_layer_sizes: (50, 50, 50) e dimensione 8 score: 0.6153846153846154
