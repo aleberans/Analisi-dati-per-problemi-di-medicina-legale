@@ -1,7 +1,21 @@
-INFO:Dataset_totali:{'SVC': 0.6667480667480667, 'DT': 0.5603174603174603, 'RF': 0.6229141229141228, 'NB': 0.706064306064306, 'LD': 0.7192104192104192, 'MLP': 0.6741554741554742}
-INFO:Dataset_with_bmi:{'SVC': 0.6667480667480667, 'DT': 0.5682539682539682, 'RF': 0.5927553927553928, 'NB': 0.69010989010989, 'LD': 0.7049247049247049, 'MLP': 0.6667480667480667}
-INFO:Dataset_with_data:{'SVC': 0.7715913715913716, 'DT': 0.608017908017908, 'RF': 0.631013431013431, 'NB': 0.7271469271469271, 'LD': 0.7180708180708181, 'MLP': 0.7271469271469271}
-INFO:Dataset_with_data_and_bmi:{'SVC': 0.7579161579161579, 'DT': 0.6376475376475377, 'RF': 0.6446072446072447, 'NB': 0.7493691493691493, 'LD': 0.7118030118030119, 'MLP': 0.7266178266178266}
-INFO:Details:{'SVC': 0.6703296703296704, 'DT': 0.6286528286528287, 'RF': 0.6326007326007326, 'NB': 0.6359788359788361, 'LD': 0.6433862433862434, 'MLP': 0.6006919006919007}
-INFO:Details_with_pca:{'SVC': 0.6702482702482703, 'DT': 0.5864061864061864, 'RF': 0.6827024827024827, 'NB': 0.665079365079365, 'LD': 0.5881155881155881, 'MLP': 0.6041514041514042}
-INFO:Details_with_tsne:{'SVC': 0.5274318274318275, 'DT': 0.5216117216117215, 'RF': 0.45547415547415543, 'NB': 0.5205535205535206, 'LD': 0.4157916157916158, 'MLP': 0.4402930402930403}
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 04.Feb 2020 18:22:36
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: SVC(C=0.774263682681127, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma=0.1291549665014884,
+    kernel='rbf', max_iter=-1, probability=False, random_state=None,
+    shrinking=True, tol=0.001, verbose=False)
+INFO:Risultati:SCORE: 0.6667480667480667
+INFO:Risultati:FINE ADDESTRAMENTO alle 04.Feb 2020 18:23:18, tempo di calcolo totale in secondi: 42.12180256843567
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 04.Feb 2020 18:23:18
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+                       max_features='sqrt', max_leaf_nodes=2,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort=False,
+                       random_state=None, splitter='best')
+INFO:Risultati:SCORE: 0.6576312576312576
+INFO:Risultati:FINE ADDESTRAMENTO alle 04.Feb 2020 18:23:26, tempo di calcolo totale in secondi: 7.9839606285095215
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 04.Feb 2020 18:23:26
