@@ -19,3 +19,4 @@ INFO:Risultati:IPERPARAMETRI: DecisionTreeClassifier(class_weight=None, criterio
 INFO:Risultati:SCORE: 0.6576312576312576
 INFO:Risultati:FINE ADDESTRAMENTO alle 04.Feb 2020 18:23:26, tempo di calcolo totale in secondi: 7.9839606285095215
 INFO:Risultati:INIZIO ADDESTRAMENTO alle 04.Feb 2020 18:23:26
+INFO:numexpr.utils:NumExpr defaulting to 8 threads.
