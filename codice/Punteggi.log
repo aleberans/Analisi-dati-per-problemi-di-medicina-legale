@@ -4978,3 +4978,30 @@ INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0,
 INFO:Risultati:IPERPARAMETRI: {'activation': 'relu', 'hidden_layer_sizes': [4, 4], 'max_iter': 5000}
 INFO:Risultati:SCORE: 0.49947089947089945
 INFO:Risultati:FINE ADDESTRAMENTO alle 07.Feb 2020 05:30:59, tempo di calcolo totale in secondi: 220.90976071357727
+ERROR:root:Invalid alias: The name clear can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name more can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name less can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name man can't be aliased because it is another magic command.
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 07.Feb 2020 11:42:38
+ERROR:root:Invalid alias: The name clear can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name more can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name less can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name man can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name clear can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name more can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name less can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name man can't be aliased because it is another magic command.
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 07.Feb 2020 11:43:58
+ERROR:root:Invalid alias: The name clear can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name more can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name less can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name man can't be aliased because it is another magic command.
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 07.Feb 2020 11:44:34
+ERROR:root:Invalid alias: The name clear can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name more can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name less can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name man can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name clear can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name more can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name less can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name man can't be aliased because it is another magic command.
