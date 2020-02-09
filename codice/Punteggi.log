@@ -46,3 +46,56 @@ INFO:Risultati:RIDUZIONE DIMENSIONALITA None
 INFO:Risultati:IPERPARAMETRI: {'activation': 'relu', 'hidden_layer_sizes': [6], 'max_iter': 5000}
 INFO:Risultati:SCORE: 0.6619047619047618
 INFO:Risultati:FINE ADDESTRAMENTO alle 09.Feb 2020 18:39:35, tempo di calcolo totale in secondi: 267.27026438713074
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 09.Feb 2020 19:36:37
+INFO:Risultati:DATASET in uso: Totali_with_BMI
+INFO:Risultati:MODELLO: SVC
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 09.Feb 2020 20:15:07
+INFO:Risultati:DATASET in uso: Totali_with_BMI
+INFO:Risultati:MODELLO: SVC
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'C': 4.641588833612782, 'gamma': 0.774263682681127, 'kernel': 'rbf'}
+INFO:Risultati:SCORE: 0.6687830687830688
+INFO:Risultati:FINE ADDESTRAMENTO alle 09.Feb 2020 20:15:36, tempo di calcolo totale in secondi: 29.27080464363098
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 09.Feb 2020 20:15:36
+INFO:Risultati:DATASET in uso: Totali_with_BMI
+INFO:Risultati:MODELLO: DecisionTreeClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'entropy', 'max_depth': 2, 'max_features': 'sqrt', 'max_leaf_nodes': 50}
+INFO:Risultati:SCORE: 0.5862433862433862
+INFO:Risultati:FINE ADDESTRAMENTO alle 09.Feb 2020 20:15:42, tempo di calcolo totale in secondi: 6.108902215957642
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 09.Feb 2020 20:15:42
+INFO:Risultati:DATASET in uso: Totali_with_BMI
+INFO:Risultati:MODELLO: RandomForestClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'gini', 'max_depth': 5, 'max_features': 'log2', 'max_leaf_nodes': 10, 'n_estimators': 100}
+INFO:Risultati:SCORE: 0.6624338624338625
+INFO:Risultati:FINE ADDESTRAMENTO alle 09.Feb 2020 20:42:13, tempo di calcolo totale in secondi: 1590.4707305431366
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 09.Feb 2020 20:42:13
+INFO:Risultati:DATASET in uso: Totali_with_BMI
+INFO:Risultati:MODELLO: GaussianNB
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:SCORE: 0.6857142857142857
+INFO:Risultati:FINE ADDESTRAMENTO alle 09.Feb 2020 20:42:13, tempo di calcolo totale in secondi: 0.1718425750732422
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 09.Feb 2020 20:42:13
+INFO:Risultati:DATASET in uso: Totali_with_BMI
+INFO:Risultati:MODELLO: LinearDiscriminantAnalysis
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:SCORE: 0.6899470899470899
+INFO:Risultati:FINE ADDESTRAMENTO alle 09.Feb 2020 20:42:13, tempo di calcolo totale in secondi: 0.38599324226379395
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 09.Feb 2020 20:42:13
+INFO:Risultati:DATASET in uso: Totali_with_BMI
+INFO:Risultati:MODELLO: MLPClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'activation': 'logistic', 'hidden_layer_sizes': [4], 'max_iter': 5000}
+INFO:Risultati:SCORE: 0.6523809523809523
+INFO:Risultati:FINE ADDESTRAMENTO alle 09.Feb 2020 20:46:14, tempo di calcolo totale in secondi: 240.93205738067627
