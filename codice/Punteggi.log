@@ -1684,3 +1684,147 @@ INFO:Risultati:RIDUZIONE DIMENSIONALITA PCA(copy=True, iterated_power='auto', n_
 INFO:Risultati:IPERPARAMETRI: {'activation': 'tanh', 'hidden_layer_sizes': [2], 'max_iter': 5000}
 INFO:Risultati:SCORE: 0.6068783068783069
 INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 17:17:29, tempo di calcolo totale in secondi: 357.3327577114105
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 17:20:13
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_13_dim
+INFO:Risultati:MODELLO: SVC
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=13,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {'C': 27.825594022071257, 'gamma': 'scale', 'kernel': 'rbf'}
+INFO:Risultati:SCORE: 0.5687830687830687
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 17:38:53, tempo di calcolo totale in secondi: 1119.6940350532532
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 17:38:53
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_13_dim
+INFO:Risultati:MODELLO: DecisionTreeClassifier
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=13,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'gini', 'max_depth': 10, 'max_features': None, 'max_leaf_nodes': 10}
+INFO:Risultati:SCORE: 0.45449735449735446
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 17:39:04, tempo di calcolo totale in secondi: 11.321419715881348
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 17:39:04
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_13_dim
+INFO:Risultati:MODELLO: RandomForestClassifier
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=13,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'entropy', 'max_depth': 10, 'max_features': 'sqrt', 'max_leaf_nodes': 10, 'n_estimators': 5}
+INFO:Risultati:SCORE: 0.5232804232804233
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 18:07:29, tempo di calcolo totale in secondi: 1704.5117619037628
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 18:07:29
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_13_dim
+INFO:Risultati:MODELLO: GaussianNB
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=13,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:SCORE: 0.546031746031746
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 18:07:31, tempo di calcolo totale in secondi: 1.9162700176239014
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 18:07:31
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_13_dim
+INFO:Risultati:MODELLO: LinearDiscriminantAnalysis
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=13,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:SCORE: 0.4306878306878307
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 18:07:33, tempo di calcolo totale in secondi: 1.955744981765747
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 18:07:33
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_13_dim
+INFO:Risultati:MODELLO: MLPClassifier
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=13,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {'activation': 'relu', 'hidden_layer_sizes': [10], 'max_iter': 5000}
+INFO:Risultati:SCORE: 0.4947089947089947
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 18:11:28, tempo di calcolo totale in secondi: 234.79251551628113
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 18:11:28
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_15_dim
+INFO:Risultati:MODELLO: SVC
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=15,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {'C': 0.774263682681127, 'gamma': 0.021544346900318846, 'kernel': 'rbf'}
+INFO:Risultati:SCORE: 0.47724867724867726
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 18:31:37, tempo di calcolo totale in secondi: 1209.7878637313843
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 18:31:37
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_15_dim
+INFO:Risultati:MODELLO: DecisionTreeClassifier
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=15,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'entropy', 'max_depth': 10, 'max_features': 'log2', 'max_leaf_nodes': 50}
+INFO:Risultati:SCORE: 0.5613756613756613
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 18:31:46, tempo di calcolo totale in secondi: 8.749380111694336
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 18:31:46
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_15_dim
+INFO:Risultati:MODELLO: RandomForestClassifier
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=15,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'entropy', 'max_depth': 2, 'max_features': 'log2', 'max_leaf_nodes': 100, 'n_estimators': 5}
+INFO:Risultati:SCORE: 0.49100529100529094
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 19:07:18, tempo di calcolo totale in secondi: 2131.39874625206
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 19:07:18
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_15_dim
+INFO:Risultati:MODELLO: GaussianNB
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=15,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:SCORE: 0.5624338624338623
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 19:07:20, tempo di calcolo totale in secondi: 1.9326963424682617
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 19:07:20
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_15_dim
+INFO:Risultati:MODELLO: LinearDiscriminantAnalysis
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=15,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:SCORE: 0.42433862433862435
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 19:07:22, tempo di calcolo totale in secondi: 2.028181791305542
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 11.Feb 2020 19:07:22
+INFO:Risultati:DATASET in uso: Details_reduce_TSNE_15_dim
+INFO:Risultati:MODELLO: MLPClassifier
+INFO:Risultati:SCALER: RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0, init='random', learning_rate=200.0,
+     method='exact', metric='euclidean', min_grad_norm=1e-07, n_components=15,
+     n_iter=1000, n_iter_without_progress=300, n_jobs=None, perplexity=30.0,
+     random_state=None, verbose=0)
+INFO:Risultati:IPERPARAMETRI: {'activation': 'tanh', 'hidden_layer_sizes': [10, 10], 'max_iter': 5000}
+INFO:Risultati:SCORE: 0.4624338624338625
+INFO:Risultati:FINE ADDESTRAMENTO alle 11.Feb 2020 19:11:13, tempo di calcolo totale in secondi: 231.6097128391266
