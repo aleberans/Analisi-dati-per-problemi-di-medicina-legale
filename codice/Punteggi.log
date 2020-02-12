@@ -2177,3 +2177,4 @@ INFO:Risultati:RIDUZIONE DIMENSIONALITA TSNE(angle=0.5, early_exaggeration=12.0,
 INFO:Risultati:IPERPARAMETRI: {'activation': 'tanh', 'hidden_layer_sizes': [6], 'max_iter': 5000}
 INFO:Risultati:SCORE: 0.536955636955637
 INFO:Risultati:FINE ADDESTRAMENTO alle 12.Feb 2020 00:09:42, tempo di calcolo totale in secondi: 351.7717537879944
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 12.Feb 2020 00:26:59
