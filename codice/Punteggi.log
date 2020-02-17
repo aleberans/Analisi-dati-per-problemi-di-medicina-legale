@@ -2178,3 +2178,520 @@ INFO:Risultati:IPERPARAMETRI: {'activation': 'tanh', 'hidden_layer_sizes': [6], 
 INFO:Risultati:SCORE: 0.536955636955637
 INFO:Risultati:FINE ADDESTRAMENTO alle 12.Feb 2020 00:09:42, tempo di calcolo totale in secondi: 351.7717537879944
 INFO:Risultati:INIZIO ADDESTRAMENTO alle 12.Feb 2020 00:26:59
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e9136d110 state=finished returned list>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e91363250 state=finished returned list>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e9137edd0 state=finished returned list>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e9137cb90 state=finished raised WorkerInterrupt>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e913a1cd0 state=finished raised WorkerInterrupt>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e919af810 state=finished raised WorkerInterrupt>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e9137e110 state=finished raised BrokenProcessPool>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e9136d050 state=finished raised BrokenProcessPool>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e9145c790 state=finished raised BrokenProcessPool>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e916a94d0 state=finished raised BrokenProcessPool>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e9137e450 state=finished raised BrokenProcessPool>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e9137cad0 state=finished raised BrokenProcessPool>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e9137ec90 state=finished raised BrokenProcessPool>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e9137cb10 state=finished raised BrokenProcessPool>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e9136fad0 state=finished raised BrokenProcessPool>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f1e91361250 state=finished raised BrokenProcessPool>
+Traceback (most recent call last):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 340, in __call__
+    self.parallel.dispatch_next()
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 769, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 835, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/parallel.py", line 754, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/ale/anaconda3/envs/tesi/lib/python3.7/site-packages/joblib/_parallel_backends.py", line 551, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+AttributeError: 'NoneType' object has no attribute 'submit'
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:47:17
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: SVC
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'C': 27.825594022071257, 'gamma': 0.021544346900318846, 'kernel': 'rbf'}
+INFO:Risultati:TEST ERROR: 0.7692307692307693
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:49:24
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: SVC
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'C': 27.825594022071257, 'gamma': 0.021544346900318846, 'kernel': 'rbf'}
+INFO:Risultati:TRAINING ERROR: 0.7210084033613446
+INFO:Risultati:TEST ERROR: 0.7692307692307693
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:49:24, tempo di calcolo totale in secondi: 0.6564342975616455
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:49:24
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: SVC
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'C': 166.81005372000593, 'gamma': 0.003593813663804626, 'kernel': 'rbf'}
+INFO:Risultati:TRAINING ERROR: 0.692717086834734
+INFO:Risultati:TEST ERROR: 0.6538461538461539
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:49:25, tempo di calcolo totale in secondi: 0.6387336254119873
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:49:25
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: SVC
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'C': 27.825594022071257, 'gamma': 'auto', 'kernel': 'linear'}
+INFO:Risultati:TRAINING ERROR: 0.6921568627450979
+INFO:Risultati:TEST ERROR: 0.6923076923076923
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:49:25, tempo di calcolo totale in secondi: 0.5896151065826416
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:49:25
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: SVC
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'C': 0.774263682681127, 'gamma': 0.1291549665014884, 'kernel': 'rbf'}
+INFO:Risultati:TRAINING ERROR: 0.711484593837535
+INFO:Risultati:TEST ERROR: 0.6153846153846154
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:49:26, tempo di calcolo totale in secondi: 0.8087866306304932
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:49:26
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: SVC
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'C': 0.774263682681127, 'gamma': 'auto', 'kernel': 'linear'}
+INFO:Risultati:TRAINING ERROR: 0.653781512605042
+INFO:Risultati:TEST ERROR: 0.8076923076923077
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:49:27, tempo di calcolo totale in secondi: 0.7791924476623535
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:49:27
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: DecisionTreeClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'gini', 'max_depth': 10, 'max_features': 'sqrt', 'max_leaf_nodes': 10}
+INFO:Risultati:TRAINING ERROR: 0.7019607843137255
+INFO:Risultati:TEST ERROR: 0.5
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:49:27, tempo di calcolo totale in secondi: 0.3236861228942871
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:49:27
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: DecisionTreeClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'gini', 'max_depth': None, 'max_features': None, 'max_leaf_nodes': 2}
+INFO:Risultati:TRAINING ERROR: 0.6820728291316526
+INFO:Risultati:TEST ERROR: 0.6153846153846154
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:49:28, tempo di calcolo totale in secondi: 0.30989623069763184
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:49:28
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: DecisionTreeClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'gini', 'max_depth': 10, 'max_features': 'log2', 'max_leaf_nodes': 50}
+INFO:Risultati:TRAINING ERROR: 0.684033613445378
+INFO:Risultati:TEST ERROR: 0.6538461538461539
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:49:28, tempo di calcolo totale in secondi: 0.32719898223876953
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:49:28
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: DecisionTreeClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'entropy', 'max_depth': 10, 'max_features': 'sqrt', 'max_leaf_nodes': 50}
+INFO:Risultati:TRAINING ERROR: 0.615406162464986
+INFO:Risultati:TEST ERROR: 0.6153846153846154
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:49:28, tempo di calcolo totale in secondi: 0.33344173431396484
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:49:28
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: DecisionTreeClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'gini', 'max_depth': 10, 'max_features': 'sqrt', 'max_leaf_nodes': 5}
+INFO:Risultati:TRAINING ERROR: 0.7025210084033614
+INFO:Risultati:TEST ERROR: 0.5384615384615384
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:49:29, tempo di calcolo totale in secondi: 0.31649231910705566
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:49:29
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: RandomForestClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'entropy', 'max_depth': 10, 'max_features': 'sqrt', 'max_leaf_nodes': 5, 'n_estimators': 10}
+INFO:Risultati:TRAINING ERROR: 0.6932773109243696
+INFO:Risultati:TEST ERROR: 0.6923076923076923
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:51:50, tempo di calcolo totale in secondi: 141.58921718597412
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:51:50
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: RandomForestClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'gini', 'max_depth': 2, 'max_features': 'log2', 'max_leaf_nodes': None, 'n_estimators': 10}
+INFO:Risultati:TRAINING ERROR: 0.6823529411764705
+INFO:Risultati:TEST ERROR: 0.5769230769230769
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:54:20, tempo di calcolo totale in secondi: 150.04713916778564
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:54:20
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: RandomForestClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'entropy', 'max_depth': 5, 'max_features': None, 'max_leaf_nodes': 50, 'n_estimators': 10}
+INFO:Risultati:TRAINING ERROR: 0.7316526610644258
+INFO:Risultati:TEST ERROR: 0.38461538461538464
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:56:39, tempo di calcolo totale in secondi: 138.90992975234985
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:56:39
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: RandomForestClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'entropy', 'max_depth': 2, 'max_features': 'log2', 'max_leaf_nodes': 50, 'n_estimators': 5}
+INFO:Risultati:TRAINING ERROR: 0.6644257703081232
+INFO:Risultati:TEST ERROR: 0.6923076923076923
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 17:59:08, tempo di calcolo totale in secondi: 148.54500770568848
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 17:59:08
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: RandomForestClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'criterion': 'gini', 'max_depth': 5, 'max_features': None, 'max_leaf_nodes': 100, 'n_estimators': 5}
+INFO:Risultati:TRAINING ERROR: 0.7022408963585435
+INFO:Risultati:TEST ERROR: 0.6538461538461539
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:01:56, tempo di calcolo totale in secondi: 168.09015130996704
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:01:56
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: GaussianNB
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:TRAINING ERROR: 0.7299719887955183
+INFO:Risultati:TEST ERROR: 0.6153846153846154
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:01:56, tempo di calcolo totale in secondi: 0.014398336410522461
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:01:56
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: GaussianNB
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:TRAINING ERROR: 0.6834733893557422
+INFO:Risultati:TEST ERROR: 0.7692307692307693
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:01:56, tempo di calcolo totale in secondi: 0.013086557388305664
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:01:56
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: GaussianNB
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:TRAINING ERROR: 0.7305322128851541
+INFO:Risultati:TEST ERROR: 0.6153846153846154
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:01:56, tempo di calcolo totale in secondi: 0.01670050621032715
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:01:56
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: GaussianNB
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:TRAINING ERROR: 0.6627450980392157
+INFO:Risultati:TEST ERROR: 0.7307692307692307
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:01:56, tempo di calcolo totale in secondi: 0.014448165893554688
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:01:56
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: GaussianNB
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:TRAINING ERROR: 0.6725490196078431
+INFO:Risultati:TEST ERROR: 0.7307692307692307
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:01:56, tempo di calcolo totale in secondi: 0.01236104965209961
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:01:56
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: LinearDiscriminantAnalysis
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:TRAINING ERROR: 0.5969187675070028
+INFO:Risultati:TEST ERROR: 0.5769230769230769
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:01:56, tempo di calcolo totale in secondi: 0.04184317588806152
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:01:56
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: LinearDiscriminantAnalysis
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:TRAINING ERROR: 0.6159663865546218
+INFO:Risultati:TEST ERROR: 0.7692307692307693
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:01:56, tempo di calcolo totale in secondi: 0.0205841064453125
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:01:56
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: LinearDiscriminantAnalysis
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:TRAINING ERROR: 0.6736694677871148
+INFO:Risultati:TEST ERROR: 0.6538461538461539
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:01:56, tempo di calcolo totale in secondi: 0.02718496322631836
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:01:56
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: LinearDiscriminantAnalysis
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:TRAINING ERROR: 0.6352941176470588
+INFO:Risultati:TEST ERROR: 0.6538461538461539
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:01:56, tempo di calcolo totale in secondi: 0.030176162719726562
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:01:56
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: LinearDiscriminantAnalysis
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {}
+INFO:Risultati:TRAINING ERROR: 0.6254901960784314
+INFO:Risultati:TEST ERROR: 0.6923076923076923
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:01:56, tempo di calcolo totale in secondi: 0.024023771286010742
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:01:56
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: MLPClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'activation': 'logistic', 'hidden_layer_sizes': [10], 'max_iter': 5000}
+INFO:Risultati:TRAINING ERROR: 0.6627450980392157
+INFO:Risultati:TEST ERROR: 0.8461538461538461
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:02:22, tempo di calcolo totale in secondi: 25.94131350517273
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:02:22
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: MLPClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'activation': 'identity', 'hidden_layer_sizes': [20], 'max_iter': 5000}
+INFO:Risultati:TRAINING ERROR: 0.7207282913165267
+INFO:Risultati:TEST ERROR: 0.7307692307692307
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:02:46, tempo di calcolo totale in secondi: 23.573513746261597
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:02:46
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: MLPClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'activation': 'tanh', 'hidden_layer_sizes': [2], 'max_iter': 5000}
+INFO:Risultati:TRAINING ERROR: 0.7210084033613446
+INFO:Risultati:TEST ERROR: 0.5769230769230769
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:03:11, tempo di calcolo totale in secondi: 25.597891807556152
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:03:11
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: MLPClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'activation': 'identity', 'hidden_layer_sizes': [6], 'max_iter': 5000}
+INFO:Risultati:TRAINING ERROR: 0.7025210084033614
+INFO:Risultati:TEST ERROR: 0.6923076923076923
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:03:35, tempo di calcolo totale in secondi: 23.8899507522583
+INFO:Risultati:INIZIO ADDESTRAMENTO alle 14.Feb 2020 18:03:35
+INFO:Risultati:DATASET: Totali
+INFO:Risultati:MODEL: MLPClassifier
+INFO:Risultati:SCALER: StandardScaler(copy=True, with_mean=True, with_std=True)
+INFO:Risultati:RIDUZIONE DIMENSIONALITA None
+INFO:Risultati:IPERPARAMETRI: {'activation': 'logistic', 'hidden_layer_sizes': [4], 'max_iter': 5000}
+INFO:Risultati:TRAINING ERROR: 0.6820728291316526
+INFO:Risultati:TEST ERROR: 0.6923076923076923
+INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:04:00, tempo di calcolo totale in secondi: 24.521785974502563
