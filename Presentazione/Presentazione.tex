@@ -1,0 +1,341 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{geometry}
+\usepackage{xcolor,colortbl}
+\usepackage{array, booktabs, makecell}
+\usepackage{siunitx, mhchem}
+
+\title[Your Short Title]{Incidenti Stradali}
+\author{Alessandro Beranti}
+\institute{Università degli Studi di Milano Statale }
+\date{25 Febbraio 2020}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Uncomment these lines for an automatically generated outline.
+%\begin{frame}{Outline}
+%  \tableofcontents
+%\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{Introduzione}
+
+\begin{block}{Obiettivo}
+	Stabilire che tipo di mezzo ha investito la vittima
+\end{block}
+
+\begin{block}{Caratteristiche iniziali}
+A partire dal file fornito ho eseguito diversi studi considerando di volta in volta diversi fattori:
+\end{block}
+
+\begin{itemize}
+	\item Caratteristiche delle ossa rotte
+	\item Algoritmi di apprendimento
+	\item Pre-processing dei dati tramite: 
+	\begin{itemize}
+		\item StandardScaler
+		\item MinMaxScaler
+		\item RobustScaler
+	\end{itemize}
+\end{itemize}
+
+
+\begin{block}{Risultati ottenuti}
+Da ogni studio sono conseguite diverse tabelle che tengono conto dei fattori precedentemente descritti.
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Modelli Apprendimento}
+\begin{block}{Modelli usati}
+	Per compiere lo studio sono stati usati diversi modelli di apprendimento:
+	\begin{itemize}
+		\item Support Vector Machine ( SVC )
+		\item Decision Tree ( DT )
+		\item Random Forest ( RF )
+		\item GaussianNB (NB )
+		\item LinearDiscriminantAnalysis ( LD )
+		\item MLPClassifier ( MLP )
+	\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Componenti usate}
+	\begin{block}{}
+		Totali:
+		\begin{itemize}
+			\item Sesso, Anni, Peso, Altezza, Tot Testa, Tot Torace, Tot Addome, Tot Scheletro
+		\end{itemize}
+	\end{block}
+	\begin{block}{}
+		Totali\_BMI:
+		\begin{itemize}
+			\item Sesso, Anni, Peso, Altezza, Bmi, Tot Testa, Tot Torace, Tot Addome, Tot Scheletro
+		\end{itemize}
+	\end{block}
+	\begin{block}{}
+		Totali\_DATA:
+		\begin{itemize}
+			\item Data, Sesso, Anni, Peso, Altezza, Tot Testa, Tot Torace, Tot Addome, Tot Scheletro
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Componenti usate}
+	\begin{block}{}
+	Totali\_BMI\_DATA:
+		\begin{itemize}
+		\item Data, Sesso, Anni, Peso, Altezza, Bmi, Tot Testa, Tot Torace, Tot Addome, Tot Scheletro
+		\end{itemize}
+	\end{block}
+	\begin{block}{}
+		Details, composto da:
+		\begin{columns}[t]
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item Testa
+					\begin{itemize}
+						\item Neurocranio
+						\item Splancnocranio
+						\item Telencefalo
+						\item Cervelletto
+						\item Tronco-encefalico
+					\end{itemize}
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item Torace
+					\begin{itemize}
+						\item Polmoni
+						\item Trachea/bronchi
+						\item Cuore
+						\item Aorta-toracica
+						\item Diaframma
+					\end{itemize}
+				\end{itemize}
+			\end{column}
+		\end{columns}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Componenti usate}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item Addome
+				\begin{itemize}
+					\item Fegato
+					\item Milza
+					\item Aorta-addominale
+					\item Reni
+					\item Mesentere
+				\end{itemize}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item Scheletro
+				\begin{itemize}
+					\item Rachide-cervicale
+					\item Rachide-toracico
+					\item Rachide-lombare
+					\item bacino-e-sacro
+					\item Complesso-sterno/claveo/costale
+				\end{itemize}
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Analizziamo i risultati}
+	\begin{itemize}
+		\item PCA e TSNE sono gli algoritmi usati per ridurre la dimensionalità
+		\item Il numero a fianco indica a quante dimensioni si è scesi
+		\item Details ha una dimensione iniziale di 20
+		\item Il punteggio sta ad indicare la percentuale di casi in cui l'algoritmo ha predetto correttamente di che mezzo si tratta
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Analizziamo i risultati}
+\begin{block}{StandardScaler}
+	\begin{center}
+		\begin{adjustbox}{max width=\textwidth}
+			\begin{tabular}{lrrrr}
+				\toprule
+				{} &    Totali &  Totali\_BMI &  Totali\_DATA &  Totali\_DATA\_and\_BMI \\
+				\midrule
+				SVC &  0.66 &         0.66 &          0.77 &                  0.73 \\
+				DT  &  0.56 &         0.56 &          0.61 &                  0.63 \\
+				RF  &  0.64 &         0.63 &          0.57 &                  0.59 \\
+				NB  &  0.69 &         0.68 &          0.72 &                  0.75 \\
+				LD  &  0.71 &         0.68 &          0.72 &                  0.72 \\
+				MLP &  0.69 &         0.69 &          0.74 &                  0.72 \\
+				\bottomrule
+			\end{tabular}
+		\end{adjustbox}
+	\end{center}
+	\begin{center}
+		\begin{adjustbox}{max width=\textwidth}
+			\begin{tabular}{lrrrrrrr}
+				\toprule
+				{} &   Details &  \thead{Details\\PCA\_5} & \thead{Details\\ PCA\_10} &  \thead{Details\\ PCA\_13} &  \thead{Details\\PCA\_15} &  \thead{Details\\TSNE\_13} &  \thead{Details\\TSNE\_15} \\
+				\midrule
+				SVC &  0.68 &                  0.63 &                   0.68 &                   0.67 &                   0.71 &                    0.51 &                    0.53 \\
+				DT  &  0.68 &                  0.60 &                   0.67 &                   0.64 &                   0.57 &                    0.43 &                    0.50 \\
+				RF  &  0.67 &                  0.59 &                   0.69 &                   0.70 &                   0.63 &                    0.51 &                    0.55 \\
+				NB  &  0.63 &                  0.61 &                   0.66 &                   0.67 &                   0.65 &                    0.56 &                    0.57 \\
+				LD  &  0.63 &                  0.64 &                   0.60 &                   0.59 &                   0.59 &                    0.48 &                    0.49 \\
+				MLP &  0.63 &                  0.62 &                   0.61 &                   0.62 &                   0.65 &                    0.39 &                    0.47 \\
+				\bottomrule
+			\end{tabular}
+		\end{adjustbox}
+	\end{center}
+\end{block}
+\end{frame}
+\begin{frame}{Analizziamo i risultati}
+	\begin{block}{MinMaxScaler}
+		\begin{center}
+			\begin{adjustbox}{max width=\textwidth}
+				\begin{tabular}{lrrrr}
+					\toprule
+					{} &    Totali &  Totali\_BMI &  Totali\_DATA &  Totali\_DATA\_and\_BMI \\
+					\midrule
+					SVC &  0.66 &         0.62 &          0.73 &                  0.74 \\
+					DT  &  0.61 &         0.55 &          0.65 &                  0.63 \\
+					RF  &  0.60 &         0.62 &          0.62 &                  0.61 \\
+					NB  &  0.69 &         0.68 &          0.72 &                  0.75 \\
+					LD  &  0.71 &         0.68 &          0.72 &                  0.72 \\
+					MLP &  0.62 &         0.64 &          0.71 &                  0.76 \\
+					\bottomrule
+				\end{tabular}
+			\end{adjustbox}
+		\end{center}
+		\begin{center}
+			\begin{adjustbox}{max width=\textwidth}
+				\begin{tabular}{lrrrrrrr}
+					\toprule
+					{} &   Details &  \thead{Details\\PCA\_5} &  \thead{Details\\PCA\_10} &  \thead{Details\\PCA\_13} &  \thead{Details\\PCA\_15} &  \thead{Details\\TSNE\_13} &  \thead{Details\\TSNE\_15} \\
+					\midrule
+					SVC &  0.74 &                  0.70 &                   0.64 &                   0.67 &                   0.70 &                    0.58 &                    0.42 \\
+					DT  &  0.70 &                  0.61 &                   0.60 &                   0.56 &                   0.59 &                    0.51 &                    0.56 \\
+					RF  &  0.67 &                  0.65 &                   0.66 &                   0.71 &                   0.67 &                    0.46 &                    0.52 \\
+					NB  &  0.63 &                  0.67 &                   0.65 &                   0.67 &                   0.67 &                    0.57 &                    0.58 \\
+					LD  &  0.63 &                  0.65 &                   0.61 &                   0.60 &                   0.62 &                    0.43 &                    0.39 \\
+					MLP &  0.65 &                  0.64 &                   0.64 &                   0.60 &                   0.63 &                    0.51 &                    0.43 \\
+					\bottomrule
+				\end{tabular}
+			\end{adjustbox}
+		\end{center}
+	\end{block}
+\end{frame}
+\begin{frame}{Analizziamo i risultati}
+	\begin{block}{RobustScaler}
+		\begin{center}
+			\begin{adjustbox}{max width=\textwidth}
+				\begin{tabular}{lrrrr}
+					\toprule
+					{} &    Totali &  Totali\_BMI &  Totali\_DATA &  Totali\_DATA\_and\_BMI \\
+					\midrule
+					SVC &  0.66 &         0.68 &          0.77 &                  0.72 \\
+					DT  &  0.59 &         0.60 &          0.62 &                  0.65 \\
+					RF  &  0.62 &         0.63 &          0.56 &                  0.61 \\
+					NB  &  0.69 &         0.68 &          0.72 &                  0.75 \\
+					LD  &  0.71 &         0.68 &          0.72 &                  0.72 \\
+					MLP &  0.70 &         0.67 &          0.70 &                  0.66 \\
+					\bottomrule
+				\end{tabular}
+			\end{adjustbox}
+		\end{center}
+		\begin{center}
+			\begin{adjustbox}{max width=\textwidth}
+				\begin{tabular}{lrrrrrrr}
+					\toprule
+					{} &   Details &  \thead{Details\\PCA\_5} &  \thead{Details\\PCA\_10} &  \thead{Details\\PCA\_13} &  \thead{Details\\PCA\_15} &  \thead{Details\\TSNE\_13} &  \thead{Details\\TSNE\_15} \\
+					\midrule
+					SVC &  0.68 &                  0.63 &                   0.63 &                   0.66 &                   0.66 &                    0.56 &                    0.47 \\
+					DT  &  0.65 &                  0.63 &                   0.61 &                   0.64 &                   0.63 &                    0.45 &                    0.56 \\
+					RF  &  0.65 &                  0.65 &                   0.64 &                   0.64 &                   0.66 &                    0.52 &                    0.49 \\
+					NB  &  0.63 &                  0.67 &                   0.67 &                   0.67 &                   0.65 &                    0.54 &                    0.56 \\
+					LD  &  0.63 &                  0.63 &                   0.60 &                   0.64 &                   0.67 &                    0.43 &                    0.42 \\
+					MLP &  0.56 &                  0.63 &                   0.60 &                   0.65 &                   0.60 &                    0.49 &                    0.46 \\
+					\bottomrule
+				\end{tabular}
+			\end{adjustbox}
+		\end{center}
+	\end{block}
+\end{frame}
+\begin{frame}{Analizziamo i risultati}
+	\begin{block}{Senza Scaler}
+		\begin{center}
+			\begin{adjustbox}{max width=\textwidth}
+				\begin{tabular}{lrrrrrr}
+					\toprule
+					{} &  \thead{Details\\PCA\_5} &  \thead{Details\\PCA\_10} &  \thead{Details\\PCA\_13} &  \thead{Details\\PCA\_15} &  \thead{Details\\TSNE\_13} &  \thead{Details\\TSNE\_15} \\
+					\midrule
+					SVC &                  0.65 &                   0.66 &                   0.68 &                   0.66 &                    0.57 &                    0.54 \\
+					DT  &                  0.60 &                   0.55 &                   0.59 &                   0.51 &                    0.50 &                    0.52 \\
+					RF  &                  0.66 &                   0.64 &                   0.60 &                   0.64 &                    0.53 &                    0.55 \\
+					NB  &                  0.67 &                   0.64 &                   0.66 &                   0.65 &                    0.52 &                    0.55 \\
+					LD  &                  0.64 &                   0.62 &                   0.58 &                   0.62 &                    0.47 &                    0.51 \\
+					MLP &                  0.66 &                   0.65 &                   0.60 &                   0.58 &                    0.43 &                    0.53 \\
+					\bottomrule
+				\end{tabular}
+			\end{adjustbox}
+		\end{center}
+	In generale non c’è un aumento di prestazioni tra i vari scaler
+	\end{block}
+\end{frame}
+\begin{frame}{Conclusioni}
+	\begin{block}{}
+		\begin{center}
+			\begin{adjustbox}{max width=\textwidth}
+				\begin{tabular}{lrrrr}
+					\toprule
+					{} &  StandardScaler &  MinMaxScaler &  RobustScaler &  No\_Scaler \\
+					\midrule
+					Totali                     &        0.713 &      0.713 &      0.713 &        NaN \\
+					Totali\_BMI            &        0.692 &      0.689 &      0.689 &        NaN \\
+					Totali\_DATA           &        \cellcolor{blue!25}0.774 &      0.735 &      \cellcolor{blue!25}0.774 &        NaN \\
+					Totali\_DATA\_BMI   &        0.751 &      0.767 &      0.751 &        NaN \\
+					Details                    &        0.685 &      0.740 &      0.685 &        NaN \\
+					Details\_PCA\_5   &        0.647 &      0.701 &      0.670 &   0.670 \\
+					Details\_PCA\_10  &        0.699 &      0.662 &      0.670 &   0.662 \\
+					Details\_PCA\_13  &        0.701 &      0.710 &      0.670 &   0.685 \\
+					Details\_PCA\_15  &        0.715 &      0.700 &      0.678 &   0.661 \\
+					Details\_TSNE\_13 &        0.561 &      0.584 &      0.568 &   0.572 \\
+					Details\_TSNE\_15 &        0.578 &      0.586 &      0.562 &   0.554 \\
+					\bottomrule
+				\end{tabular}
+			\end{adjustbox}
+		\end{center}
+	\end{block}
+	Le migliori prestazioni si ottengono usando Totali con la data senza praticare una riduzione della dimensionalità
+\end{frame}
+\end{document}
