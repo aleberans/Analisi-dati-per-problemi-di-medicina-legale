@@ -14,20 +14,20 @@
 \contentsline {subsubsection}{\numberline {2.1.1.6}Multi-Layer Perceptron Classifier}{11}{subsubsection.2.1.1.6}% 
 \contentsline {subsection}{\numberline {2.1.2}Machine Learning con apprendimento\\ non supervisionato}{13}{subsection.2.1.2}% 
 \contentsline {subsection}{\numberline {2.1.3}Machine Learning con apprendimento per rinforzo}{13}{subsection.2.1.3}% 
-\contentsline {subsection}{\numberline {2.1.4}Machine Learning con apprendimento semi Supervisionato}{14}{subsection.2.1.4}% 
+\contentsline {subsection}{\numberline {2.1.4}Machine Learning con apprendimento\\ semi supervisionato}{14}{subsection.2.1.4}% 
 \contentsline {chapter}{\numberline {3}Dataset}{15}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Iris}{15}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Incidenti Stradali}{15}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Metodi per ridurre la Dimensionalit\IeC {\`a}}{15}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}PCA}{15}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}TSNE}{15}{subsection.3.3.2}% 
-\contentsline {chapter}{\numberline {4}Esperimenti}{16}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Model Selection}{16}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Scelta degli Iperparametri}{16}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Scalare i dati}{16}{subsection.4.1.2}% 
-\contentsline {section}{\numberline {4.2}Errore di Generalizzazione}{16}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Training}{16}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Cross Validation}{16}{subsection.4.2.2}% 
-\contentsline {section}{\numberline {4.3}Risultati Ottenuti}{16}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Conclusioni}{16}{section.4.4}% 
-\contentsline {chapter}{Bibliografia}{17}{chapter*.3}% 
+\contentsline {section}{\numberline {3.3}Metodi per ridurre la Dimensionalit\IeC {\`a}}{17}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}PCA}{17}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}TSNE}{17}{subsection.3.3.2}% 
+\contentsline {chapter}{\numberline {4}Esperimenti}{18}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Model Selection}{18}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Scelta degli Iperparametri}{18}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Scalare i dati}{18}{subsection.4.1.2}% 
+\contentsline {section}{\numberline {4.2}Errore di Generalizzazione}{18}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Training}{18}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Cross Validation}{18}{subsection.4.2.2}% 
+\contentsline {section}{\numberline {4.3}Risultati Ottenuti}{18}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Conclusioni}{18}{section.4.4}% 
+\contentsline {chapter}{Bibliografia}{19}{chapter*.3}% 

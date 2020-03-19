@@ -432,24 +432,62 @@ Potremmo trovare questo tipo di apprendimento ad esempio nell’addestramento di
 Inizialmente le mosse saranno del tutto casuali e senza una logica. Dal momento in cui il sistema riceverà dei feedback positivi, come ad esempio nel caso in cui mangi una pedina avversaria, allora riceverà un peso maggiore e conseguentemente un rinforzo positivo su quell’azione. Contrariamente in caso di azione negativa, il valore dei pesi su quell’azione andrà in decremento.
 
 Conseguentemente a questi rinforzi, il sistema darà maggior peso alle mosse che gli hanno portato maggiori benefici e tenderà a replicare lo stesso comportamento su nuove mosse future.
-\subsection{Machine Learning con apprendimento semi Supervisionato}
+\subsection{Machine Learning con apprendimento\\ semi supervisionato}
 Può essere visto come un quarto tipo di apprendimento automatico. In questo caso, al contrario dell’apprendimento non supervisionato, abbiamo che di tutti i dati presenti nel training set, solo pochi di essi sono stati etichettati.
-% 
-%			CAPITOLO 2: Stato dell'arte
-% 
+
+%			CAPITOLO 2
+
 
 \chapter{Dataset}
-
+Un dataset è una collezione di dati nel quale ogni colonna della tabella corrisponde ad una caratteristica e ogni riga ad una singola osservazione o istanza. Essi sono il ``cibo'' per gli algoritmi di machine learning. Quanto più un dataset è ricco di osservazioni tanto più sarà in grado di fornire prestazioni e accuratezza in output.
 
 \section{Iris}
-
-
+Durante il tirocinio, inizialmente, per prendere familiarità con gli strumenti e algoritmi necessari a compiere lo studio ho utilizzato il dataset Iris. Esso è un dataset multivariato introdotto da Ronald Fisher nel 1936. Consiste in 150 istanze di Iris e classificate secondo tre specie: Setosa, Virginica e Versicolor.
+Le variabili considerate sono lunghezza e larghezza di sepalo e petalo del fiore iris.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 150mm]{immagini/Iris}
+	\caption{Visualizzazione di un estratto del dataset Iris}
+\end{figure}
 \section{Incidenti Stradali}
+Apprese le basi del Machine Learning ho iniziato a lavorare con il dataset ``Incidenti Stradali'', questo dataset è stato fornito da medici legali e raccoglie, tristemente, i decessi causati da incidenti stradali. Sono state raccolte 131 istanze e ognuna rappresenta una persona morta. Il dataset è organizzato in vari livelli di dettaglio. Un primo livello è composto dalle  caratteristiche basilari:
+\begin{itemize}
+	\item Numero del verbale, verrà usato come indice univoco
+	\item Data del decesso
+	\item Sesso
+	\item Anni
+	\item Peso
+	\item Altezza
+	\item BMI
+\end{itemize}
+Successivamente sono raccolte tutte le ossa rotte durante l'incidente con etichette che vanno da 0, nessuna lesione, a 4, lesione massima.
+Successivamente sono descritti i totali delle rotture avvenute nei distretti di:
+\begin{itemize}
+	\item Testa
+	\item Torace
+	\item Addome
+	\item Scheletro
+\end{itemize}
+Ogni singolo distretto è poi diviso più nello specifico in singole ossa, come in figura 10
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 160mm]{immagini/testa-torace-dataset}
+	\includegraphics[width = 160mm]{immagini/addome-scheletro-dataset}
+	\caption{Suddivisione caratteristiche dettagliate}
+\end{figure}
 
+Il dataset ha inoltre due ulteriori livelli di dettaglio. Esso contiene infatti anche dati più specifici riguardanti la frattura o meno di ossa ben specifiche raggruppate in:
+\begin{itemize}
+	\item Cranio
+	\item Rachide
+	\item Torace - Gabbia Toracica
+	\item Bacino
+	\item Arti Superiori
+	\item Arti Inferiori
+\end{itemize}
+In ultimo è registrato il mezzo che ha investito la persona. Questo è il label set, la y dei modelli descritti al capitolo precedente. Tutti gli esperimenti effettuati in fase di studio sono incentrati su cercare di classificare il tipo di mezzo, leggero ovvero auto, etichettato con 0, o pesante, con etichetta 1, che ha investito l'individuo.
 
-
-
-
+Nel mio studio mi sono limitato a considerare le caratteristiche basilari, i totali e quelle riportate in figura 10.
 \section{Metodi per ridurre la Dimensionalità}
 
 

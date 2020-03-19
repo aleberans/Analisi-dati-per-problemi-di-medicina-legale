@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.13)  19 MAR 2020 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.13)  19 MAR 2020 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -506,19 +506,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 165.
 
 [3]
-<immagini/Iperpiano-3-dimensioni.png, id=221, 497.86pt x 219.219pt>
+<immagini/Iperpiano-3-dimensioni.png, id=222, 497.86pt x 219.219pt>
 File: immagini/Iperpiano-3-dimensioni.png Graphic file (type png)
 <use immagini/Iperpiano-3-dimensioni.png>
 Package pdftex.def Info: immagini/Iperpiano-3-dimensioni.png  used on input lin
 e 190.
 (pdftex.def)             Requested size: 142.26378pt x 62.64195pt.
  [4 <./immagini/Iperpiano-3-dimensioni.png>]
-<immagini/svc.jpg, id=230, 155.6214pt x 132.0132pt>
+<immagini/svc.jpg, id=231, 155.6214pt x 132.0132pt>
 File: immagini/svc.jpg Graphic file (type jpg)
 <use immagini/svc.jpg>
 Package pdftex.def Info: immagini/svc.jpg  used on input line 200.
 (pdftex.def)             Requested size: 133.72795pt x 113.44855pt.
-<immagini/linearmente-separabili.png, id=231, 180.675pt x 170.88844pt>
+<immagini/linearmente-separabili.png, id=232, 180.675pt x 170.88844pt>
 File: immagini/linearmente-separabili.png Graphic file (type png)
 <use immagini/linearmente-separabili.png>
 Package pdftex.def Info: immagini/linearmente-separabili.png  used on input lin
@@ -529,33 +529,33 @@ e 215.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./immagini/svc.jpg>] [6 <./immagini/linearmente-separabili.png>]
-<immagini/esempio_dataset_non_lineare.png, id=244, 659.46375pt x 592.2125pt>
+<immagini/esempio_dataset_non_lineare.png, id=245, 659.46375pt x 592.2125pt>
 File: immagini/esempio_dataset_non_lineare.png Graphic file (type png)
 <use immagini/esempio_dataset_non_lineare.png>
 Package pdftex.def Info: immagini/esempio_dataset_non_lineare.png  used on inpu
 t line 271.
 (pdftex.def)             Requested size: 113.81102pt x 102.20193pt.
  [7 <./immagini/esempio_dataset_non_lineare.png>]
-<immagini/decision_tree.png, id=253, 1296.845pt x 790.955pt>
+<immagini/decision_tree.png, id=254, 1296.845pt x 790.955pt>
 File: immagini/decision_tree.png Graphic file (type png)
 <use immagini/decision_tree.png>
 Package pdftex.def Info: immagini/decision_tree.png  used on input line 305.
 (pdftex.def)             Requested size: 147.95433pt x 90.22774pt.
  [8 <./immagini/decision_tree.png (PNG copy)>] [9]
-<immagini/naive-bayes-classification-1.png, id=266, 552.0625pt x 411.5375pt>
+<immagini/naive-bayes-classification-1.png, id=267, 552.0625pt x 411.5375pt>
 File: immagini/naive-bayes-classification-1.png Graphic file (type png)
 <use immagini/naive-bayes-classification-1.png>
 Package pdftex.def Info: immagini/naive-bayes-classification-1.png  used on inp
 ut line 356.
 (pdftex.def)             Requested size: 165.02597pt x 123.01636pt.
  [10 <./immagini/naive-bayes-classification-1.png>]
-<immagini/Perceptron.jpg, id=278, 496.254pt x 172.0026pt>
+<immagini/Perceptron.jpg, id=279, 496.254pt x 172.0026pt>
 File: immagini/Perceptron.jpg Graphic file (type jpg)
 <use immagini/Perceptron.jpg>
 Package pdftex.def Info: immagini/Perceptron.jpg  used on input line 380.
 (pdftex.def)             Requested size: 256.0748pt x 88.75423pt.
  [11 <./immagini/Perceptron.jpg>]
-<immagini/Multilayer-Perceptron.jpg, id=289, 493.3632pt x 280.8894pt>
+<immagini/Multilayer-Perceptron.jpg, id=290, 493.3632pt x 280.8894pt>
 File: immagini/Multilayer-Perceptron.jpg Graphic file (type jpg)
 <use immagini/Multilayer-Perceptron.jpg>
 Package pdftex.def Info: immagini/Multilayer-Perceptron.jpg  used on input line
@@ -566,38 +566,77 @@ Package pdftex.def Info: immagini/Multilayer-Perceptron.jpg  used on input line
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 416.
 
-[12 <./immagini/Multilayer-Perceptron.jpg>] [13] [14]
+[12 <./immagini/Multilayer-Perceptron.jpg>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 435.
+
+[13] [14]
 Capitolo 3.
+<immagini/Iris.png, id=306, 228.855pt x 52.7571pt>
+File: immagini/Iris.png Graphic file (type png)
+<use immagini/Iris.png>
+Package pdftex.def Info: immagini/Iris.png  used on input line 449.
+(pdftex.def)             Requested size: 426.79134pt x 98.3904pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 449--450
+ [][] 
+ []
+
 [15
 
-]
+ <./immagini/Iris.png>]
+<immagini/testa-torace-dataset.png, id=314, 222.8325pt x 26.7399pt>
+File: immagini/testa-torace-dataset.png Graphic file (type png)
+<use immagini/testa-torace-dataset.png>
+Package pdftex.def Info: immagini/testa-torace-dataset.png  used on input line 
+474.
+(pdftex.def)             Requested size: 455.24408pt x 54.63391pt.
+<immagini/addome-scheletro-dataset.png, id=315, 260.4129pt x 30.8352pt>
+File: immagini/addome-scheletro-dataset.png Graphic file (type png)
+<use immagini/addome-scheletro-dataset.png>
+Package pdftex.def Info: immagini/addome-scheletro-dataset.png  used on input l
+ine 475.
+(pdftex.def)             Requested size: 455.24408pt x 53.90591pt.
+
+Overfull \hbox (36.9904pt too wide) in paragraph at lines 474--476
+ [][] 
+ []
+
+
+Overfull \hbox (36.9904pt too wide) in paragraph at lines 474--476
+ [] 
+ []
+
+[16 <./immagini/testa-torace-dataset.png> <./immagini/addome-scheletro-dataset.
+png>] [17]
 Capitolo 4.
-(./elaborato_corretto.bbl [16
+(./elaborato_corretto.bbl [18
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 514.
- [17
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 552.
+ [19
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 514.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 552.
  (./elaborato_corretto.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 514.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 514.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 552.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 552.
 Package rerunfilecheck Info: File `elaborato_corretto.out' has not changed.
-(rerunfilecheck)             Checksum: C79A682F8AC020416B18E4BB34ED658F;2212.
+(rerunfilecheck)             Checksum: 281AC64EA2540238B0E0B6C6BE35F0BE;2212.
  ) 
 Here is how much of TeX's memory you used:
- 9200 strings out of 492609
- 132748 string characters out of 6131462
- 257503 words of memory out of 5000000
- 12905 multiletter control sequences out of 15000+600000
+ 9219 strings out of 492609
+ 133248 string characters out of 6131462
+ 256503 words of memory out of 5000000
+ 12917 multiletter control sequences out of 15000+600000
  12060 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,7n,32p,833b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,7n,32p,833b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
@@ -613,10 +652,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on elaborato_corretto.pdf (22 pages, 480076 bytes).
+Output written on elaborato_corretto.pdf (24 pages, 516310 bytes).
 PDF statistics:
- 388 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
- 71 named destinations out of 1000 (max. 500000)
- 294 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 407 PDF objects out of 1000 (max. 8388607)
+ 335 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
