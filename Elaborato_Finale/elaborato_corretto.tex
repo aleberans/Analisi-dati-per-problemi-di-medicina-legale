@@ -208,10 +208,15 @@ Il Support Vector Machine ha l'obiettivo di identificare l'iperpiano che divide 
 	\item se l'iperpiano cercato non esiste, Support Vector Machine usa una mappatura non lineare per trasformare i dati di allenamento in una dimensione superiore. In questo modo, i dati di due classi possono sempre essere separati da un iperpiano, che sarà scelto per la suddivisione dei dati.
 \end{itemize}
 
-Un iperpiano linearmente separabile è un iperpiano in cui è semplice distinguere due classi. Nella seguente immagine è visibile come sia possibile disegnare un numero infinito di linee rette per separare i diversi elementi. Il problema è trovare quale tra le infinite rette risulti ottimale, ossia quella che generi il minimo errore di classificazione su una nuova osservazione.
-Per fare ciò dobbiamo avere i nostri elementi il più lontano possibile dall' iperpiano pur rimanendo nella zona corretta. (immagine linearmente separabili)
+Un iperpiano linearmente separabile è un iperpiano in cui è semplice distinguere due classi. Nella figura 3 è visibile come sia possibile disegnare un numero infinito di linee rette per separare i diversi elementi. Il problema è trovare quale tra le infinite rette risulti ottimale, ossia quella che generi il minimo errore di classificazione su una nuova osservazione.
+Per fare ciò dobbiamo avere i nostri elementi il più lontano possibile dall' iperpiano pur rimanendo nella zona corretta. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 40mm]{immagini/linearmente-separabili}
+	\caption{Infinite rette possono separare gli elementi}
+\end{figure}
 
-Nel momento in cui vengono aggiunti nuovi dati di test, il modello decide la classe che gli appartiene. (allego foto con esempio massimizzato)
+Nel momento in cui vengono aggiunti nuovi dati di test, il modello decide la classe che gli appartiene.
 
 Dato un training set etichettato:
 
@@ -259,7 +264,13 @@ Se il vettore dei pesi è indicato da $w$ e $\parallel w \parallel$ è la sua lu
 \end{center}
 ciò significa che minimizzando il vettore peso $w$, avremo margine massimo che determina l'iperpiano ottimale.
 
-Non è però sempre possibile dividere i dati tramite un iperpiano, nella figura sotto vi è un chiaro esempio  (allega foto)
+Non è però sempre possibile dividere i dati tramite un iperpiano, nella figura sotto vi è un chiaro esempio
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 40mm]{immagini/esempio_dataset_non_lineare}
+	\caption{Non sempre è possibile dividere i dati linearmente}
+\end{figure}
 
 Per utilizzare la classificazione tramite iperpiani anche per dati che avrebbero bisogno di funzioni non lineari per essere separati, è necessario ricorrere alla tecnica degli spazi immagine ($feature$ $spaces$). Questo metodo, che sta alla base della teoria delle SVM, consiste nel mappare i dati iniziali in uno spazio di dimensione superiore.  Presupponendo quindi $m > n$, per la mappa si utilizza una funzione
 \begin{equation}
@@ -288,7 +299,12 @@ Il Decision Tree Classifier è un algoritmo di apprendimento supervisionato. È 
 \end{itemize}
 
 Normalmente il decision tree viene costruito a partire dall'insieme dei dati iniziali (data set), il quale può essere diviso in due sottoinsiemi: il \textit{training set}, sulla base del quale si crea la struttura dell'albero, e il \textit{test set} che viene utilizzato per testare l'accuratezza del modello predittivo così creato.
-Il processo di partizionamento avviene in maniera ricorsiva. La sua visualizzazione come diagramma di flusso è utile per capire il suo funzionamento ( immagine)
+Il processo di partizionamento avviene in maniera ricorsiva. In figura 5 vi è una sua visualizzazione come diagramma di flusso è utile per capire il suo funzionamento
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 52mm]{immagini/decision_tree}
+	\caption{Visualizzazione decision tree come diagramma di flusso}
+\end{figure}
 
 L'algoritmo si compone di tre passaggi:
 \begin{itemize}
@@ -333,8 +349,13 @@ y = argmax_y P(y) \prod_{i=1}^{n} P(x_i|y)
 \end{equation}
 Rimane solo da calcolare $P(y)$ e $P(x_i|y)$ ricavabile dal dataset dato in input al sistema.
 
-Nel Gaussian Naive Bayes si presume che i valori continui associati a ciascuna caratteristica siano distribuiti secondo una distribuzione gaussiana. Una distribuzione gaussiana è anche chiamata distribuzione normale. Una volta tracciato, fornisce una curva a campana simmetrica rispetto alla media dei valori delle caratteristiche, come mostrato in figura: (figura)
+Nel Gaussian Naive Bayes si presume che i valori continui associati a ciascuna caratteristica siano distribuiti secondo una distribuzione gaussiana. Una distribuzione gaussiana è anche chiamata distribuzione normale. Una volta tracciato, fornisce una curva a campana simmetrica rispetto alla media dei valori delle caratteristiche, come mostrato in figura qui sotto:
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 58mm]{immagini/naive-bayes-classification-1}
+	\caption{Distribuzione normale o gaussiana}
+\end{figure}
 
 Si presume che la probabilità delle caratteristiche sia gaussiana, quindi la probabilità condizionata è data da:
 \begin{equation}
@@ -352,15 +373,30 @@ Il processo prevede di proiettare i dati in input su un sottospazio lineare dall
 %\end{equation}
 %e selezionamo la classe $k$ che massimizza questa probabilità condizionata.
 \subsubsection{Multi-Layer Perceptron Classifier}
-Il Multi-Layer Perceptron Classifier è un algoritmo di apprendimento supervisionato. L'idea di base è quella del neurone umano e della rete di neuroni che compone il nostro cervello. Alla base della rete neurale invece che esserci il neurone troviamo il percettrone. Esso è composta dagli inputs $x_1, x_2, ..., x_n$ con i loro pesi corrispondenti $w_1, w_2, ..., w_n$. Una funzione chiamata funzione di attivazione prende gli input, li moltiplica per i pesi corrispondenti e produce l'output y. (immagine perceptron)
+Il Multi-Layer Perceptron Classifier è un algoritmo di apprendimento supervisionato. L'idea di base è quella del neurone umano e della rete di neuroni che compone il nostro cervello. Alla base della rete neurale invece che esserci il neurone troviamo il percettrone. Esso è composta dagli inputs $x_1, x_2, ..., x_n$ con i loro pesi corrispondenti $w_1, w_2, ..., w_n$. Una funzione chiamata funzione di attivazione prende gli input, li moltiplica per i pesi corrispondenti e produce l'output y.
 
-Una rete con un solo percettrone è chiamata a singolo livello. Esistono poi le reti multistrato, sono reti che hanno minimo 3 nodi disposti su più livelli:
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 90mm]{immagini/Perceptron}
+	\caption{Visualizzazione di un percettrone}
+\end{figure}
+
+
+Una rete con un solo percettrone è chiamata a singolo livello. Esistono poi le reti multistrato, sono reti che hanno minimo 3 nodi disposti su più livelli, figura 8:
 \begin{itemize}
 	\item livello input
 	\item livello output 
 	\item hidden layer: livelli intermedi tra input e output 
 \end{itemize}
+
+
 In questa rete ogni nodo, escluso il nodo di input, usa una funzione di attivazione non lineare per modellare il comportamento e assieme alla backpropagation vengono usate per allenare il modello.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 80mm]{immagini/Multilayer-Perceptron}
+	\caption{Visualizzazione di una rete multistrato}
+\end{figure}
 La funzione di attivazione non fa altro che combinare l'input del neurone con i pesi e aggiungere un bias per produrre l'output.
 Esistono diverse funzioni di attivazione:
 \begin{itemize}
