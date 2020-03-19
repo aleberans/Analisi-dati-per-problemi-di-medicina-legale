@@ -117,27 +117,27 @@ Questa sezione, facoltativa, contiene i ringraziamenti.
 Questo documento ha una duplice funzione: da un lato mostra un esempio completo di elaborato finale redatto in \LaTeX\ e conforme allo standard PDF/A, e dall'altro contiene suggerimenti e risposte a domande frequenti poste dagli studenti. Se ne raccomanda, pertanto, un'attenta lettura.
 
 \chapter{Machine Learning}
-Il termine machine learning, o apprendimento automatico in italiano, si riferisce alla capacità dei computer di apprendere e agire senza essere programmati esplicitamente.
-Gli strumenti di machine learning si occupano di dotare i programmi della capacità di "apprendere" e adattarsi agli input forniti
+Il termine Machine Learning, o apprendimento automatico in italiano, si riferisce alla capacità dei computer di apprendere e agire senza essere programmati esplicitamente.
+Gli strumenti di machine learning si occupano di dotare i programmi della capacità di ``apprendere'' e adattarsi agli input forniti.
 Al giorno d'oggi siamo circondati da tecnologie basate sull'apprendimento automatico:
 \begin{itemize}
 	\item software che rilevano lo spam a partire dai nostri messaggi e-mail  
 	\item i motori di ricerca che imparano a fornirci i migliori risultati possibili
-	\item le transazioni con carta di credito sono protette da un software che impara a rilevare le frodi
-	\item Le fotocamere digitali imparano a rilevare i volti
+	\item le transazioni con carta di credito protette da un software che impara a rilevare le frodi
+	\item le fotocamere digitali imparano a rilevare i volti
 	\item le applicazioni di assistenza personale intelligenti sugli smartphone imparano a riconoscere i comandi vocali
-	\item addestrare i veicoli per guidare senza assistenza
+	\item addestramento dei veicoli per guidare senza intervento umano
 	\item applicazioni scientifiche come la bioinformatica, la medicina e l'astronomia
 \end{itemize}
 \section{Come funziona il Machine Learning}
 \label{sec:Come funziona il Machine Learning}
-Nel Machine learning vengono usati metodi statistici che utilizzano l'esperienza per migliorare le prestazioni di algoritmi o fare previsioni più accurate.
-La qualità e la dimensione dei dataset, (collezione di dati), raccolti o resi disponibili utilizzati nel processo sono fondamentali per il successo e l'accuratezza delle previsioni fatte.
+Nel Machine Learning vengono usati metodi statistici che utilizzano l'esperienza per migliorare le prestazioni di algoritmi o fare previsioni più accurate.
+La qualità e la dimensione dei dataset (collezione di dati), raccolti o resi disponibili e utilizzati nel processo sono fondamentali per il successo e l'accuratezza delle previsioni fatte.
 
 Nel processo possiamo distinguere diversi aspetti:
 \begin{itemize}
 	\item Domain set: raccolta arbitraria di dati, X. Questo è l'insieme di oggetti che si desidera etichettare
-	\item Label set: generalmente si usano un set di etichette del tipo \{0, 1\} che rappresentano la presenza o l'assenza della caratteristiche si sta cercando
+	\item Label set: generalmente si usa un set di etichette del tipo \{0, 1\} che rappresentano la presenza o l'assenza della caratteristica che si sta cercando
 	\item Training data: è l'input dato in pasto al computer
 	\item Algoritmo: scelto in base ai dati in input, è la regola che viene usata dal sistema per classificare e in generale predire la caratteristica
 	\item Errore di generalizzazione: è la probabilità che non venga predetta l'etichetta corretta 
@@ -147,24 +147,24 @@ Una categorizzazione dei compiti del machine learning si ha quando si considera 
 	\item classificazione, i classificatori separano i dati in due o più classi. Quando fornisco un esempio al classificatore, l'algoritmo mi restituisce la classe a cui potrebbe appartenere.
 	Esistono due tipi di classificazione:
 	\begin{itemize}
-		\item binaria, quando le etichette sono soltanto due
-		\item multiclasse se le etichette sono tre o più
+		\item binaria: le etichette sono soltanto due
+		\item multiclasse: le etichette sono tre o più
 	\end{itemize}
 	\item regressione, usata per predire un valore continuo, per esempio il prezzo di una casa date la dimensione e metratura
 	\item clustering, un insieme di input viene diviso in gruppi in modo che i singoli elementi siano simili agli altri punti dello stesso insieme e diversi dagli elementi degli altri. Diversamente da quanto accade per la classificazione, i gruppi non sono noti prima, rendendolo tipicamente un compito non supervisionato.
 \end{itemize}
-I compiti dell'apprendimento automatico vengono tipicamente classificati in quattro categorie, a seconda della natura del "segnale" utilizzato per l'apprendimento o del "feedback" disponibile al sistema di apprendimento. Queste categorie, anche dette paradigmi, sono:
+I compiti dell'apprendimento automatico vengono tipicamente classificati in quattro categorie, a seconda della natura del ``segnale'' utilizzato per l'apprendimento o del ``feedback'' disponibile al sistema di apprendimento. Queste categorie, anche dette paradigmi, sono:
 \begin{itemize}
-	\item Machine learning supervisionato
-	\item Machine learning non supervisionato
-	\item Machine learning per rinforzo
-	\item Machine learning semi-supervisionato
+	\item Machine Learning supervisionato
+	\item Machine Learning non supervisionato
+	\item Machine Learning per rinforzo
+	\item Machine Learning semi-supervisionato
 	
 \end{itemize}
 
-\subsection{Machine Learning con apprendimento supervisionato}
+\subsection{Machine Learning con apprendimento \\supervisionato}
 \label{sec:apprendimento supervisionato}
-Attravero l’apprendimento supervisionato cerchiamo di costruire un modello partendo da dei dati di addestramento etichettati, con i quali cerchiamo di fare previsioni su dati non disponibili o futuri. Con il termine "supervisione" si intende quindi che nel nostro insieme dei campioni (o dataset), i segnali di output desiderati sono già noti poiché precedentemente etichettati.
+Attraverso l’apprendimento supervisionato cerchiamo di costruire un modello partendo da dati di addestramento etichettati, con i quali cerchiamo di fare previsioni su dati non disponibili o futuri. Con il termine ``supervisione'' si intende quindi che nel nostro insieme dei campioni (o dataset), i segnali di output desiderati sono già noti poiché precedentemente etichettati.
 
 Esistono molti algoritmi per svolgere apprendimento supervisionato, durante il tirocinio ho avuto modo di usare:
 \begin{itemize}
@@ -181,38 +181,35 @@ Esistono molti algoritmi per svolgere apprendimento supervisionato, durante il t
 Il Support Vector Machine è un algoritmo di apprendimento automatico supervisionato che può essere usato sia per scopi di classificazione che di regressione, ha la sua massima efficacia in problemi di classificazione binaria anche se può essere utilizzato anche per problemi di classificazione multiclasse.
 
 L'SVM è basato sull'idea di riuscire a trovare un iperpiano che divida al meglio un set di elementi in due classi distinte, definiamo alcuni concetti chiave:
-\begin{comment}
-\begin{figure}[b]
-\centering
-\includegraphics[width = 60mm]{immagini/Iperpiano-3-dimensioni}
-\caption{Il processo di trasformazione delle idee in testo~\cite{hamalainen2019web}.}
-\label{fig:ideas2text}
-\end{figure}
-\begin{figure}[b]
-\centering
-\includegraphics[width = 100mm]{immagini/support_vector}
-\caption{Il processo di trasformazione delle idee in testo~\cite{hamalainen2019web}.}
-\label{fig:ideas2text}
-\end{figure}
-\end{comment}
 
 
 \begin{itemize}
-	\item Iperpiano: nel caso in cui sia abbiano solo due dimensioni spaziali $x_1$ e $x_2$, l'iperpiano è raffigurato come una linea che separa un insieme di dati. Nel caso in cui le dimensioni siano 3, l'iperpiano è raffigurato come un piano, vedi immagine 1.
-	Con più di 3 dimensioni viene definito "iperpiano".
+	\item Iperpiano: nel caso in cui si abbiano solo due dimensioni spaziali $x_1$ e $x_2$, l'iperpiano è raffigurato come una linea che separa un insieme di dati. Nel caso in cui le dimensioni siano 3, l'iperpiano è raffigurato come un piano, vedi figura 1.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width = 50mm]{immagini/Iperpiano-3-dimensioni}
+		\caption{Iperpiano in 3 dimensioni}
+	\end{figure}
+	Con più di 3 dimensioni viene definito ``iperpiano''.
 	\item Support Vector: chiamati vettori di supporto in italiano, sono i punti che si trovano piu vicini all'iperpiano che divide i dati.
-	\item Margine: è la distanza tra i vettori di supporto di due classi diverse. A metà di questa distanza viene tracciato l'iperpiano. (immagine da inserire)
+	\item Margine: è la distanza tra i vettori di supporto di due classi diverse. A metà di questa distanza viene tracciato l'iperpiano, vedi figura 2.
 \end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 47mm]{immagini/svc}
+	\caption{Margine e vettori di supporto}
+\end{figure}
 
 Il Support Vector Machine ha l'obiettivo di identificare l'iperpiano che divide meglio i vettori di supporto in classi, per fare ciò esegue due step:
 
 \begin{itemize}
-	\item Cerca un iperpiano linearmente separabile che separa i valori di una classe dall'altra. Nel caso in cui ne esista più di uno cerca quello con il margine più alto tra i vettori di supporto in modo da migliorare l'accuratezza del modello
-	\item se l'iperpiano cercato non esiste, Support Vector Machine usa una mappatura non lineare per trasformare i dati di allenamento in una dimensione superiore. In questo modo, i dati di due classi possono sempre essere separati da un iperpiano, che sarà scelto per la suddivisione dei dati.  
+	\item cerca un iperpiano linearmente separabile che separa i valori di una classe dall'altra. Nel caso in cui ne esista più di uno cerca quello con il margine più alto tra i vettori di supporto in modo da migliorare l'accuratezza del modello.
+	\item se l'iperpiano cercato non esiste, Support Vector Machine usa una mappatura non lineare per trasformare i dati di allenamento in una dimensione superiore. In questo modo, i dati di due classi possono sempre essere separati da un iperpiano, che sarà scelto per la suddivisione dei dati.
 \end{itemize}
 
 Un iperpiano linearmente separabile è un iperpiano in cui è semplice distinguere due classi. Nella seguente immagine è visibile come sia possibile disegnare un numero infinito di linee rette per separare i diversi elementi. Il problema è trovare quale tra le infinite rette risulti ottimale, ossia quella che generi il minimo errore di classificazione su una nuova osservazione.
-Per fare ciò dobbiamo avere i nostri elementi il più lontano possibile dal iperpiano pur rimanendo nella zona corretta. (immagine linearmente separabili)
+Per fare ciò dobbiamo avere i nostri elementi il più lontano possibile dall' iperpiano pur rimanendo nella zona corretta. (immagine linearmente separabili)
 
 Nel momento in cui vengono aggiunti nuovi dati di test, il modello decide la classe che gli appartiene. (allego foto con esempio massimizzato)
 
@@ -236,11 +233,11 @@ Ragionando a due dimensioni per semplificare il problema abbiamo che
 \begin{center}
 	\[w_0 + w_1x_1 + w_2x_2 = 0\]
 \end{center}
-I punti che stanno sopra l'iperpiano , e che rappresentano un classe , soddisfano la seguente condizione:
+I punti che stanno sopra l'iperpiano e che rappresentano un classe soddisfano la seguente condizione:
 \begin{center}
 	\[w_0 + w_1x_1+w_2x_2 > 0\]
 \end{center}
-mentre qualsiasi punto che si trova sotto l'iperpiano, appartiene all'altra classe, che è soddisfatta dalla seguente condizione 
+mentre qualsiasi punto che si trova sotto l'iperpiano, appartiene all'altra classe, che è soddisfatta dalla seguente condizione :
 \begin{center}
 	\[w_0 + w_1x_1+w_2x_2 < 0\]
 \end{center}
@@ -260,21 +257,21 @@ Se il vettore dei pesi è indicato da $w$ e $\parallel w \parallel$ è la sua lu
 \begin{center}
 	\[ \frac{1}{\left | w \right |} + \frac{1}{\left | w \right |} = \frac{2}{\left | w \right |}\]
 \end{center}
-ciè significa cge minimizzando il vettore peso $w$, avremo margine massimo che determina l'iperpiano ottimale.
+ciò significa che minimizzando il vettore peso $w$, avremo margine massimo che determina l'iperpiano ottimale.
 
 Non è però sempre possibile dividere i dati tramite un iperpiano, nella figura sotto vi è un chiaro esempio  (allega foto)
 
-Per utilizzare la classificazione tramite iperpiani anche per dati che avrebber bisogno di funzioni non lineari per essere separati, è necessario ricorrere alla tecnica degli spazi immagine ($feature$ $spaces$). Questo metodo, che sta allabase della teoria delle SVM, consiste nel mappare i dati iniziali in uno spaziodi dimensione superiore.  Presupponendo quindi $m > n$, per la mappa si utilizza una funzione
+Per utilizzare la classificazione tramite iperpiani anche per dati che avrebbero bisogno di funzioni non lineari per essere separati, è necessario ricorrere alla tecnica degli spazi immagine ($feature$ $spaces$). Questo metodo, che sta alla base della teoria delle SVM, consiste nel mappare i dati iniziali in uno spazio di dimensione superiore.  Presupponendo quindi $m > n$, per la mappa si utilizza una funzione
 \begin{equation}
 	\phi: \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}
 \end{equation}
 attraverso la funzione $\phi$ i dati vengono mappati in uno spazio in cui diventano linearmente separabili e in cui sarà possibile trovare un iperpiano che li separi.
 
-La tecnica degli spazi immagine è particolarmente interessante per algoritmi che utilizzano i dati di training $x_i$ solo attraverso prodotti scalari $x_i \cdot x_j$. In questo caso nello spazio $\mathbb{R}^{m}$ non si devono trovare esplicitamente $\phi(x_i)$ e $\phi (x_j)$ ma basta calcolare il loro prodotto scalare $\phi (x_i) \cdot \phi (x_j)$. Per rendere semplice questo ultimo calcolo, che in spazi di dimensioni elevate diventa molto complicato, si utilizza una funzione detta kernel che restituisce direttamente il prodotto scalare delle immagini:
+La tecnica degli spazi immagine è particolarmente interessante per algoritmi che utilizzano i dati di training $x_i$ solo attraverso prodotti scalari $x_i \cdot x_j$. In questo caso nello spazio $\mathbb{R}^{m}$ non si devono trovare esplicitamente $\phi(x_i)$ e $\phi (x_j)$ ma basta calcolare il loro prodotto scalare $\phi (x_i) \cdot \phi (x_j)$. Per rendere semplice questo ultimo calcolo, che in spazi di dimensioni elevate diventa molto complicato, si utilizza una funzione detta \textit{kernel} che restituisce direttamente il prodotto scalare delle immagini:
 \begin{equation}
 K(x_i, x_j) = \phi (x_i) \cdot \phi (x_j)
 \end{equation}
-Esistono svariati kernel, i più utilizzati sono:
+Esistono svariati \textit{kernel}, i più utilizzati sono:
 \begin{itemize}
 	\item Lineare: $K(x, y) = x \cdot y$
 	\item Polinomiale: $K(x, y) = (x \cdot y)^{d}$ oppure $K(x, y) = (1 + x \cdot y)^{d}$
@@ -283,26 +280,118 @@ Esistono svariati kernel, i più utilizzati sono:
 \end{itemize}
 
 \subsubsection{Decision Tree Classifier}
-Il Decision Tree Classifier è un algoritmo di apprendimento supervisionato. Utilizza un albero decisionale, decision tree, composto da:
+Il Decision Tree Classifier è un algoritmo di apprendimento supervisionato. È un metodo privo di distribuzione o non parametrico, che non dipende da ipotesi di distribuzione di probabilità. Utilizza un albero decisionale, \textit{decision tree}, composto da:
 \begin{itemize}
-	\item 
+	\item Nodi: rappresenta la caratteristica o attributo
+	\item Ramo: rappresenta una regola di decisione
+	\item Foglia: rappresenta il risultato
 \end{itemize}
-\subsubsection{Random Forest Classifier}
-\subsubsection{Gaussian Naive Bayes}
-\subsubsection{Linear Discriminat Analysis}
-\subsubsection{Multi-Layer Perceptron Classifier}
-\subsection{Machine Learning con apprendimento Non Supervisionato}
-Nell’apprendimento senza supervisione, al contrario di quella supervisionata abbiamo dei dati senza etichetta o dati non strutturati. Con queste tecniche siamo in grado di osservare la struttura dei dati e di estrapolare informazioni cariche di significato. In queste tecniche non si può però contare su una variabile nota relativa al risultato o su di una funzione di ricompensa.
 
-Abbiamo due tecniche che ci vengono in aiuto nell’affrontare problemi di apprendimento non supervisionato: il Clustering e la Riduzione della dimensionalità dei dati.
-\subsection{Machine Learning con apprendimento per Rinforzo}
-Il terzo tipo di apprendimento automatico è l’Apprendimento per Rinforzo. L’obiettivo di questo tipo di apprendimento è quello di costruire un sistema (agente) che attraverso le interazioni con l’ambiente migliori le proprie performance.
+Normalmente il decision tree viene costruito a partire dall'insieme dei dati iniziali (data set), il quale può essere diviso in due sottoinsiemi: il \textit{training set}, sulla base del quale si crea la struttura dell'albero, e il \textit{test set} che viene utilizzato per testare l'accuratezza del modello predittivo così creato.
+Il processo di partizionamento avviene in maniera ricorsiva. La sua visualizzazione come diagramma di flusso è utile per capire il suo funzionamento ( immagine)
+
+L'algoritmo si compone di tre passaggi:
+\begin{itemize}
+	\item 1) Seleziona l'attributo migliore utilizzando le misure di selezione degli attributi per dividere i record
+	\item 2) Trasforma tale attributo in un nodo decisionale e suddivide il set di dati in sottoinsiemi più piccoli
+	\item 3) Inizia la costruzione dell'albero ripetendo questo processo in modo ricorsivo per ogni figlio fino a quando una delle seguenti condizioni non verrà rispettata:
+	\begin{itemize}
+		\item Tutte le tuple appartengono allo stesso valore di attributo
+		\item Non ci sono più attributi rimanenti
+		\item Non ci sono più casi
+	\end{itemize}
+\end{itemize}
+
+La misura di selezione degli attributi è un'euristica per selezionare il criterio di suddivisione che divide i dati nel miglior modo possibile. I più famosi sono l'entropia e l'indice di Gini.
+(parlare di loro nel caso ci sia spazio)
+
+\subsubsection{Random Forest Classifier}
+Il Random Forest Classifier è un algoritmo di apprendimento supervisionato. Esso si compone di un grande numero di singoli alberi di decisione che operano come un insieme. Ogni albero della foresta genera una previsione e quella che compare più frequentemente diventa la previsione del modello. 
+
+Il concetto fondamentale dietro una foresta casuale risiede nel fatto che un grande numero di alberi non correlati tra loro che operano insieme saranno più efficienti di un singolo albero.
+
+La bassa correlazione è la chiave, modelli non correlati possono produrre previsioni d'insieme più accurate di qualsiasi singola previsione. La ragione risiede nel fatto che, anche se alcuni alberi potrebbero sbagliare, molti altri avranno ottenuto la previsione corretta.
+\subsubsection{Gaussian Naive Bayes}
+Il Gaussian Naive Bayes è uno dei più semplici algoritmi di apprendimento supervisionato, si basa sul teorema di Bayes. L'algoritmo assume che l'effetto di una particolare caratteristica in una classe sia indipendente dalle altre caratteristiche. Anche se le caratteristiche sono interdipendenti, esse vengono comunque considerate in modo indipendente. Questa ipotesi semplifica il calcolo, ed è per questo che è considerata naive. Questo assunto si chiama indipendenza condizionale di classe.
+Usiamo il teorema di Bayes:
+\begin{equation}
+P(y | X) = \frac{P(X | y) P(y)}{P(X)}
+\end{equation}
+dove $y$ è l'etichetta e $X = (x_1, x_2, x_3, ..., x_n)$ ovvero il vettore di caratteristiche di lunghezza $n$
+
+Siccome abbiamo assunto che le caratteristiche siano indipendenti possiamo dire che:
+\begin{equation}
+P(y| x_1,..., x_n) = \frac{P(x_1|y) P(x_2|y)...P(x_n|y)P(y)}{P(x_1)P(x_2)...P(x_n)}
+\end{equation}
+Poiché il denominatore rimane costante per un determinato input possiamo rimuoverlo e scrivere:
+\begin{equation}
+P(y| x_1,..., x_n) = P(y) \prod_{i=1}^{n} P(x_1|y)
+\end{equation}
+Ora dobbiamo creare un modello per classificare. Lo facciamo trovando la probabilità di un dato insieme di input per tutti i possibili valori di y e prendendo l'output con la massima probabilità:
+\begin{equation}
+y = argmax_y P(y) \prod_{i=1}^{n} P(x_i|y)
+\end{equation}
+Rimane solo da calcolare $P(y)$ e $P(x_i|y)$ ricavabile dal dataset dato in input al sistema.
+
+Nel Gaussian Naive Bayes si presume che i valori continui associati a ciascuna caratteristica siano distribuiti secondo una distribuzione gaussiana. Una distribuzione gaussiana è anche chiamata distribuzione normale. Una volta tracciato, fornisce una curva a campana simmetrica rispetto alla media dei valori delle caratteristiche, come mostrato in figura: (figura)
+
+
+Si presume che la probabilità delle caratteristiche sia gaussiana, quindi la probabilità condizionata è data da:
+\begin{equation}
+P(x_i|y) = \frac{1}{\sqrt{2\pi \sigma_y^2}} e^{(-\frac{(x_i-\mu_y)^2}{2\sigma_y^2})}
+\end{equation}
+
+\subsubsection{Linear Discriminat Analysis}
+Il Linear Discriminat Analysis è un algoritmo di apprendimento supervisionato il cui scopo è trovare una combinazione lineare di caratteristiche che caratterizza o separa due o più classi di oggetti. La combinazione risultante può essere utilizzata come classificatore o anche per la riduzione della dimensionalità.
+
+Il processo prevede di proiettare i dati in input su un sottospazio lineare dalle direzioni che massimizzano la divisione tra le classi. La dimensione dell'output è necessariamente inferiore al numero di classi, quindi questa è, in generale, una riduzione della dimensionalità piuttosto forte, e ha senso solo in un ambiente multiclasse.
+
+%Linear Discriminant Analysis può essere derivato utilizzando la regola di Bayes
+%\begin{equation}
+%P(y=k|X) = \frac{P(X|y=k) P(y=k)}{P(X)} = \frac{P(X|y=k) P(y=k)}{\sum_{l}P(X|y=l) \cdot P(y=l)}
+%\end{equation}
+%e selezionamo la classe $k$ che massimizza questa probabilità condizionata.
+\subsubsection{Multi-Layer Perceptron Classifier}
+Il Multi-Layer Perceptron Classifier è un algoritmo di apprendimento supervisionato. L'idea di base è quella del neurone umano e della rete di neuroni che compone il nostro cervello. Alla base della rete neurale invece che esserci il neurone troviamo il percettrone. Esso è composta dagli inputs $x_1, x_2, ..., x_n$ con i loro pesi corrispondenti $w_1, w_2, ..., w_n$. Una funzione chiamata funzione di attivazione prende gli input, li moltiplica per i pesi corrispondenti e produce l'output y. (immagine perceptron)
+
+Una rete con un solo percettrone è chiamata a singolo livello. Esistono poi le reti multistrato, sono reti che hanno minimo 3 nodi disposti su più livelli:
+\begin{itemize}
+	\item livello input
+	\item livello output 
+	\item hidden layer: livelli intermedi tra input e output 
+\end{itemize}
+In questa rete ogni nodo, escluso il nodo di input, usa una funzione di attivazione non lineare per modellare il comportamento e assieme alla backpropagation vengono usate per allenare il modello.
+La funzione di attivazione non fa altro che combinare l'input del neurone con i pesi e aggiungere un bias per produrre l'output.
+Esistono diverse funzioni di attivazione:
+\begin{itemize}
+	\item Identity: $f(x) = x$
+	\item Logistic: $f(x) = \frac{1}{1 + e^{-x}}$
+	\item Tanh: $f(x) = tanh(x)$
+	\item Relu: $f(x) = max(0, x)$
+\end{itemize}
+L'output $y$ viene calcolato nel seguente modo: 
+\begin{equation}
+y = ( \sum_{i=1}^{n}w_ix_i + b) = \Phi (w^{T}x + b)
+\end{equation}
+dove $w$ è il vettore di pesi, $x$ è il vettore di inputs, $b$ è il bias e $\Phi$ è la funzione di attivazione.
+
+Il processo di addestramento del Multi-Layer Perceptron avviene mediante una continua regolazione dei pesi delle connessioni dopo ogni elaborazione. Questa regolazione si basa sull'errore nell'output. Questa regolazione continua dei pesi è un processo di apprendimento supervisionato chiamato ``backpropagation''.
+Il processo continua fino a quando l'errore non raggiunge il valore più basso.
+\subsection{Machine Learning con apprendimento\\ non supervisionato}
+Nell’apprendimento non supervisionato, al contrario di quello supervisionato abbiamo dei dati senza etichetta o dati non strutturati. Le tecniche di apprendimento non supervisionato mirano ad estrarre, in modo automatico, della conoscenza a partire da basi di dati. Questo avviene senza una specifica conoscenza dei contenuti da analizzare. Un esempio tipico di questi algoritmi lo si ha nei motori di ricerca. Questi programmi, data una o più parole chiave, sono in grado di creare una lista di link rimandanti alle pagine che l'algoritmo di ricerca ritiene attinenti alla ricerca effettuata.
+
+I principali algoritmi sono:
+\begin{itemize}
+	\item Clustering
+	\item Regole di associazione
+\end{itemize}
+\subsection{Machine Learning con apprendimento per rinforzo}
+Il terzo tipo di apprendimento automatico è l’apprendimento per rinforzo. L’obiettivo di questo tipo di apprendimento è quello di costruire un sistema che attraverso le interazioni con l’ambiente migliori le proprie performance.
 
 Per poter migliorare le funzionalità del sistema vengono introdotti dei rinforzi, ovvero segnali di ricompensa.
 
 Questo rinforzo non è dato dalle label (etichette) o dai valori corretti di verità, ma è una misurazione sulla qualità delle azioni intraprese dal sistema. Per questo motivo non può essere assimilato ad un apprendimento supervisionato.
-
-Attraverso algoritmi che fanno largo utilizzo del Deep Learning, è tornato di moda questo tipo di apprendimento. Potremmo trovare questo tipo di apprendimento ad esempio nell’addestramento di un sistema per il gioco degli scacchi.
+Potremmo trovare questo tipo di apprendimento ad esempio nell’addestramento di un sistema per il gioco degli scacchi.
 
 Inizialmente le mosse saranno del tutto casuali e senza una logica. Dal momento in cui il sistema riceverà dei feedback positivi, come ad esempio nel caso in cui mangi una pedina avversaria, allora riceverà un peso maggiore e conseguentemente un rinforzo positivo su quell’azione. Contrariamente in caso di azione negativa, il valore dei pesi su quell’azione andrà in decremento.
 
@@ -385,9 +474,6 @@ Nelle conclusioni si tirano le somme di quanto realizzato, facendo un riassunto 
 \bibliography{bibliografia}
 \addcontentsline{toc}{chapter}{Bibliografia}
 
-
-% Pagina dichiusura del LIM
-\closingpage
 
 \end{document}
 
