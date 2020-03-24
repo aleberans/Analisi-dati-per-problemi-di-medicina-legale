@@ -1,3 +1,50 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{SupervisedMachineLearning}
+Fredrik Lindsten Thomas B.~Schön Andreas~Lindholm, Niklas~Wahlström.
+\newblock {\em Supervised Machine Learning}.
+\newblock Cambridge University Press, 2020.
+
+\bibitem{Introductiontodatamining}
+Pang-Ning Tan, Michael Steinbach, Anuj Karpatne, and Vipin Kumar.
+\newblock {\em Introduction to Data Mining (2nd Edition)}.
+\newblock Pearson, 2nd edition, 2018.
+
+\bibitem{LectureNotesNg}
+Andrew Ng.
+\newblock Cs229 lecture notes.
+\newblock url{ http://cs229.stanford.edu/notes/cs229-notes3.pdf/}, October
+  2018.
+
+\bibitem{DataMiningandKnowledgeDiscoveryHandbook}
+Oded Maimon and Lior Rokach.
+\newblock {\em Data Mining and Knowledge Discovery Handbook}.
+\newblock Springer-Verlag, Berlin, Heidelberg, 2005.
+
+\bibitem{RandomForest}
+Breiman Leo.
+\newblock {\em Random Forests}.
+
+\bibitem{Mitchell97}
+Tom~M. Mitchell.
+\newblock {\em Machine Learning}.
+\newblock McGraw-Hill, New York, 1997.
+
+\bibitem{multilayerPerceptron}
+K.-L Du and M.N.s Swamy.
+\newblock {\em Neural Networks and Statistical Learning}.
+\newblock 01 2019.
+
+\bibitem{unsupervisedlearning}
+Zoubin Ghahramani.
+\newblock Unsupervised learning.
+\newblock In {\em Advanced Lectures on Machine Learning}, pages 72--112.
+  Springer-Verlag, 2004.
+
+\bibitem{semisupervised}
+Philippe Thomas.
+\newblock Semi-supervised learning by olivier chapelle, bernhard schölkopf,
+  and alexander zien (review).
+\newblock {\em IEEE Trans. Neural Networks}, 20(3):542, 2009.
 
 \end{thebibliography}

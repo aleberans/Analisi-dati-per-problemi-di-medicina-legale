@@ -2,47 +2,55 @@ This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: elaborato_corretto.aux
 The style file: unsrt.bst
-I found no \citation commands---while reading file elaborato_corretto.aux
 Database file #1: bibliografia.bib
-You've used 0 entries,
+I was expecting a `,' or a `}'---line 75 of file bibliografia.bib
+ : title = {Random Forests}
+ :                         .
+I'm skipping whatever remains of this entry
+Too many commas in name 1 of "Andreas Lindholm, Niklas Wahlström,Fredrik Lindsten, Thomas B. Schön" for entry SupervisedMachineLearning
+while executing---line 944 of file unsrt.bst
+Warning--empty publisher in RandomForest
+Warning--empty year in RandomForest
+Warning--empty publisher in multilayerPerceptron
+You've used 9 entries,
             1791 wiz_defined-function locations,
-            445 strings with 3546 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            502 strings with 4763 characters,
+and the built_in function-call counts, 1621 in all, are:
+= -- 137
+> -- 54
+< -- 1
++ -- 23
+- -- 14
+* -- 74
+:= -- 251
+add.period$ -- 27
+call.type$ -- 9
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 12
+duplicate$ -- 93
+empty$ -- 189
+format.name$ -- 14
+if$ -- 379
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 9
+missing$ -- 14
+newline$ -- 47
+num.names$ -- 9
+pop$ -- 54
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 32
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 36
+swap$ -- 17
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+warning$ -- 3
+while$ -- 13
+width$ -- 10
+write$ -- 94
+(There were 2 error messages)
