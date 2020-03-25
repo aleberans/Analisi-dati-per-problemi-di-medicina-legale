@@ -477,9 +477,9 @@ Quando si applica questa trasformazione dei dati, l'asse corrispondente all'auto
 Detto in altro modo, i punti possono essere osservati meglio se distesi lungo questo asse, con piccole deviazioni da esso. Allo stesso modo, l'asse corrispondente al secondo autovettore (l'autovettore corrispondente al secondo autovalore più grande) è l'asse lungo il quale la varianza delle distanze dal primo asse è maggiore, e così via fino al numero di dimensioni che si è scelto di tenere.
 
 Ma come funziona esattamente? 
-Per prima cosa si costruisce la matrice dei dati A nel quale ogni colonna corrisponde ad una caratteristica e ogni riga ad una istanza. Successivamente si calcola la media di ogni colonna e la si sottrae ad ogni elemento della matrice, e otteniamo così la matrice B.
+Per prima cosa si costruisce la matrice dei dati A nel quale ogni colonna corrisponde ad una caratteristica e ogni riga ad una istanza. Successivamente si calcola la media di ogni colonna e la si sottrae ad ogni elemento della matrice, ottenendo così la matrice B.
 
-A questo punto viene calcolata la matrice di covarianza. Nella diagonale principale è visualizzata la varianza mentre tutti gli altri elementi rappresentano la covarianza tra le caratteristiche. Ogni valore di covarianza assume un segno: se positivo significa che c'è una correlazione positiva, al contrario, se negativa, c'è una correlazione inversa.
+A questo punto viene calcolata la matrice di covarianza. Ogni valore di covarianza assume un segno: se positivo significa che c'è una correlazione positiva, al contrario, se negativa, c'è una correlazione inversa.
 
 La matrice appena calcolata serve per poter calcolare gli autovalori, operatori che si basano sul fatto che moltiplicando o dividendo un vettore cambia solo la sua lunghezza e non la direzione. Un autovalore $\lambda$ è tale se risolve $Av = \lambda v$, con $A$ matrice quadrata e $v$ vettore che viene definito autovettore. 
 

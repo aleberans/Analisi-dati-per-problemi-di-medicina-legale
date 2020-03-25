@@ -20,7 +20,7 @@
 \contentsline {section}{\numberline {3.2}Incidenti Stradali}{15}{section.3.2}% 
 \contentsline {section}{\numberline {3.3}Riduzione della Dimensionalit\IeC {\`a}}{16}{section.3.3}% 
 \contentsline {subsection}{\numberline {3.3.1}PCA}{17}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}t-SNE}{19}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.2}t-SNE}{18}{subsection.3.3.2}% 
 \contentsline {chapter}{\numberline {4}Esperimenti}{21}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Model Selection}{21}{section.4.1}% 
 \contentsline {subsection}{\numberline {4.1.1}Scelta degli Iperparametri}{21}{subsection.4.1.1}% 
