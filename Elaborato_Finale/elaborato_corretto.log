@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.13)  24 MAR 2020 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.13)  25 MAR 2020 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,28 +574,31 @@ Package pdftex.def Info: immagini/addome-scheletro-dataset.png  used on input l
 ine 438.
 (pdftex.def)             Requested size: 455.24408pt x 53.90591pt.
 
-Overfull \hbox (36.9904pt too wide) in paragraph at lines 437--439
- [][] 
- []
-
-
-Overfull \hbox (36.9904pt too wide) in paragraph at lines 437--439
+Overfull \hbox (36.9904pt too wide) in paragraph at lines 435--439
  [] 
  []
 
-[15 <./immagini/testa-torace-dataset.png> <./immagini/addome-scheletro-dataset.
-png>] [16]
-<immagini/pca.png, id=342, 520.94624pt x 520.94624pt>
+
+Overfull \hbox (36.9904pt too wide) in paragraph at lines 435--439
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15] [16 <./immagini/testa-torace-dataset.png> <./immagini/addome-scheletro-dat
+aset.png>]
+<immagini/pca.png, id=343, 1083.04625pt x 429.605pt>
 File: immagini/pca.png Graphic file (type png)
 <use immagini/pca.png>
-Package pdftex.def Info: immagini/pca.png  used on input line 469.
-(pdftex.def)             Requested size: 170.71652pt x 170.7125pt.
+Package pdftex.def Info: immagini/pca.png  used on input line 470.
+(pdftex.def)             Requested size: 284.52756pt x 112.8615pt.
  [17 <./immagini/pca.png>] [18]
-<immagini/t-dist1.jpeg, id=356, 120.45pt x 68.6565pt>
+<immagini/t-dist1.jpeg, id=359, 153.2124pt x 118.041pt>
 File: immagini/t-dist1.jpeg Graphic file (type jpg)
 <use immagini/t-dist1.jpeg>
 Package pdftex.def Info: immagini/t-dist1.jpeg  used on input line 529.
-(pdftex.def)             Requested size: 199.16928pt x 113.53706pt.
+(pdftex.def)             Requested size: 224.77676pt x 173.18674pt.
  [19 <./immagini/t-dist1.jpeg>]
 [20]
 Capitolo 4.
@@ -615,13 +618,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 591.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 591.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 591.
 Package rerunfilecheck Info: File `elaborato_corretto.out' has not changed.
-(rerunfilecheck)             Checksum: B980E0ED173F2C5D58B104C23CA83C40;2104.
+(rerunfilecheck)             Checksum: 94C842EC39B05400B68AADA44F7A6397;2104.
  ) 
 Here is how much of TeX's memory you used:
- 9240 strings out of 492609
- 133362 string characters out of 6131462
- 257856 words of memory out of 5000000
- 12922 multiletter control sequences out of 15000+600000
+ 9246 strings out of 492609
+ 133417 string characters out of 6131462
+ 257943 words of memory out of 5000000
+ 12925 multiletter control sequences out of 15000+600000
  12060 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,8n,32p,833b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -640,10 +643,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on elaborato_corretto.pdf (28 pages, 497301 bytes).
+Output written on elaborato_corretto.pdf (28 pages, 490296 bytes).
 PDF statistics:
- 453 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
- 90 named destinations out of 1000 (max. 500000)
+ 459 PDF objects out of 1000 (max. 8388607)
+ 383 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 500000)
  304 words of extra memory for PDF output out of 10000 (max. 10000000)
 

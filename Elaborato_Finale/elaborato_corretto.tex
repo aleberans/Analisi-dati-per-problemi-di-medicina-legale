@@ -10,7 +10,7 @@
 \def\myCDL{Corso di Laurea triennale in\\Informatica}
 
 % TITOLO TESI:
-\def\myTitle{ANALISI DEI DATI PER PROBLEMI DI MEDICINA LEGALE}
+\def\myTitle{ANALISI DEI DATI PER PROBLEMI DI\\ MEDICINA LEGALE}
 
 % AUTORE:
 \def\myName{Alessandro Beranti}
@@ -343,7 +343,7 @@ Il processo prevede di proiettare i dati in input su un sottospazio lineare dall
 %P(y=k|X) = \frac{P(X|y=k) P(y=k)}{P(X)} = \frac{P(X|y=k) P(y=k)}{\sum_{l}P(X|y=l) \cdot P(y=l)}
 %\end{equation}
 %e selezionamo la classe $k$ che massimizza questa probabilità condizionata.
-\subsubsection{Reti neurali multi-strato}
+\subsubsection{Reti Neurali Multi-Strato}
 Le reti neurali multi-strato sono un modello che utilizza l'algoritmo ``backpropagation'', basato sulla minimizzazione dell'errore, per compiere apprendimento supervisionato. L'idea di base è quella del neurone umano e della rete di neuroni che compone il nostro cervello. Il componente principale di una rete neurale è detto neurone o percettrone. Esso è identificato da $n$ pesi reali $w_1, w_2,...,w_n$ e quando riceve una serie di input $x_1,x_2,...,x_n$ li moltiplica per i pesi corrispondenti, viene così prodotto un valore $v$ sommando i prodotti ottenuti a cui viene sommato un termine di bias. \cite{multilayerPerceptron}  L'output della rete è ottenuto calcolando una particolare funzione, detta funzione di attivazione, usando $v$ come argomento.
 
 \begin{figure}[h]
@@ -402,7 +402,7 @@ Può essere visto come un quarto tipo di apprendimento automatico. In questo cas
 
 
 \chapter{Dataset}
-Un dataset è una collezione di dati nel quale ogni colonna della tabella corrisponde a una caratteristica e ogni riga ad una singola osservazione o istanza. Essi sono il ``cibo'' per gli algoritmi di machine learning. Quanto più un dataset è ricco di osservazioni tanto più sarà in grado di fornire prestazioni e accuratezza in output.
+Un dataset è una collezione di dati, comunemente corrisponde al contenuto di una singola tabella nella quale una colonna corrisponde a una caratteristica e ogni riga ad una singola osservazione o istanza. Gli algoritmi di Machine Learning utilizzano i dataset per "apprendere". Quanto più un dataset è ricco di osservazioni tanto più l'algoritmo che lo utilizza sarà in grado di fornire prestazioni e accuratezza in output. 
 
 \section{Iris}
 Durante il tirocinio, inizialmente, per prendere familiarità con gli strumenti e algoritmi necessari a compiere lo studio, ho utilizzato il dataset Iris. Esso è un dataset multivariato introdotto da Ronald Fisher nel 1936. Consiste in 150 istanze di fiori iris e classificate secondo tre specie: Setosa, Virginica e Versicolor.
@@ -413,26 +413,26 @@ Le variabili considerate sono lunghezza e larghezza di sepalo e petalo.
 	\caption{Visualizzazione di un estratto del dataset Iris}
 \end{figure}
 \section{Incidenti Stradali}
-Apprese le basi del Machine Learning ho iniziato a lavorare con il dataset ``Incidenti Stradali'', questo dataset è stato fornito da medici legali e raccoglie, tristemente, i decessi causati da incidenti stradali. Sono state raccolte 131 istanze e ognuna rappresenta una persona deceduta. Il dataset è organizzato in vari livelli di dettaglio. Un primo livello è composto dalle  caratteristiche basilari:
+Apprese le basi del Machine Learning ho iniziato a lavorare con il dataset ``Incidenti Stradali'', questo dataset è stato fornito da medici legali e raccoglie, tristemente, i decessi causati appunto da incidenti stradali. Sono state raccolte 131 istanze e ognuna rappresenta una persona deceduta. Il dataset è organizzato in vari livelli di dettaglio. Un primo livello è composto dalle  caratteristiche basilari:
 \begin{itemize}
-	\item Numero del verbale, verrà usato come indice univoco
-	\item Data del decesso
-	\item Sesso
-	\item Anni
-	\item Peso
-	\item Altezza
-	\item BMI, indice di massa corporea
+	\item numero del verbale, verrà usato come indice univoco,
+	\item data del decesso,
+	\item sesso,
+	\item anni,
+	\item peso,
+	\item altezza,
+	\item BMI, indice di massa corporea.
 \end{itemize}
 Successivamente sono raccolte tutte le ossa rotte durante l'incidente con etichette che vanno da 0, nessuna lesione, a 4, lesione massima.
 Successivamente sono descritti i totali delle rotture avvenute nei distretti di:
 \begin{itemize}
-	\item Testa
-	\item Torace
-	\item Addome
-	\item Scheletro
+	\item testa,
+	\item torace,
+	\item addome,
+	\item scheletro,
 \end{itemize}
-Ogni singolo distretto è poi diviso più nello specifico in singole ossa, come in figura 10
-\begin{figure}[h]
+Ogni distretto è poi diviso più nello specifico in singole ossa. (cfr. Figura 9)
+\begin{figure}[h])
 	\centering
 	\includegraphics[width = 160mm]{immagini/testa-torace-dataset}
 	\includegraphics[width = 160mm]{immagini/addome-scheletro-dataset}
@@ -441,33 +441,34 @@ Ogni singolo distretto è poi diviso più nello specifico in singole ossa, come 
 
 Il dataset ha inoltre due ulteriori livelli di dettaglio. Esso contiene infatti anche dati più specifici riguardanti la frattura o meno di singole ossa raggruppate in:
 \begin{itemize}
-	\item Cranio
-	\item Rachide
-	\item Torace - Gabbia Toracica
-	\item Bacino
-	\item Arti Superiori
-	\item Arti Inferiori
+	\item cranio,
+	\item rachide,
+	\item torace - gabbia toracica,
+	\item bacino,
+	\item arti superiori,
+	\item arti inferiori.
 \end{itemize}
 In ultimo è registrato il mezzo che ha investito la persona. Questo è il label set, la y dei modelli descritti al capitolo precedente. Tutti gli esperimenti effettuati in fase di studio sono incentrati sul cercare di classificare il tipo di mezzo, leggero ovvero auto, etichettato con 0, o pesante, con etichetta 1, che ha investito l'individuo.
 
-Nel mio studio mi sono limitato a considerare le caratteristiche basilari, i totali e quelle riportate in figura 10.
+Nel mio studio mi sono limitato a considerare le caratteristiche basilari, i totali e quelle riportate in Figura 7.
 \section{Riduzione della Dimensionalità}
 \label{sec:riduzione}
-Nei problemi di classificazione di Machine Learning ci sono spesso molte caratteristiche da tenere in considerazione, basti pensare che il dataset ``Incidenti Stradali'' al completo ha circa 350 caratteristiche. Per dataset con molte dimensioni, diciamo con un numero maggiore di 10, la riduzione della dimensionalità è un pratica importante svolta prima di applicare algoritmi di Machine Learning per evitare l'effetto chiamato \textit{curse of dimensionality}, ``maledizione della dimensionalità''. Il problema sorge nel momento in cui la dimensionalità aumenta e lo spazio aumenta così rapidamente che i dati disponibili diventano radi, sparsi. In ambito statistico questa scarsità è problematica in quanto i dati necessari a supportare il risultato aumentano in modo esponenziale.
+Nei problemi di classificazione di Machine Learning ci sono spesso molte caratteristiche da tenere in considerazione, basti pensare che il dataset ``Incidenti Stradali'' al completo ha circa 350 caratteristiche. Per dataset con molte dimensioni la riduzione della dimensionalità è un pratica importante svolta prima di applicare algoritmi di Machine Learning per evitare l'effetto chiamato \textit{curse of dimensionality}, ``maledizione della dimensionalità''. Il problema sorge nel momento in cui la dimensionalità aumenta e lo spazio aumenta così rapidamente che i dati disponibili diventano radi, sparsi. In ambito statistico questa scarsità è problematica in quanto i dati necessari a supportare il risultato aumentano in modo esponenziale.
 Inoltre dati con molte dimensioni possono causare problemi di \textit{overfitting}, ovvero il sistema in qualche modo impara e memorizza il risultato, si adatta (\textit{fitting}) troppo bene (\textit{over}) ai dati di training perdendo di generalità. Il modello sembra perfetto per i dati di training ma quando si prova ad applicarlo ai dati di test si verificano molti errori.
 Per questo motivo viene effettuata una riduzione della dimensionalità in modo da eliminare le caratteristiche più irrilevanti e lasciare spazio a quelle rilevanti. 
 
-In questo contesto entrano in gioco algoritmi di riduzione della dimensionalità come PCA e TSNE.
+In questo contesto entrano in gioco algoritmi di riduzione della dimensionalità come PCA e t-SNE.
 
 \subsection{PCA}
-Principal component analysis, o analisi delle componenti principali, è una tecnica che mira a ridurre il numero di variabili o caratteristiche che descrivono un insieme di dati ad un numero inferiore cercando di limitare la perdita di informazione.
-PCA prende un dataset contenente una lista di tuple che rappresentano punti nello spazio a molte dimensioni e trova le direzioni lungo le quali le tuple si allineano meglio. L'idea è di trattare le tuple come una matrice $M$ e trovare gli autovettori per $M M^{T}$ o $M^{T}M$. 
+L'idea alla base del pricipal component analysis (PCA), o analisi delle componenti principale, è di ridurre la dimensione di un dataset che contiene un grande numero di caratteristiche correlate, mantenendo il più possibile la varianza presente nel dataset. Quello che si fa è selezionare le componenti principali, che non sono correlate tra di loro e che sono ordinate in modo tale che le prime  mantengano la maggior parte di varianza presente in tutte le caratteristiche iniziali. \cite{pca}
+
+L'idea è di trattare le caratteristiche come una matrice $M$ e trovare gli autovettori per $M M^{T}$ o $M^{T}M$. 
 
 La matrice di questi autovettori può essere vista come una rotazione nello spazio. 
 \begin{figure}[h]
 \centering
-\includegraphics[width = 60mm]{immagini/pca}
-\caption{Dimensioni trovare tramite PCA}
+\includegraphics[width = 100mm]{immagini/pca}
+\caption{Dimensioni trovate tramite PCA \cite{pcaFigura}}
 \end{figure}
 
 
@@ -493,13 +494,13 @@ $v=\left[\begin{matrix}
 
 Per calcolare gli autovalori di una matrice è possibile risolvere la seguente equazione
 \begin{equation}
-det(A - \lambda I) = 0
+det(A - \lambda I) = 0,
 \end{equation}
 dove $I$ è la matrice identità e $det$ rappresenta il determinante della matrice.
 
 Allo stesso modo è possibile calcolare gli autovettori corrispondenti agli autovalori calcolati precedentemente risolvendo l'espressione e trovando $v$:
 \begin{equation}
-det(A - \lambda I) v = 0
+det(A - \lambda I) v = 0.
 \end{equation}
 Gli autovettori trovati formeranno gli assi del nuovo sistema di riferimento di dimensioni più piccole rispetto a quello iniziale. Tuttavia gli autovettori definiscono solo le dimensioni dell'asse poiché hanno tutti lunghezza 1, di conseguenza per decidere quale autovettore vogliamo eliminare per il nostro sottospazio di dimensione inferiore dobbiamo vedere gli autovalori degli autovettori. Quello che faremo sarà eliminare gli autovettori con autovalori più bassi in quanto hanno il minor numero di informazioni sulla distribuzione dei dati al loro interno. Quello che viene fatto è ordinare gli autovalori dal più grande al più piccolo e prendere i primi $k$ autovettori corrispondenti.
 
@@ -510,27 +511,26 @@ CP = W^{T} \cdot B^{T}
 dove $CP$ è la matrice costituita dalle componenti principali, $W^{T}$ è la matrice formata usando gli autovettori che abbiamo scelto di mantenere precedentemente di cui prendiamo la trasposta, $B^{T}$ è la trasposta della matrice B precedentemente calcolata.
 Quello che si ottiene sono i dati originali ma inseriti nello spazio considerando come assi di riferimento gli autovettori calcolati.
 
-Sebbene PCA sia uno degli algoritmi più famosi e usati poiché è veloce, facile da usare e intuitivo ha un problema: è una tecnica lineare, questo significa che non è in grado di trovare delle dipendenze non lineari che gli consentono di tornare ad uno stato precedente. Una volta passati da $N$ a $M$ dimensioni, non è più possibile tornare ad $N$ partendo da $M$.
+Sebbene PCA sia uno degli algoritmi più famosi e usati poiché è veloce, facile da usare e intuitivo ha un problema: è una tecnica lineare, questo significa che non è in grado di trovare delle dipendenze non lineari che gli consentono di tornare ad uno stato precedente. 
 
 t-SNE non è limitato da proiezioni lineari il che significa che può adattarsi ad ogni tipo di dataset.
 \subsection{t-SNE}
 t-SNE, o t-Distributed Stochastic Neighbor Embedding, è una tecnica di riduzione della dimensionalità non lineare. Utilizza una struttura locale nel quale punti aventi molte dimensioni vengono mappati nello spazio usando un numero inferiore di dimensioni in modo che le distanze tra i punti rimangano quasi le stesse.
  
-L'algoritmo prevede tre steps:
+L'algoritmo prevede tre step.
 \begin{itemize}
 	\item Misura le somiglianze tra i punti nello spazio a molte dimensioni e, per ogni punto $x_i$, centra una distribuzione gaussiana sopra di esso. Viene misurata la densità di tutti gli altri punti $x_j$ sotto questa distribuzione.
 	Successivamente viene normalizzata la curva per tutti gli altri punti.
-	
-	Questo ci dà un set di probabilità ($Pij$) che sono proporzionali alle somiglianze. Questo significa che se i punti $x_1$ e $x_2$ hanno valori uguali sotto questa distribuzione gaussiana, le loro proporzioni e somiglianze sono uguali. La distribuzione può essere manipolata usando quella che viene chiamata perplessità, la quale influenza la varianza della distribuzione, ovvero quanto è ampia la curva, che a sua volta influenza  il numero dei vicini di ogni punto. Il normale range della perplessità è tra 5 e 50.
-	\item Simile al primo ma anziché usare una distribuzione gaussiana usa Student (allega foto). Essa ci fornisce un secondo set di probabilità $Q_ij$ in uno spazio ridotto. Come si può vedere dalla figura 11 la t-distribution ha code più lunghe rispetto alla gaussiana, questo fornisce una migliore visualizzazione della distanza dei punti.
+	Questo ci dà un set di probabilità ($Pij$) che sono proporzionali alle somiglianze, ciò significa che se i punti $x_1$ e $x_2$ hanno valori uguali sotto questa distribuzione gaussiana, le loro proporzioni e somiglianze sono uguali. La distribuzione può essere manipolata usando quella che viene chiamata perplessità, la quale influenza la varianza della distribuzione, ovvero quanto è ampia la curva, che a sua volta influenza  il numero dei vicini di ogni punto. Il normale range della perplessità è tra 5 e 50.
+	\item Simile al primo ma anziché usare una distribuzione gaussiana usa Student. Essa ci fornisce un secondo set di probabilità $Q_ij$ in uno spazio ridotto. La t-distribution ha code più lunghe rispetto alla gaussiana, questo fornisce una migliore visualizzazione della distanza dei punti. (cfr. Figura 9)
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width = 70mm]{immagini/t-dist1}
-		\caption{Distribuzione gaussiana vs t-Student}
+		\includegraphics[width = 79mm]{immagini/t-dist1}
+		\caption{In verde distribuzione gaussiana vs t-Student in blu. La forma della distribuzione t-student è data dai gradi di libertà che si riferiscono al numero di osservazioni indipendenti all'interno dei dati}
 	\end{figure}
 	\item Vogliamo ora che le probabilità $Q_{ij}$ calcolate nello spazio ridotto riflettano al meglio possibile le $P_{ij}$ calcolate usando lo spazio con più dimensioni. 
-	Misuriamo la differenza tra le distribuzioni di probabilità degli spazi delle due dimensioni usando la divergenza di Kullback-Liebler (KL) che confronta efficacemente valori di $P_{ij}$ e $Q_{ij}$ di grandi dimensioni. Infine, usiamo la tecnica della discesa gradiente per ridurre al minimo la funzione di costo KL.
+	Misuriamo la differenza tra le distribuzioni di probabilità degli spazi delle due dimensioni usando la divergenza di Kullback-Liebler (KL) che confronta efficacemente valori di $P_{ij}$ e $Q_{ij}$ di grandi dimensioni. Infine, usiamo la tecnica della discesa gradiente per ridurre al minimo la funzione di costo KL. \cite{t-SNE}
 \end{itemize}
 
 Nel capitolo 3 vedremo concretamente come utilizzare PCA e t-SNE per ridurre la dimensione del dataset Incidenti Stradali.
@@ -543,7 +543,7 @@ Nel capitolo 3 vedremo concretamente come utilizzare PCA e t-SNE per ridurre la 
 
 \chapter{Esperimenti}
 \label{cap3}
-
+Durante il tirocinio ho effettuato diversi esperimenti a partire dal dataset fornito prendendo in considerazione 
 
 \section{Model Selection}
 

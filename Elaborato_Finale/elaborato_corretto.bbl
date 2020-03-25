@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{SupervisedMachineLearning}
 Fredrik Lindsten Thomas B.~Schön Andreas~Lindholm, Niklas~Wahlström.
@@ -46,5 +46,20 @@ Philippe Thomas.
 \newblock Semi-supervised learning by olivier chapelle, bernhard schölkopf,
   and alexander zien (review).
 \newblock {\em IEEE Trans. Neural Networks}, 20(3):542, 2009.
+
+\bibitem{pca}
+I.T. Jolliffe.
+\newblock {\em Principal Component Analysis}.
+\newblock Springer Verlag, 1986.
+
+\bibitem{pcaFigura}
+Matthias Scholz.
+\newblock {\em Approaches to analyse and interpret biological profile data.}
+\newblock Ph.d. thesis, University of Potsdam, Germany, 2006.
+
+\bibitem{t-SNE}
+Geoffrey~Hinton Laurens van~der Maaten.
+\newblock Visualizing data using t-sne.
+\newblock {\em JournalofMachineLearningResearch9}, 2008.
 
 \end{thebibliography}
