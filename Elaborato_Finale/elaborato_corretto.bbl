@@ -47,6 +47,11 @@ Philippe Thomas.
   and alexander zien (review).
 \newblock {\em IEEE Trans. Neural Networks}, 20(3):542, 2009.
 
+\bibitem{shalevshwartz2014understanding}
+Shai Shalev-Shwartz and Shai Ben-David.
+\newblock {\em Understanding machine learning : from theory to algorithms}.
+\newblock 2014.
+
 \bibitem{pca}
 I.T. Jolliffe.
 \newblock {\em Principal Component Analysis}.

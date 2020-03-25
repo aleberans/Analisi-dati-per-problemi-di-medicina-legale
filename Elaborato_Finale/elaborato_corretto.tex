@@ -402,10 +402,10 @@ Può essere visto come un quarto tipo di apprendimento automatico. In questo cas
 
 
 \chapter{Dataset}
-Un dataset è una collezione di dati, comunemente corrisponde al contenuto di una singola tabella nella quale una colonna corrisponde a una caratteristica e ogni riga ad una singola osservazione o istanza. Gli algoritmi di Machine Learning utilizzano i dataset per "apprendere". Quanto più un dataset è ricco di osservazioni tanto più l'algoritmo che lo utilizza sarà in grado di fornire prestazioni e accuratezza in output. 
+Un dataset è una collezione di dati, comunemente corrisponde al contenuto di una singola tabella nella quale una colonna rappresenta una caratteristica e ogni riga una singola osservazione o istanza. Gli algoritmi di Machine Learning utilizzano i dataset per "apprendere", tanto più un dataset è ricco di osservazioni tanto più l'algoritmo che lo utilizza sarà in grado di fornire prestazioni e accuratezza in output. 
 
 \section{Iris}
-Durante il tirocinio, inizialmente, per prendere familiarità con gli strumenti e algoritmi necessari a compiere lo studio, ho utilizzato il dataset Iris. Esso è un dataset multivariato introdotto da Ronald Fisher nel 1936. Consiste in 150 istanze di fiori iris e classificate secondo tre specie: Setosa, Virginica e Versicolor.
+Durante il tirocinio, inizialmente, per prendere familiarità con gli strumenti e algoritmi necessari a compiere lo studio, ho utilizzato il dataset Iris. Esso è un dataset multivariato introdotto da Ronald Fisher nel 1936. Consiste in 150 istanze di fiori iris classificate secondo tre specie: Setosa, Virginica e Versicolor.
 Le variabili considerate sono lunghezza e larghezza di sepalo e petalo.
 \begin{figure}[h]
 	\centering
@@ -423,15 +423,14 @@ Apprese le basi del Machine Learning ho iniziato a lavorare con il dataset ``Inc
 	\item altezza,
 	\item BMI, indice di massa corporea.
 \end{itemize}
-Successivamente sono raccolte tutte le ossa rotte durante l'incidente con etichette che vanno da 0, nessuna lesione, a 4, lesione massima.
 Successivamente sono descritti i totali delle rotture avvenute nei distretti di:
 \begin{itemize}
 	\item testa,
 	\item torace,
 	\item addome,
-	\item scheletro,
+	\item scheletro.
 \end{itemize}
-Ogni distretto è poi diviso più nello specifico in singole ossa. (cfr. Figura 9)
+Ogni distretto è poi diviso più nello specifico in singole ossa, ognuna con etichetta che va da 0, nessuna lesione, a 4, lesione massima. (cfr. Figura 9)
 \begin{figure}[h])
 	\centering
 	\includegraphics[width = 160mm]{immagini/testa-torace-dataset}
@@ -453,7 +452,7 @@ In ultimo è registrato il mezzo che ha investito la persona. Questo è il label
 Nel mio studio mi sono limitato a considerare le caratteristiche basilari, i totali e quelle riportate in Figura 7.
 \section{Riduzione della Dimensionalità}
 \label{sec:riduzione}
-Nei problemi di classificazione di Machine Learning ci sono spesso molte caratteristiche da tenere in considerazione, basti pensare che il dataset ``Incidenti Stradali'' al completo ha circa 350 caratteristiche. Per dataset con molte dimensioni la riduzione della dimensionalità è un pratica importante svolta prima di applicare algoritmi di Machine Learning per evitare l'effetto chiamato \textit{curse of dimensionality}, ``maledizione della dimensionalità''. Il problema sorge nel momento in cui la dimensionalità aumenta e lo spazio aumenta così rapidamente che i dati disponibili diventano radi, sparsi. In ambito statistico questa scarsità è problematica in quanto i dati necessari a supportare il risultato aumentano in modo esponenziale.
+Nei problemi di classificazione di Machine Learning ci sono spesso molte caratteristiche da tenere in considerazione, basti pensare che il dataset ``Incidenti Stradali'' al completo ha circa 350 caratteristiche. Per dataset con molte dimensioni la riduzione della dimensionalità è un pratica importante svolta prima di applicare algoritmi di Machine Learning per evitare l'effetto chiamato \textit{curse of dimensionality}, ``maledizione della dimensionalità''\cite{shalevshwartz2014understanding}. Il problema sorge nel momento in cui le caratteristiche sono molte e lo spazio aumenta così rapidamente che i dati disponibili diventano radi, sparsi. In ambito statistico questa scarsità è problematica in quanto i dati necessari a supportare il risultato aumentano in modo esponenziale.
 Inoltre dati con molte dimensioni possono causare problemi di \textit{overfitting}, ovvero il sistema in qualche modo impara e memorizza il risultato, si adatta (\textit{fitting}) troppo bene (\textit{over}) ai dati di training perdendo di generalità. Il modello sembra perfetto per i dati di training ma quando si prova ad applicarlo ai dati di test si verificano molti errori.
 Per questo motivo viene effettuata una riduzione della dimensionalità in modo da eliminare le caratteristiche più irrilevanti e lasciare spazio a quelle rilevanti. 
 
@@ -511,7 +510,7 @@ CP = W^{T} \cdot B^{T}
 dove $CP$ è la matrice costituita dalle componenti principali, $W^{T}$ è la matrice formata usando gli autovettori che abbiamo scelto di mantenere precedentemente di cui prendiamo la trasposta, $B^{T}$ è la trasposta della matrice B precedentemente calcolata.
 Quello che si ottiene sono i dati originali ma inseriti nello spazio considerando come assi di riferimento gli autovettori calcolati.
 
-Sebbene PCA sia uno degli algoritmi più famosi e usati poiché è veloce, facile da usare e intuitivo ha un problema: è una tecnica lineare, questo significa che non è in grado di trovare delle dipendenze non lineari che gli consentono di tornare ad uno stato precedente. 
+Sebbene PCA sia uno degli algoritmi più famosi e usati poiché è veloce, facile da usare e intuitivo ha un problema: è una tecnica lineare, presuppone cioè che i componenti principali siano una combinazione lineare delle caratteristiche originali. Nel caso non sia così non fornirà risultati efficienti. 
 
 t-SNE non è limitato da proiezioni lineari il che significa che può adattarsi ad ogni tipo di dataset.
 \subsection{t-SNE}
