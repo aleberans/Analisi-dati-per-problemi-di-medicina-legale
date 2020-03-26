@@ -67,4 +67,10 @@ Geoffrey~Hinton Laurens van~der Maaten.
 \newblock Visualizing data using t-sne.
 \newblock {\em JournalofMachineLearningResearch9}, 2008.
 
+\bibitem{Raschka2018ModelEM}
+Sebastian Raschka.
+\newblock Model evaluation, model selection, and algorithm selection in machine
+  learning.
+\newblock {\em ArXiv}, abs/1811.12808, 2018.
+
 \end{thebibliography}

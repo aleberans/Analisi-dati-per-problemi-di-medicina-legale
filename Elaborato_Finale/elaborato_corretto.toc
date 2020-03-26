@@ -24,10 +24,10 @@
 \contentsline {chapter}{\numberline {4}Esperimenti}{21}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Model Selection}{21}{section.4.1}% 
 \contentsline {subsection}{\numberline {4.1.1}Scelta degli Iperparametri}{21}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Scalare i dati}{21}{subsection.4.1.2}% 
-\contentsline {section}{\numberline {4.2}Errore di Generalizzazione}{21}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Training}{21}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Cross Validation}{21}{subsection.4.2.2}% 
-\contentsline {section}{\numberline {4.3}Risultati Ottenuti}{21}{section.4.3}% 
-\contentsline {chapter}{\numberline {5}Conclusioni}{22}{chapter.5}% 
-\contentsline {chapter}{Bibliografia}{23}{chapter*.3}% 
+\contentsline {subsection}{\numberline {4.1.2}Scalare i dati}{22}{subsection.4.1.2}% 
+\contentsline {section}{\numberline {4.2}Errore di Generalizzazione}{22}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Training}{22}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Cross Validation}{22}{subsection.4.2.2}% 
+\contentsline {section}{\numberline {4.3}Risultati Ottenuti}{22}{section.4.3}% 
+\contentsline {chapter}{\numberline {5}Conclusioni}{23}{chapter.5}% 
+\contentsline {chapter}{Bibliografia}{25}{chapter*.3}% 

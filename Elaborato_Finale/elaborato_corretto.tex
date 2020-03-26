@@ -141,8 +141,8 @@ Il domain set può essere diviso in due sottoinsiemi: il \textit{training set}, 
 Una categorizzazione dei compiti del machine learning si ha quando si considera l'output desiderato del sistema che può essere di diversi tipi:
 \begin{itemize}
 	\item classificazione, significa che il dato è categorico \cite{SupervisedMachineLearning} e viene fatta una divisione dei dati in classi o etichette. Può essere una classificazione binaria, nel quale le etichette sono soltanto due, oppure multiclasse, etichette sono tre o più,
-	\item regressione, usata per predire un valore assimilabile a una quantità che varia in un insieme continuo, per esempio il prezzo di una casa date la dimensione e la metratura, \cite{SupervisedMachineLearning}
-	\item clustering, in cui un insieme di input viene diviso in gruppi in modo che i singoli elementi siano simili agli altri punti dello stesso insieme e diversi dagli elementi degli altri; diversamente da quanto accade per la classificazione, i gruppi non sono noti prima, rendendolo tipicamente un compito non supervisionato. \cite{Introductiontodatamining}
+	\item regressione, usata per predire un valore assimilabile a una quantità che varia in un insieme continuo, per esempio il prezzo di una casa date la dimensione e la metratura \cite{SupervisedMachineLearning},
+	\item clustering, in cui un insieme di input viene diviso in gruppi in modo che i singoli elementi siano simili agli altri punti dello stesso insieme e diversi dagli elementi degli altri; diversamente da quanto accade per la classificazione, i gruppi non sono noti prima, rendendolo tipicamente un compito non supervisionato \cite{Introductiontodatamining}.
 \end{itemize}
 Gli algoritmi di apprendimento automatico vengono tipicamente organizzati in quattro categorie, a seconda della natura del ``segnale'' utilizzato per l'apprendimento o del ``feedback'' disponibile al sistema di apprendimento. Queste categorie, anche dette paradigmi, sono:
 \begin{itemize}
@@ -154,6 +154,7 @@ Gli algoritmi di apprendimento automatico vengono tipicamente organizzati in qua
 \end{itemize}
 
 \subsection{Apprendimento supervisionato}
+\label{apprendimentoSupervisionato}
 Attraverso l’apprendimento supervisionato si cerca di costruire un modello partendo da dati di addestramento etichettati, a partire dai quali si tenta di fare previsioni su dati non disponibili o futuri. Con il termine ``supervisione'' si intende quindi che nell'insieme dei campioni (o dataset), i segnali di output desiderati sono già noti poiché precedentemente etichettati.
 Nell'apprendimento supervisionato l'output può essere sia numerico che categorico, quindi può trattarsi rispettivamente di regressione e classificazione; siccome il tirocinio ha riguardato solo quest'ultima d'ora in avanti parleremo di classificazione.
 
@@ -402,11 +403,11 @@ Può essere visto come un quarto tipo di apprendimento automatico. In questo cas
 
 
 \chapter{Dataset}
-Un dataset è una collezione di dati, comunemente corrisponde al contenuto di una singola tabella nella quale una colonna rappresenta una caratteristica e ogni riga una singola osservazione o istanza. Gli algoritmi di Machine Learning utilizzano i dataset per "apprendere", tanto più un dataset è ricco di osservazioni tanto più l'algoritmo che lo utilizza sarà in grado di fornire prestazioni e accuratezza in output. 
+Un dataset è una collezione di dati, comunemente corrisponde al contenuto di una singola tabella nella quale una colonna rappresenta una caratteristica e ogni riga una singola osservazione o istanza. Gli algoritmi di Machine Learning utilizzano i dataset per ``apprendere'', tanto più un dataset è ricco di osservazioni tanto più l'algoritmo che lo utilizza sarà in grado di fornire prestazioni e accuratezza in output. 
 
 \section{Iris}
-Durante il tirocinio, inizialmente, per prendere familiarità con gli strumenti e algoritmi necessari a compiere lo studio, ho utilizzato il dataset Iris. Esso è un dataset multivariato introdotto da Ronald Fisher nel 1936. Consiste in 150 istanze di fiori iris classificate secondo tre specie: Setosa, Virginica e Versicolor.
-Le variabili considerate sono lunghezza e larghezza di sepalo e petalo.
+Per prendere familitarità con gli strumenti e gli algoritmi da utilizzare, ho fatto riferimento al dataset Iris. Esso è un dataset multivariato introdotto da Ronald Fisher nel 1936. Consiste in 150 istanze di fiori iris classificate secondo tre specie: Setosa, Virginica e Versicolor.
+Le variabili considerate sono lunghezza e larghezza di sepalo e petalo (cfr. Figura 6). 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = 150mm]{immagini/Iris}
@@ -430,7 +431,7 @@ Successivamente sono descritti i totali delle rotture avvenute nei distretti di:
 	\item addome,
 	\item scheletro.
 \end{itemize}
-Ogni distretto è poi diviso più nello specifico in singole ossa, ognuna con etichetta che va da 0, nessuna lesione, a 4, lesione massima. (cfr. Figura 9)
+Ogni distretto è poi diviso più nello specifico in singole ossa, ognuna con etichetta che va da 0, nessuna lesione, a 4, lesione massima (cfr. Figura 7).
 \begin{figure}[h])
 	\centering
 	\includegraphics[width = 160mm]{immagini/testa-torace-dataset}
@@ -459,7 +460,7 @@ Per questo motivo viene effettuata una riduzione della dimensionalità in modo d
 In questo contesto entrano in gioco algoritmi di riduzione della dimensionalità come PCA e t-SNE.
 
 \subsection{PCA}
-L'idea alla base del pricipal component analysis (PCA), o analisi delle componenti principale, è di ridurre la dimensione di un dataset che contiene un grande numero di caratteristiche correlate, mantenendo il più possibile la varianza presente nel dataset. Quello che si fa è selezionare le componenti principali, che non sono correlate tra di loro e che sono ordinate in modo tale che le prime  mantengano la maggior parte di varianza presente in tutte le caratteristiche iniziali. \cite{pca}
+L'idea alla base del pricipal component analysis (PCA), o analisi delle componenti principale, è di ridurre la dimensione di un dataset che contiene un grande numero di caratteristiche correlate, mantenendo il più possibile la varianza presente nel dataset. Quello che si fa è selezionare le componenti principali, che non sono correlate tra di loro e che sono ordinate in modo tale che le prime  mantengano la maggior parte di varianza presente in tutte le caratteristiche iniziali \cite{pca}.
 
 L'idea è di trattare le caratteristiche come una matrice $M$ e trovare gli autovettori per $M M^{T}$ o $M^{T}M$. 
 
@@ -529,7 +530,7 @@ L'algoritmo prevede tre step.
 		\caption{In verde distribuzione gaussiana vs t-Student in blu. La forma della distribuzione t-student è data dai gradi di libertà che si riferiscono al numero di osservazioni indipendenti all'interno dei dati}
 	\end{figure}
 	\item Vogliamo ora che le probabilità $Q_{ij}$ calcolate nello spazio ridotto riflettano al meglio possibile le $P_{ij}$ calcolate usando lo spazio con più dimensioni. 
-	Misuriamo la differenza tra le distribuzioni di probabilità degli spazi delle due dimensioni usando la divergenza di Kullback-Liebler (KL) che confronta efficacemente valori di $P_{ij}$ e $Q_{ij}$ di grandi dimensioni. Infine, usiamo la tecnica della discesa gradiente per ridurre al minimo la funzione di costo KL. \cite{t-SNE}
+	Misuriamo la differenza tra le distribuzioni di probabilità degli spazi delle due dimensioni usando la divergenza di Kullback-Liebler (KL) che confronta efficacemente valori di $P_{ij}$ e $Q_{ij}$ di grandi dimensioni. Infine, usiamo la tecnica della discesa gradiente per ridurre al minimo la funzione di costo KL \cite{t-SNE}.
 \end{itemize}
 
 Nel capitolo 3 vedremo concretamente come utilizzare PCA e t-SNE per ridurre la dimensione del dataset Incidenti Stradali.
@@ -542,17 +543,15 @@ Nel capitolo 3 vedremo concretamente come utilizzare PCA e t-SNE per ridurre la 
 
 \chapter{Esperimenti}
 \label{cap3}
-Durante il tirocinio ho effettuato diversi esperimenti a partire dal dataset fornito prendendo in considerazione 
-
+Durante il tirocinio ho effettuato diversi esperimenti a partire dal dataset fornito prendendo in considerazione i vari livelli di dettaglio. In questo capitolo verranno discussi i passaggi necessari per passare dal dataset ad una previsione dell'etichetta corrispondente il più precisa possibile.
 \section{Model Selection}
-
+Il processo di \emph{model selection} è la ricerca del modello più performante dato una set di modelli prodotti da diverse scelte di iperparametri \cite{Raschka2018ModelEM}.
+Durante il tirocinio ho avuto modo di lavorare con i modelli riportati al capitolo \ref{apprendimentoSupervisionato}, ognuno dei quali presenta diversi iperparametri con cui è possibile modificare il comportamento del modello. Vediamo nel dettaglio i vari iperparametri che ho usato durante lo studio sugli incidenti stradali.
+ 
 \subsection{Scelta degli Iperparametri}
-
-\begin{equation}
-x_i(n) = a_{i1}u_1(n) + a_{i2}u_2(n) + \cdots + a_{iJ}u_J(n) \, .
-\label{eq:multimix}
-\end{equation}
-
+In ogni modello sono presenti diversi iperparametri, ognuno dei quali ha scopi ben precisi.
+Iniziamo parlando degli iperparametri di SVC, in particolare di \emph{C} il cui ruolo è illustrato in Figura (ALLEGA); per un valori di \emph{C} grande è assegnata una grande PENALITA agli errori che risiedono sul margine. ciò è evidente dalla figura a sinistra di Figura 3 dove i due punti più vicini all'iperpiano influenzano il suo orientamento, ciò comporta che l'iperpiano sia più vicino agli altri punti. Considerando un \emph{C} di valore più basso, come nella figura a destra di Figura 3 questi punti diventano errori; l'orientazione dell'iperpiano è diversa rispetto a prima, inoltre c'è un un margine molto più ampio.
+Un altro iperparametro di SVC è il \emph{Kernel} che può essere di diversi tipi: \emph{linear}, \emph{polynomial}, \emph{radial basis function}. Associato al kernel di tipo polinomiale c'è inoltre un altro iperparametro chiamato \emph{degree}, VEDI FIGURA ASSOCIATA
 \subsection{Scalare i dati}
 
 
