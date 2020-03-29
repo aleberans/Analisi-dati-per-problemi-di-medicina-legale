@@ -550,13 +550,14 @@ Nel \ref{cap3} vedremo concretamente come utilizzare PCA e t-SNE per ridurre la 
 Durante il tirocinio ho effettuato diversi esperimenti a partire dal dataset descritto al capitolo precedente prendendo in considerazione i diversi livelli di dettaglio(\ref{incidentiStradali}), ho usato \emph{python} come linguaggio di programmazione in particolare il pacchetto \emph{skikit-learn} \cite{scikit-learn} e \emph{Jupyter} come ambiente di lavoro \cite{jupyter}.
 In questo capitolo verranno discussi i passaggi necessari per passare dal dataset ad una previsione dell'etichetta corrispondente il più precisa possibile.
 \section{Pre Processsing}
+\label{preprocessing}
 In prima istanza quello che si fa avendo i dati è un processo di pre processing. I dati vengono trasformati o codificati in modo tale che sia più facile per l'algoritmo, che verrà applicato in un secondo momento,  analizzarli e interpretarli.
 Consiste in diversi passaggi.
 \begin{itemize}
-	\item Gestione dei valori null, è necessario gestire i valori nulli prima di fornire i dati all'algoritmo poiché nessun modello è in grado di gestirli autonomamente. (DROPNA)
+	\item Gestione dei valori null, è necessario gestire i valori nulli prima di fornire i dati all'algoritmo poiché nessun modello è in grado di gestirli autonomamente.
 	\item Imputation, ovvero il processo nel quale vengono sostituiti i valori mancanti all'interno del dataset. Per fare questo sklearn mette a disposizione la classe \emph{Imputer}.
 	\item Standardizzazione, processo di trasformazione dei valori. Questo viene fatto poiché, all'interno del dataset, potrebbero esserci caratteristiche inserite con scale diverse. Prendiamo per esempio un dataset con all'interno due caratteristiche numeriche, ``metratura'' e ``costo'', non sono sulla stessa scala, ``metratura'' si misura in metri quadrati, mentre ``costo'' in euro. 
-	\item Gestire le variabili categoriche, variabili che indica l'appartenenza ad una specifica categoria, come per esempio i gruppi sanguigni.
+	\item Gestire le variabili categoriche, variabili che indicano l'appartenenza ad una specifica categoria.
 \end{itemize}
 Durante il tirocinio come processo di pre-processing ho controllato che il numero del verbale di ogni istanza fosse univoco e che le caratteristiche basilari \ref{incidentiStradali} avessero un valore sensato con quello che stavano rappresentando. Successivamente ho scalato i dati usando tre diversi scaler del pacchetto \emph{preprocessing} di \emph{scikit-learn}:
 \begin{itemize}
@@ -565,20 +566,20 @@ Durante il tirocinio come processo di pre-processing ho controllato che il numer
 	\item \emph{RobustScaler}.
 \end{itemize} 
 \subsection{Scalare i dati}
-Il processo di scalatura consente di standardizzare i dati. Questa pratica è importante, non solo per riuscire a confrontare caratteristiche con unità di misura diverse, come detto al paragrafo precedente, ma anche perché molti algoritmi lavorano meglio con dati impostati in questo modo.  
+Il processo di scalatura consente di standardizzare i dati. Questa pratica è importante, non solo per riuscire a confrontare caratteristiche con unità di misura diverse, come detto in \ref{preprocessing}, ma anche perché molti algoritmi lavorano meglio con dati impostati in questo modo.  
 Analizziamo ora le tre diverse tecniche usate.
 
-\emph{StandardScaler}, standardizza i dati rimuovendo la media $\mu$ e sottraendo la varianza $\sigma$, ovvero \cite{scikit-learn}
+\emph{StandardScaler}, standardizza i dati rimuovendo la media $\mu$ e sottraendo la varianza $\sigma$ \cite{scikit-learn}, ovvero:
 \begin{equation}
 z = \frac{x_i - \mu}{\sigma}.
 \end{equation}
-Questo viene fatto poiché molti algoritmi assumono che tutte le caratteristiche siano centrato attorno a 0 e abbiano varianza dello stesso ordine. Se una caratteristica presenta una varianza di ordini di grandezza superiore rispetto ad altre, potrebbe influenzare troppo la funzione obiettivo dell'algoritmo usato e rendere lo stimatore incapace di apprendere correttamente da altre caratteristiche \cite{scikit-learn}.
+Questo viene fatto poiché molti algoritmi assumono che tutte le caratteristiche siano centrate attorno a 0 e abbiano varianza dello stesso ordine. Se una caratteristica presenta una varianza di ordini di grandezza superiore rispetto ad altre, potrebbe influenzare troppo la funzione obiettivo dell'algoritmo usato e rendere lo stimatore incapace di apprendere correttamente da altre caratteristiche \cite{scikit-learn}.
 
 \emph{MinMaxScaler}, ridimensiona singolarmente ogni caratteristica in un determinato intervallo \cite{scikit-learn}, esempio tra 0 e 1. Si applica la seguente formula:
 \begin{equation}
 X_{norm} = \frac{X - X_{min}}{X_{max} - X_{min}}
 \end{equation}
-\emph{RobustScaler}, scala le caratteristiche usando statistiche sono sono robuste rispetto agli outlier \cite{scikit-learn}. Questo scaler rimuove la mediana e scala i dati in base all'intervallo quantile, è utile perché i valori anomali possono spesso influenzare la media e la  varianza del campione in modo negativo. In tali casi, l'intervallo mediano e quartile danno spesso risultati migliori.
+\emph{RobustScaler}, scala le caratteristiche usando statistiche robuste rispetto agli outlier \cite{scikit-learn}. Questo scaler rimuove la mediana e scala i dati in base all'intervallo quantile, è utile perché i valori anomali possono spesso influenzare la media e la  varianza del campione in modo negativo. In tali casi, l'intervallo mediano e quartile danno spesso risultati migliori.
 
 \section{Model Selection}
 Il processo di \emph{model selection} è la ricerca del modello più performante dato una set di modelli prodotti da diverse scelte di iperparametri. \cite{Raschka2018ModelEM}.
@@ -586,7 +587,7 @@ Durante il tirocinio ho avuto modo di lavorare con i modelli riportati al capito
  
 \subsection{Scelta degli Iperparametri}
 \label{iperparametri}
-In ogni modello sono presenti diversi iperparametri, ognuno dei quali ha scopi ben precisi. Durante il tirocinio ho usato diversi iperparametri per rendere i modelli il più efficienti possibili. Parliamo ora degli iperparametri con cui ho lavorato.
+In ogni modello sono presenti diversi iperparametri, ognuno dei quali ha scopi ben precisi. Durante il tirocinio ho usato diversi iperparametri per rendere i modelli più efficienti.
 Iniziamo con gli iperparametri di SVC, in particolare di \emph{C}, per un valore di \emph{C} grande è assegnato un grande peso agli errori che risiedono sul margine, quindi diminuisce il bias e aumenta la varianza. Per valori di \emph{C} piccoli invece si ha un bias più grande e una minore varianza. 
 Un altro iperparametro di SVC è il \emph{Kernel} che può essere di diversi tipi: \emph{linear}, \emph{polynomial}, \emph{radial basis function}. Associato al kernel di tipo polinomiale c'è inoltre un altro iperparametro chiamato \emph{degree}. Esso consente un limite decisionale più flessibile 
 Associato invece ad un kernel di tipo gaussiano c'è \emph{gamma} usato per gestire la classificazione non lineare.
@@ -613,8 +614,9 @@ model_selection_grid_DT = {'criterion': ['gini', 'entropy'],
 'max_depth': [None, 2, 5, 10]}
 \end{lstlisting}
 
-
+\newpage
 In Random Forest troviamo gli stessi iperparametri di Decision Tree con l'aggiunta di \emph{n\_estimators} che rappresenta il numero di  alberi nella foresta.
+
 \begin{lstlisting}[frame=single, basicstyle=\footnotesize]
 model_selection_grid_RF = {'n_estimators': [5, 10, 50, 100, 200],
 'criterion': ['gini', 'entropy'],
@@ -645,9 +647,15 @@ L'errore di generalizzazione può essere  minimizzato evitando l' ``overfitting'
 Per prevenire ``overfitting'' viene usata la ``cross-validation''.
 \section{Cross Validation}
 \label{cv}
-La cross-validation, o k-fold validation, è una tecnica che utilizza parte dei dati disponibili per addestrare il modello e una parte per testarlo \cite{TheElementsofStatisticalLearning}. Viene specificato il numero di fold, ovvero in quante parti dividere il training set. Facciamo un esempio di come funziona, impostiamo a 5 il numero di fold.	Avremo come risultato set come in Figura (INSERIRE FIGURA).
-Un set viene assegnato a ``validation test'', mentre i restanti 4 set compongono il ``training set''. L'algoritmo viene addestrato usando il training set così composto e testato sul  validation. Questo procedimento viene eseguito per tutte le combinazioni possibili dei set.
-Negli esperimenti di paragrafo \ref{sec:risultati} ho usato una cross-validation annidata per stimare l'errore di generalizzazione e fare la model selection usando in entrambi i casi 9 come numero di fold per tutti gli algoritmi nel quale era richiesta una model selection \ref{iperparametri}, quindi per Gaussian Naive Bayes e Linear Discriminant Analysis ho effettuato solo una cross-validation singola per l'errore di generalizzazione.
+La cross-validation, o k-fold validation, è una tecnica che utilizza parte dei dati disponibili per addestrare il modello e una parte per testarlo \cite{TheElementsofStatisticalLearning}. Viene specificato il numero di fold, ovvero in quante parti dividere il training set. Facciamo un esempio di come funziona, impostiamo a 3 il numero di fold.	Avremo come risultato set come in Figura 10.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 79mm]{immagini/cross-validation}
+	\caption{INSERIRE}
+\end{figure}
+Un set viene assegnato a ``validation test'', mentre i restanti 2 set compongono il ``training set''. L'algoritmo viene addestrato usando il training set così composto e testato sul  validation. Questo procedimento viene eseguito per tutte le combinazioni possibili dei set.
+Negli esperimenti di paragrafo \ref{sec:risultati} ho usato una cross-validation annidata per stimare l'errore di generalizzazione e fare la model selection usando in entrambi i casi 9 come numero di fold per tutti gli algoritmi nel quale era richiesta una model selection \ref{iperparametri}, quindi per Gaussian Naive Bayes e Linear Discriminant Analysis ho effettuato solo una cross-validation singola per stimare l'errore di generalizzazione.
 
 
 
@@ -655,7 +663,7 @@ Negli esperimenti di paragrafo \ref{sec:risultati} ho usato una cross-validation
 \newpage
 \section{Risultati Ottenuti}
 \label{sec:risultati}
-Visualizziamo ora i risultati ottenuti, ogni riga corrisponde ad un esperimento effettuato usando un modello mentre ogni colonna corrisponde al tipo di dataset usando per effettuare l'addestramento.
+Visualizziamo ora i risultati ottenuti, ogni riga corrisponde ad un esperimento effettuato usando un algoritmo di apprendimento mentre ogni colonna corrisponde al tipo di dataset usato per effettuare l'addestramento.
 
 Tabelle generate usando come scaler StandardScaler.
 \begin{table}[ht]
@@ -717,6 +725,7 @@ Tabelle generate usando come scaler StandardScaler.
 		\end{adjustbox}
 	\end{center}
 \end{table}
+
 \newpage
 
 Tabelle generate usando come scaler MinMaxScaler.
@@ -784,7 +793,7 @@ Tabelle generate usando come scaler MinMaxScaler.
 
 \newpage
 
-Tabelle generate usando come scaler RobustScaler.
+Tabelle generate usando come scaler RobustScaler ma usando direttamente la riduzione di dimensionalità.
 \begin{table}[h]
 	\begin{center}
 		\begin{adjustbox}{max width=\textwidth, max totalheight= {3.3cm}}
