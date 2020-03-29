@@ -20,12 +20,13 @@
 \BOOKMARK [2][-]{subsection.3.3.1}{PCA}{section.3.3}% 20
 \BOOKMARK [2][-]{subsection.3.3.2}{t-SNE}{section.3.3}% 21
 \BOOKMARK [0][-]{chapter.4}{Esperimenti}{}% 22
-\BOOKMARK [1][-]{section.4.1}{Model Selection}{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.1.1}{Scelta degli Iperparametri}{section.4.1}% 24
-\BOOKMARK [2][-]{subsection.4.1.2}{Scalare i dati}{section.4.1}% 25
-\BOOKMARK [1][-]{section.4.2}{Errore di Generalizzazione}{chapter.4}% 26
-\BOOKMARK [2][-]{subsection.4.2.1}{Training}{section.4.2}% 27
-\BOOKMARK [2][-]{subsection.4.2.2}{Cross Validation}{section.4.2}% 28
-\BOOKMARK [1][-]{section.4.3}{Risultati Ottenuti}{chapter.4}% 29
-\BOOKMARK [0][-]{chapter.5}{Conclusioni}{}% 30
-\BOOKMARK [0][-]{chapter*.3}{Bibliografia}{}% 31
+\BOOKMARK [1][-]{section.4.1}{Pre Processsing}{chapter.4}% 23
+\BOOKMARK [2][-]{subsection.4.1.1}{Scalare i dati}{section.4.1}% 24
+\BOOKMARK [1][-]{section.4.2}{Model Selection}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.2.1}{Scelta degli Iperparametri}{section.4.2}% 26
+\BOOKMARK [1][-]{section.4.3}{Errore di Generalizzazione}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.4}{Cross Validation}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.5}{Risultati Ottenuti}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.6}{Analisi dei Risultati}{chapter.4}% 30
+\BOOKMARK [0][-]{chapter.5}{Conclusioni}{}% 31
+\BOOKMARK [0][-]{chapter*.24}{Bibliografia}{}% 32

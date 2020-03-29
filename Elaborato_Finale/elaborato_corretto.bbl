@@ -67,10 +67,25 @@ Geoffrey~Hinton Laurens van~der Maaten.
 \newblock Visualizing data using t-sne.
 \newblock {\em JournalofMachineLearningResearch9}, 2008.
 
+\bibitem{scikit-learn}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay.
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
+
+\bibitem{jupyter}
+
+
 \bibitem{Raschka2018ModelEM}
 Sebastian Raschka.
 \newblock Model evaluation, model selection, and algorithm selection in machine
   learning.
 \newblock {\em ArXiv}, abs/1811.12808, 2018.
+
+\bibitem{TheElementsofStatisticalLearning}
+Jerome~Friedman Trevor~Hastie, Robert~Tibshirani.
+\newblock {\em The Elements of Statistical Learning}.
+\newblock Springer-Verlag New York.
 
 \end{thebibliography}

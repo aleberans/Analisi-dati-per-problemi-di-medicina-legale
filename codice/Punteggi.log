@@ -2695,3 +2695,7 @@ INFO:Risultati:IPERPARAMETRI: {'activation': 'logistic', 'hidden_layer_sizes': [
 INFO:Risultati:TRAINING ERROR: 0.6820728291316526
 INFO:Risultati:TEST ERROR: 0.6923076923076923
 INFO:Risultati:FINE ADDESTRAMENTO alle 14.Feb 2020 18:04:00, tempo di calcolo totale in secondi: 24.521785974502563
+ERROR:root:Invalid alias: The name clear can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name more can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name less can't be aliased because it is another magic command.
+ERROR:root:Invalid alias: The name man can't be aliased because it is another magic command.
