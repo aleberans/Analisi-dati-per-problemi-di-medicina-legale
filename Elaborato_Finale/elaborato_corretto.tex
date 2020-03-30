@@ -116,7 +116,7 @@ Questa sezione, facoltativa, contiene i ringraziamenti.
 %			CAPITOLO 1: Introduzione o Abstract
 % 
 
-\chapter{Introduzione}
+\chapter*{Introduzione}
 \label{cap:introduzione}
 
 Questo documento ha una duplice funzione: da un lato mostra un esempio completo di elaborato finale redatto in \LaTeX\ e conforme allo standard PDF/A, e dall'altro contiene suggerimenti e risposte a domande frequenti poste dagli studenti. Se ne raccomanda, pertanto, un'attenta lettura.
@@ -178,14 +178,14 @@ Il Support Vector Machine (SVM) è un algoritmo di apprendimento automatico supe
 
 L'SVM è basato sull'idea di riuscire a trovare un iperpiano che divida al meglio un set di elementi in due classi distinte \cite{LectureNotesNg}. Definiamo alcuni elementi che ci serviranno successivamente.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 80mm]{immagini/2e3dimensionisvc}
+	\caption{A sinistra grafico bidimensionale e destra tridimensionale}
+\end{figure}
 
 \begin{itemize}
 	\item Iperpiano: nel caso in cui si abbiano solo due dimensioni spaziali nel qualche si trovano le descrizioni degli oggetti da classificare $x_1$ e $x_2$, l'iperpiano è raffigurato come una linea che separa un insieme di dati \cite{LectureNotesNg}. Nel caso in cui le dimensioni siano 3, l'iperpiano è raffigurato come un piano, ( cfr. Figura 1).
-	%\begin{figure}[h]
-	%	\centering
-	%	\includegraphics[width = 50mm]{immagini/Iperpiano-3-dimensioni}
-	%	\caption{A sinistra grafico bidimensionale e destra tridimensionale}
-	%\end{figure}
 	Con più di 3 dimensioni viene definito ``iperpiano''.
 	\item Support Vector: chiamati vettori di supporto in italiano, sono i punti che si trovano piu vicini all'iperpiano che divide i dati.
 	\item Margine: è la distanza tra i vettori di supporto di due classi diverse. A metà di questa distanza viene tracciato l'iperpiano, (cfr. Figura 2).
@@ -193,7 +193,7 @@ L'SVM è basato sull'idea di riuscire a trovare un iperpiano che divida al megli
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width = 47mm]{immagini/marginEhiperplane}
+	\includegraphics[width = 70mm]{immagini/marginEhiperplane}
 	\caption{Iperpiano e margine}
 \end{figure}
 
@@ -308,6 +308,12 @@ La misura di selezione degli attributi è un'euristica per selezionare il criter
 \subsubsection{Random Forest Classifier}
 Il Random Forest Classifier è un algoritmo di apprendimento supervisionato. Esso considera più alberi di decisione che operano come un insieme. Ogni albero della foresta genera una previsione e quella che compare più frequentemente diventa la previsione del modello \cite{RandomForest}.
 
+\begin{figure}
+	\centering
+	\includegraphics[width = 100mm]{immagini/randomForest}
+	\caption{Random Forest composto da più alberi di decisione}
+\end{figure}
+
 Il concetto fondamentale dietro una foresta casuale risiede nel fatto che un grande numero di alberi non correlati tra loro che operano insieme tendono a essere più efficienti di un singolo albero.
 
 La bassa correlazione è la chiave, modelli non correlati possono produrre previsioni d'insieme più accurate di qualsiasi singola previsione. La ragione risiede nel fatto che, anche se alcuni alberi potrebbero sbagliare, molti altri avranno ottenuto la previsione corretta.
@@ -410,7 +416,7 @@ Un dataset è una collezione di dati, comunemente corrisponde al contenuto di un
 \section{Iris}
 \label{iris}
 Per prendere familitarità con gli strumenti e gli algoritmi da utilizzare, ho fatto riferimento al dataset Iris. Esso è un dataset multivariato introdotto da Ronald Fisher nel 1936. Consiste in 150 istanze di fiori iris classificate secondo tre specie: Setosa, Virginica e Versicolor.
-Le variabili considerate sono lunghezza e larghezza di sepalo e petalo (cfr. Figura 6). 
+Le variabili considerate sono lunghezza e larghezza di sepalo e petalo (cfr. Figura 8). 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = \textwidth]{immagini/Iris}
@@ -435,7 +441,7 @@ Successivamente sono descritti i totali delle rotture avvenute nei distretti di:
 	\item addome,
 	\item scheletro.
 \end{itemize}
-Ogni distretto è poi diviso più nello specifico in singole ossa, ognuna con etichetta che va da 0, nessuna lesione, a 4, lesione massima (cfr. Figura 7).
+Ogni distretto è poi diviso più nello specifico in singole ossa, ognuna con etichetta che va da 0, nessuna lesione, a 4, lesione massima (cfr. Figura 9).
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = \textwidth]{immagini/testa-torace-dataset}
@@ -454,7 +460,7 @@ Il dataset ha inoltre due ulteriori livelli di dettaglio. Esso contiene infatti 
 \end{itemize}
 In ultimo è registrato il mezzo che ha investito la persona. Questo è il label set, la y dei modelli descritti al capitolo precedente. Tutti gli esperimenti effettuati in fase di studio sono incentrati sul cercare di classificare il tipo di mezzo, leggero ovvero auto, etichettato con 0, o pesante, con etichetta 1, che ha investito l'individuo.
 
-Nel mio studio mi sono limitato a considerare le caratteristiche basilari, i totali e quelle riportate in Figura 7.
+Nel mio studio mi sono limitato a considerare le caratteristiche basilari, i totali e quelle riportate in Figura 9.
 \section{Riduzione della Dimensionalità}
 \label{sec:riduzione}
 Nei problemi di classificazione di Machine Learning ci sono spesso molte caratteristiche da tenere in considerazione, basti pensare che il dataset ``Incidenti Stradali'' al completo ha circa 350 caratteristiche. Per dataset con molte dimensioni la riduzione della dimensionalità è un pratica importante svolta prima di applicare algoritmi di Machine Learning per evitare l'effetto chiamato \textit{curse of dimensionality}, ``maledizione della dimensionalità''\cite{shalevshwartz2014understanding}. Il problema sorge nel momento in cui le caratteristiche sono molte e lo spazio aumenta così rapidamente che i dati disponibili diventano radi, sparsi. In ambito statistico questa scarsità è problematica in quanto i dati necessari a supportare il risultato aumentano in modo esponenziale.
@@ -527,7 +533,7 @@ t-SNE, o t-Distributed Stochastic Neighbor Embedding, è una tecnica di riduzion
 L'algoritmo prevede tre passi.
 \begin{itemize}
 	\item Il primo punto calcola una misura di similarità tra i punti nello spazio a molte dimensioni, e centra una distribuzione gaussiana sopra a ogni punto $x_i$. Viene poi calcolato il valore della densità corrispondente per tutti gli altri punti $x_j$. Dopo un processo di normalizzazione, si ottiene un insieme di valori di probabilità $P_{ij}$ che sono che sono proporzionali ai valori di similarità. La distribuzione può essere manipolata usando quella che viene chiamata perplessità, la quale influenza la varianza della distribuzione, ovvero quanto è ampia la curva, che a sua volta influenza  il numero dei vicini di ogni punto. Il normale range della perplessità è tra 5 e 50.
-	\item Il secondo punto è simile al primo, ma al posto di una distribuzione gaussiana fa riferimento ad una distribuzione t-Student. Essa ci fornisce un secondo set di probabilità $Q_{ij}$ in uno spazio ridotto. La distribuzione t-Student ha code più lunghe rispetto alla gaussiana(cfr. Figura 9), e questo permette una migliore visualizzazione delle distanze tra i punti.
+	\item Il secondo punto è simile al primo, ma al posto di una distribuzione gaussiana fa riferimento ad una distribuzione t-Student. Essa ci fornisce un secondo set di probabilità $Q_{ij}$ in uno spazio ridotto. La distribuzione t-Student ha code più lunghe rispetto alla gaussiana(cfr. Figura 11), e questo permette una migliore visualizzazione delle distanze tra i punti.
 	
 	\begin{figure}[h]
 		\centering
@@ -537,7 +543,7 @@ L'algoritmo prevede tre passi.
 	\item Nel terzo passo si finalizza il calcolo delle probabilità $Q_{ij}$ nello spazio ridotto in modo che riflettano il meglio possibile le probabilità $P_{ij}$ relative allo spazio con più dimensioni. Ciò viene effettuato misurando la differenza tra le due distribuzioni di probabilità usando la divergenza di Kullback-Liebler (KL) che confronta efficacemente valori di $P_{ij}$ e $Q_{ij}$ di grandi dimensioni. Per minimizzare la divergenza di KL tra le due dimensioni viene utilizzata la discesa del gradiente \cite{t-SNE}.
 \end{itemize}
 
-Nel \ref{cap3} vedremo concretamente come utilizzare PCA e t-SNE per ridurre la dimensione del dataset Incidenti Stradali.
+Nel \ref{cap3} verranno applicate PCA e t-SNE per cercare di aumentare le prestazioni di classificazione dei modelli usati.
 
 
 
@@ -547,16 +553,16 @@ Nel \ref{cap3} vedremo concretamente come utilizzare PCA e t-SNE per ridurre la 
 
 \chapter{Esperimenti}
 \label{cap3}
-Durante il tirocinio ho effettuato diversi esperimenti a partire dal dataset descritto al capitolo precedente prendendo in considerazione i diversi livelli di dettaglio(\ref{incidentiStradali}), ho usato \emph{python} come linguaggio di programmazione in particolare il pacchetto \emph{skikit-learn} \cite{scikit-learn} e \emph{Jupyter} come ambiente di lavoro \cite{jupyter}.
+Durante il tirocinio ho effettuato diversi esperimenti a partire dal dataset descritto al capitolo precedente prendendo in considerazione i diversi livelli di dettaglio \ref{incidentiStradali}, ho usato \emph{python} come linguaggio di programmazione, in particolare il pacchetto \emph{skikit-learn} \cite{scikit-learn} e \emph{Jupyter} come ambiente di lavoro \cite{jupyter}.
 In questo capitolo verranno discussi i passaggi necessari per passare dal dataset ad una previsione dell'etichetta corrispondente il più precisa possibile.
 \section{Pre Processsing}
 \label{preprocessing}
-In prima istanza quello che si fa avendo i dati è un processo di pre processing. I dati vengono trasformati o codificati in modo tale che sia più facile per l'algoritmo, che verrà applicato in un secondo momento,  analizzarli e interpretarli.
+In prima istanza quello che si compie avendo i dati è un processo di pre processing. I dati vengono trasformati o codificati in modo tale che sia più facile per l'algoritmo, che verrà applicato in un secondo momento,  analizzarli e interpretarli.
 Consiste in diversi passaggi.
 \begin{itemize}
 	\item Gestione dei valori null, è necessario gestire i valori nulli prima di fornire i dati all'algoritmo poiché nessun modello è in grado di gestirli autonomamente.
-	\item Imputation, ovvero il processo nel quale vengono sostituiti i valori mancanti all'interno del dataset. Per fare questo sklearn mette a disposizione la classe \emph{Imputer}.
-	\item Standardizzazione, processo di trasformazione dei valori. Questo viene fatto poiché, all'interno del dataset, potrebbero esserci caratteristiche inserite con scale diverse. Prendiamo per esempio un dataset con all'interno due caratteristiche numeriche, ``metratura'' e ``costo'', non sono sulla stessa scala, ``metratura'' si misura in metri quadrati, mentre ``costo'' in euro. 
+	\item Imputation, ovvero il processo nel quale vengono sostituiti i valori mancanti all'interno del dataset. Per fare questo \emph{sklearn} mette a disposizione la classe \emph{Imputer}.
+	\item Standardizzazione, processo di trasformazione dei valori. Questo viene fatto poiché, all'interno del dataset, potrebbero esserci caratteristiche inserite con scale diverse. Prendiamo per esempio un dataset con all'interno due caratteristiche numeriche, ``metratura'' e ``costo'': non sono sulla stessa scala, ``metratura'' si misura in metri quadrati, mentre ``costo'' in euro. 
 	\item Gestire le variabili categoriche, variabili che indicano l'appartenenza ad una specifica categoria.
 \end{itemize}
 Durante il tirocinio come processo di pre-processing ho controllato che il numero del verbale di ogni istanza fosse univoco e che le caratteristiche basilari \ref{incidentiStradali} avessero un valore sensato con quello che stavano rappresentando. Successivamente ho scalato i dati usando tre diversi scaler del pacchetto \emph{preprocessing} di \emph{scikit-learn}:
@@ -579,10 +585,10 @@ Questo viene fatto poiché molti algoritmi assumono che tutte le caratteristiche
 \begin{equation}
 X_{norm} = \frac{X - X_{min}}{X_{max} - X_{min}}
 \end{equation}
-\emph{RobustScaler}, scala le caratteristiche usando statistiche robuste rispetto agli outlier \cite{scikit-learn}. Questo scaler rimuove la mediana e scala i dati in base all'intervallo quantile, è utile perché i valori anomali possono spesso influenzare la media e la  varianza del campione in modo negativo. In tali casi, l'intervallo mediano e quartile danno spesso risultati migliori.
+\emph{RobustScaler}, scala le caratteristiche usando statistiche robuste rispetto agli outlier \cite{scikit-learn}. Questo scaler rimuove la mediana e scala i dati in base all'intervallo quantile; è utile perché i valori anomali possono spesso influenzare la media e la  varianza del campione in modo negativo. In tali casi, l'intervallo mediano e quartile danno spesso risultati migliori.
 
 \section{Model Selection}
-Il processo di \emph{model selection} è la ricerca del modello più performante dato una set di modelli prodotti da diverse scelte di iperparametri. \cite{Raschka2018ModelEM}.
+Il processo di \emph{model selection} è la ricerca del modello più performante dato un set di modelli prodotti da diverse scelte di iperparametri. \cite{Raschka2018ModelEM}.
 Durante il tirocinio ho avuto modo di lavorare con i modelli riportati al capitolo \ref{apprendimentoSupervisionato}, ognuno dei quali presenta diversi iperparametri con cui è possibile modificare il comportamento del modello. Vediamo nel dettaglio i vari iperparametri che ho usato durante lo studio sugli incidenti stradali.
  
 \subsection{Scelta degli Iperparametri}
@@ -641,29 +647,29 @@ Per effettuare la model selection ho utilizzato \emph{GridSearchCV} fornito dal 
 \section{Errore di Generalizzazione}
 \label{sec:errore}
 L'errore di generalizzazione è una misura di quanto accuratamente un algoritmo è in grado di prevedere i valori delle etichette per nuovi dati.
-Il processo che si segue è il seguente, un algoritmo viene ``allenato'' usando degli esempi ( \emph{training} set \ref{ComefunzionailMachineLearning}) di cui è nota l'etichetta che si vuole predire. L'obiettivo è raggiungere uno stato in cui l'algoritmo sia in grado di predire le etichette per altri esempi che non ha avuto in input durante la fase di training. Si dice che così facendo l'algoritmo sarà in grado di \emph{generalizzare}.
-L'errore di generalizzazione può essere  minimizzato evitando l' ``overfitting'' nell'algoritmo di apprendimento, ovvero il caso in cui l'algoritmo si adatta a caratteristiche che sono specifiche solo del training set e che non hanno riscontro nel resto dei dati. Questo fenomeno si verifica quando i dati di training non sono sufficienti, non sono rappresentativi della realtà oppure quando l'algoritmo prende in considerazione delle caratteristiche del training set irrilevanti con l'etichetta.  Perciò, in presenza di ``overfitting'', le prestazioni sui dati di allenamento aumenteranno, mentre quelle sui dati non visionati saranno peggiori. 
+Il processo che si segue è il seguente: un algoritmo viene ``allenato'' usando degli esempi (\emph{training set}  \ref{ComefunzionailMachineLearning}) di cui è nota l'etichetta che si vuole predire. L'obiettivo è raggiungere uno stato in cui l'algoritmo sia in grado di predire le etichette per altri esempi che non ha avuto in input durante la fase di training. Si dice che così facendo l'algoritmo sarà in grado di \emph{generalizzare}.
+L'errore di generalizzazione può essere  minimizzato evitando l'``overfitting'' nell'algoritmo di apprendimento, ovvero il caso in cui l'algoritmo si adatta a caratteristiche che sono specifiche solo del training set e che non hanno riscontro nel resto dei dati. Questo fenomeno si verifica quando i dati di training non sono sufficienti, non sono rappresentativi della realtà oppure quando l'algoritmo prende in considerazione delle caratteristiche del training set irrilevanti con l'etichetta.  Perciò, in presenza di ``overfitting'', le prestazioni sui dati di allenamento aumenteranno, mentre quelle sui dati non visionati saranno peggiori. 
 
-Per prevenire ``overfitting'' viene usata la ``cross-validation''.
+Per prevenire ``overfitting'' viene usata la ``cross-validation'' in modo che l'algoritmo non impari ad adattarsi all'input fornito.
 \section{Cross Validation}
 \label{cv}
-La cross-validation, o k-fold validation, è una tecnica che utilizza parte dei dati disponibili per addestrare il modello e una parte per testarlo \cite{TheElementsofStatisticalLearning}. Viene specificato il numero di fold, ovvero in quante parti dividere il training set. Facciamo un esempio di come funziona, impostiamo a 3 il numero di fold.	Avremo come risultato set come in Figura 10.
+La cross-validation, o k-fold validation, è una tecnica che utilizza parte dei dati disponibili per addestrare il modello e una parte per testarlo \cite{TheElementsofStatisticalLearning}. Viene specificato il numero di ``fold'', ovvero in quante parti dividere il training set. Facciamo un esempio di come funziona, impostiamo a 3 il numero di fold.	Avremo come risultato set divisi come in Figura 12.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = 79mm]{immagini/cross-validation}
-	\caption{INSERIRE}
+	\caption{Cross validation con 3 fold}
 \end{figure}
-Un set viene assegnato a ``validation test'', mentre i restanti 2 set compongono il ``training set''. L'algoritmo viene addestrato usando il training set così composto e testato sul  validation. Questo procedimento viene eseguito per tutte le combinazioni possibili dei set.
+Un set viene assegnato a ``validation test'', mentre i restanti 2 compongono il ``training set''. L'algoritmo viene addestrato usando il training set così composto e testato sul  validation. Questo procedimento viene eseguito per tutte le combinazioni possibili dei set.
 Negli esperimenti di paragrafo \ref{sec:risultati} ho usato una cross-validation annidata per stimare l'errore di generalizzazione e fare la model selection usando in entrambi i casi 9 come numero di fold per tutti gli algoritmi nel quale era richiesta una model selection \ref{iperparametri}, quindi per Gaussian Naive Bayes e Linear Discriminant Analysis ho effettuato solo una cross-validation singola per stimare l'errore di generalizzazione.
 
 
 
 
-\newpage
 \section{Risultati Ottenuti}
 \label{sec:risultati}
-Visualizziamo ora i risultati ottenuti, ogni riga corrisponde ad un esperimento effettuato usando un algoritmo di apprendimento mentre ogni colonna corrisponde al tipo di dataset usato per effettuare l'addestramento.
+Visualizziamo ora i risultati ottenuti, ogni riga corrisponde ad un esperimento effettuato usando un algoritmo di apprendimento mentre ogni colonna corrisponde al tipo di dataset usato per effettuare l'addestramento. Il dataset ``Details'' ha una dimensione iniziale di 20. Il numero a fianco a ``PCA'' e ``t-SNE'' indica a quante dimensioni si è scesi. Il numero sta ad indicare la percentuale di successo del classificatore, se per esempio troviamo $0.77$ significa che nel $77\%$ dei casi il classificatore ha prodotto l'etichetta corretta.
+In azzurro vengono evidenziati gli score massimi del singolo modello mentre in arancione lo score massimo della tabella.
 
 Tabelle generate usando come scaler StandardScaler.
 \begin{table}[ht]
@@ -673,12 +679,12 @@ Tabelle generate usando come scaler StandardScaler.
 				\toprule
 				{} &    Totali &  Totali\_with\_BMI &  Totali\_with\_DATA &  Totali\_with\_DATA\_and\_BMI \\
 				\midrule
-				SVC &  0.66 &         0.66 &          0.77 &                  0.73 \\
+				SVC &  0.66 &         0.66 &          \cellcolor{orange}0.77 &                  0.73 \\
 				DT  &  0.56 &         0.56 &          0.61 &                  0.63 \\
 				RF  &  0.64 &         0.63 &          0.57 &                  0.59 \\
-				NB  &  0.69 &         0.68 &          0.72 &                  0.75 \\
-				LD  &  0.71 &         0.68 &          0.72 &                  0.72 \\
-				MLP &  0.69 &         0.69 &          0.74 &                  0.72 \\
+				NB  &  0.69 &         0.68 &          0.72 &                  \cellcolor{cyan}0.75 \\
+				LD  &  0.71 &         0.68 &          \cellcolor{cyan}0.72 &                  0.72 \\
+				MLP &  0.69 &         0.69 &          \cellcolor{cyan}0.74 &                  0.72 \\
 				\bottomrule
 			\end{tabular}
 		\end{adjustbox}
@@ -692,8 +698,8 @@ Tabelle generate usando come scaler StandardScaler.
 				{} &   Details &  \thead{Details\\PCA\_5} & \thead{Details\\ PCA\_10} &  \thead{Details\\ PCA\_13} &  \thead{Details\\PCA\_15} &  \thead{Details\\TSNE\_13} &  \thead{Details\\TSNE\_15} \\
 				\midrule
 				SVC &  0.68 &                  0.63 &                   0.68 &                   0.67 &                   0.71 &                    0.51 &                    0.53 \\
-				DT  &  0.68 &                  0.60 &                   0.67 &                   0.64 &                   0.57 &                    0.43 &                    0.50 \\
-				RF  &  0.67 &                  0.59 &                   0.69 &                   0.70 &                   0.63 &                    0.51 &                    0.55 \\
+				DT  &  \cellcolor{cyan}0.68 &                  0.60 &                   0.67 &                   0.64 &                   0.57 &                    0.43 &                    0.50 \\
+				RF  &  0.67 &                  0.59 &                   0.69 &                   \cellcolor{cyan}0.70 &                   0.63 &                    0.51 &                    0.55 \\
 				NB  &  0.63 &                  0.61 &                   0.66 &                   0.67 &                   0.65 &                    0.56 &                    0.57 \\
 				LD  &  0.63 &                  0.64 &                   0.60 &                   0.59 &                   0.59 &                    0.48 &                    0.49 \\
 				MLP &  0.63 &                  0.62 &                   0.61 &                   0.62 &                   0.65 &                    0.39 &                    0.47 \\
@@ -711,7 +717,7 @@ Tabelle generate usando come scaler StandardScaler.
 				\midrule
 				Totali                     &        0.71 \\
 				Totali\_with\_BMI            &        0.69 \\
-				Totali\_with\_DATA           &        0.77 \\
+				Totali\_with\_DATA           &        \cellcolor{orange}0.77 \\
 				Totali\_with\_DATA\_and\_BMI   &        0.75 \\
 				Details                    &        0.68 \\
 				Details\_reduce\_PCA\_5\_dim   &        0.64 \\
@@ -736,12 +742,12 @@ Tabelle generate usando come scaler MinMaxScaler.
 				\toprule
 				{} &    Totali &  Totali\_BMI &  Totali\_DATA &  Totali\_DATA\_and\_BMI \\
 				\midrule
-				SVC &  0.66 &         0.62 &          0.73 &                  0.74 \\
+				SVC &  0.66 &         0.62 &          0.73 &                  \cellcolor{cyan}0.74 \\
 				DT  &  0.61 &         0.55 &          0.65 &                  0.63 \\
 				RF  &  0.60 &         0.62 &          0.62 &                  0.61 \\
-				NB  &  0.69 &         0.68 &          0.72 &                  0.75 \\
-				LD  &  0.71 &         0.68 &          0.72 &                  0.72\\
-				MLP &  0.62 &         0.64 &          0.71 &                  0.76\\
+				NB  &  0.69 &         0.68 &          0.72 &                  \cellcolor{cyan}0.75 \\
+				LD  &  0.71 &         0.68 &          \cellcolor{cyan}0.72 &                  0.72\\
+				MLP &  0.62 &         0.64 &          0.71 &                  \cellcolor{orange}0.76\\
 				\bottomrule
 			\end{tabular}
 		\end{adjustbox}
@@ -756,8 +762,8 @@ Tabelle generate usando come scaler MinMaxScaler.
 				{} &   Details &  \thead{Details\\PCA\_5} &  \thead{Details\\PCA\_10} &  \thead{Details\\PCA\_13} &  \thead{Details\\PCA\_15} &  \thead{Details\\TSNE\_13} &  \thead{Details\\TSNE\_15} \\
 				\midrule
 				SVC &  0.74 &                  0.70 &                   0.64 &                   0.67 &                   0.70 &                    0.58 &                    0.42 \\
-				DT  &  0.70 &                  0.61 &                   0.60 &                   0.56 &                   0.59 &                    0.51 &                    0.56 \\
-				RF  &  0.67 &                  0.65 &                   0.66 &                   0.71 &                   0.67 &                    0.46 &                    0.52 \\
+				DT  &  \cellcolor{cyan}0.70 &                  0.61 &                   0.60 &                   0.56 &                   0.59 &                    0.51 &                    0.56 \\
+				RF  &  0.67 &                  0.65 &                   0.66 &                   \cellcolor{cyan}0.71 &                   0.67 &                    0.46 &                    0.52 \\
 				NB  &  0.63 &                  0.67 &                   0.65 &                   0.67 &                   0.67 &                    0.57 &                    0.58 \\
 				LD  &  0.63 &                  0.65 &                   0.61 &                   0.60 &                   0.62 &                    0.43 &                    0.39 \\
 				MLP &  0.65 &                  0.64 &                   0.64 &                   0.60 &                   0.63 &                    0.51 &                    0.43 \\
@@ -777,7 +783,7 @@ Tabelle generate usando come scaler MinMaxScaler.
 				Totali                     &      0.71 \\
 				Totali\_with\_BMI            &      0.68 \\
 				Totali\_with\_DATA           &      0.73 \\
-				Totali\_with\_DATA\_and\_BMI   &      0.76 \\
+				Totali\_with\_DATA\_and\_BMI   &      \cellcolor{orange}0.76 \\
 				Details                    &      0.74 \\
 				Details\_reduce\_PCA\_5\_dim   &      0.70 \\
 				Details\_reduce\_PCA\_10\_dim  &      0.66 \\
@@ -793,7 +799,7 @@ Tabelle generate usando come scaler MinMaxScaler.
 
 \newpage
 
-Tabelle generate usando come scaler RobustScaler ma usando direttamente la riduzione di dimensionalità.
+Tabelle generate usando come scaler RobustScaler.
 \begin{table}[h]
 	\begin{center}
 		\begin{adjustbox}{max width=\textwidth, max totalheight= {3.3cm}}
@@ -801,12 +807,12 @@ Tabelle generate usando come scaler RobustScaler ma usando direttamente la riduz
 				\toprule
 				{} &    Totali &  Totali\_BMI &  Totali\_DATA &  Totali\_DATA\_and\_BMI \\
 				\midrule
-				SVC &  0.66 &         0.68 &          0.77 &                  0.72 \\
+				SVC &  0.66 &         0.68 &          \cellcolor{orange}0.77 &                  0.72 \\
 				DT  &  0.59 &         0.60 &          0.62 &                  0.65 \\
 				RF  &  0.62 &         0.63 &          0.56 &                  0.61 \\
-				NB  &  0.69 &         0.68 &          0.72 &                  0.75 \\
-				LD  &  0.71 &         0.68 &          0.72 &                  0.72 \\
-				MLP &  0.70 &         0.67 &          0.70 &                  0.66 \\
+				NB  &  0.69 &         0.68 &          0.72 &                  \cellcolor{cyan}0.75 \\
+				LD  &  0.71 &         0.68 &          \cellcolor{cyan}0.72 &                  0.72 \\
+				MLP &  0.70 &         0.67 &          \cellcolor{cyan}0.70 &                  0.66 \\
 				\bottomrule
 			\end{tabular}
 		\end{adjustbox}
@@ -821,8 +827,8 @@ Tabelle generate usando come scaler RobustScaler ma usando direttamente la riduz
 				{} &   Details &  \thead{Details\\PCA\_5} &  \thead{Details\\PCA\_10} &  \thead{Details\\PCA\_13} &  \thead{Details\\PCA\_15} &  \thead{Details\\TSNE\_13} &  \thead{Details\\TSNE\_15} \\
 				\midrule
 				SVC &  0.68 &                  0.63 &                   0.63 &                   0.66 &                   0.66 &                    0.56 &                    0.47 \\
-				DT  &  0.65 &                  0.63 &                   0.61 &                   0.64 &                   0.63 &                    0.45 &                    0.56 \\
-				RF  &  0.65 &                  0.65 &                   0.64 &                   0.64 &                   0.66 &                    0.52 &                    0.49 \\
+				DT  &  \cellcolor{cyan}0.65 &                  0.63 &                   0.61 &                   0.64 &                   0.63 &                    0.45 &                    0.56 \\
+				RF  &  0.65 &                  0.65 &                   0.64 &                   0.64 &                   \cellcolor{cyan}0.66 &                    0.52 &                    0.49 \\
 				NB  &  0.63 &                  0.67 &                   0.67 &                   0.67 &                   0.65 &                    0.54 &                    0.56 \\
 				LD  &  0.63 &                  0.63 &                   0.60 &                   0.64 &                   0.67 &                    0.43 &                    0.42 \\
 				MLP &  0.56 &                  0.63 &                   0.60 &                   0.65 &                   0.60 &                    0.49 &                    0.46 \\
@@ -841,7 +847,7 @@ Tabelle generate usando come scaler RobustScaler ma usando direttamente la riduz
 				\midrule
 				Totali                     &      0.71 \\
 				Totali\_with\_BMI            &      0.68 \\
-				Totali\_with\_DATA           &      0.77 \\
+				Totali\_with\_DATA           &      \cellcolor{orange}0.77 \\
 				Totali\_with\_DATA\_and\_BMI   &      0.75 \\
 				Details                    &      0.68 \\
 				Details\_reduce\_PCA\_5\_dim   &      0.67 \\
@@ -860,7 +866,7 @@ Tabelle generate usando come scaler RobustScaler ma usando direttamente la riduz
 
 \newpage
 
-Tabelle generate non usando uno scaler.
+Tabelle generate non usando uno scaler e usando direttamente la riduzione di dimensionalità.
 \begin{table}[h]
 	\begin{center}
 		\begin{adjustbox}{max width=\textwidth}
@@ -868,12 +874,12 @@ Tabelle generate non usando uno scaler.
 				\toprule
 				{} &  \thead{Details\\PCA\_5} &  \thead{Details\\PCA\_10} &  \thead{Details\\PCA\_13} &  \thead{Details\\PCA\_15} &  \thead{Details\\TSNE\_13} &  \thead{Details\\TSNE\_15} \\
 				\midrule
-				SVC &                  0.65 &                   0.66 &                   0.68 &                   0.66 &                    0.57 &                    0.54 \\
-				DT  &                  0.60 &                   0.55 &                   0.59 &                   0.51 &                    0.50 &                    0.52 \\
-				RF  &                  0.66 &                   0.64 &                   0.60 &                   0.64 &                    0.53 &                    0.55 \\
-				NB  &                  0.67 &                   0.64 &                   0.66 &                   0.65 &                    0.52 &                    0.55 \\
-				LD  &                  0.64 &                   0.62 &                   0.58 &                   0.62 &                    0.47 &                    0.51 \\
-				MLP &                  0.66 &                   0.65 &                   0.60 &                   0.58 &                    0.43 &                    0.53 \\
+				SVC &                  0.65 &                   0.66 &                   \cellcolor{orange}0.68 &                   0.66 &                    0.57 &                    0.54 \\
+				DT  &                  \cellcolor{cyan}0.60 &                   0.55 &                   0.59 &                   0.51 &                    0.50 &                    0.52 \\
+				RF  &                  \cellcolor{cyan}0.66 &                   0.64 &                   0.60 &                   0.64 &                    0.53 &                    0.55 \\
+				NB  &                  \cellcolor{cyan}0.67 &                   0.64 &                   0.66 &                   0.65 &                    0.52 &                    0.55 \\
+				LD  &                  \cellcolor{cyan}0.64 &                   0.62 &                   0.58 &                   0.62 &                    0.47 &                    0.51 \\
+				MLP &                  \cellcolor{cyan}0.66 &                   0.65 &                   0.60 &                   0.58 &                    0.43 &                    0.53 \\
 				\bottomrule
 			\end{tabular}
 		\end{adjustbox}
@@ -889,7 +895,7 @@ Tabelle generate non usando uno scaler.
 				\midrule
 				Details\_reduce\_PCA\_5\_dim   &   0.67 \\
 				Details\_reduce\_PCA\_10\_dim  &   0.66 \\
-				Details\_reduce\_PCA\_13\_dim  &   0.68 \\
+				Details\_reduce\_PCA\_13\_dim  &   \cellcolor{orange}0.68 \\
 				Details\_reduce\_PCA\_15\_dim  &   0.66 \\
 				Details\_reduce\_TSNE\_13\_dim &   0.57 \\
 				Details\_reduce\_TSNE\_15\_dim &   0.55 \\
@@ -900,7 +906,7 @@ Tabelle generate non usando uno scaler.
 \end{table}
 
 \newpage
-Tabella riassuntiva generata prendendo le migliori prestazioni usando i dataset e i vari scaler. In blu troviamo le prestazioni migliori.
+Tabella riassuntiva generata prendendo le migliori prestazioni usando i dataset e i vari scaler. In arancione troviamo le prestazioni migliori.
 \begin{table}[h]
 	\begin{center}
 		\begin{adjustbox}{max width=\textwidth}
@@ -910,7 +916,7 @@ Tabella riassuntiva generata prendendo le migliori prestazioni usando i dataset 
 				\midrule
 				Totali                     &        0.71 &      0.71 &      0.71 &        NaN \\
 				Totali\_with\_BMI            &        0.69 &      0.68 &      0.68 &        NaN \\
-				Totali\_with\_DATA           &        \cellcolor{blue!25}0.77 &      0.73 &      \cellcolor{blue!25}0.77 &        NaN \\
+				Totali\_with\_DATA           &        \cellcolor{orange}0.77 &      0.73 &      \cellcolor{orange}0.77 &        NaN \\
 				Totali\_with\_DATA\_and\_BMI   &        0.75 &      0.76 &      0.75 &        NaN \\
 				Details                    &        0.68 &      0.74 &      0.68 &        NaN \\
 				Details\_reduce\_PCA\_5\_dim   &        0.64 &      0.70 &      0.67 &   0.67 \\
@@ -931,6 +937,11 @@ Tabella riassuntiva generata prendendo le migliori prestazioni usando i dataset 
 		
 
 \section{Analisi dei  Risultati}
+Osservando i risultati ci si accorge di come non ci sia uno scaler che si comporta meglio in maniera assoluta. 
+La riduzione della dimensionalità, eseguita con PCA e t-SNE non comporta un aumento delle prestazioni, anzi molto spesso genera un risultato meno prestante rispetto al dataset di partenza ``Details''. Si può inoltre notare che, all'interno delle tabelle, non sono presenti esperimenti effettuati usando ``Details'' con riduzione della dimensionalità a 5 e 10 dimensioni tramite t-SNE. Questo perché durante l'addestramento t-SNE non è riuscito a convergere e quindi l'addestramento non è riuscito.
+In ogni caso i risultati ottenuti usando t-SNE non superano mai lo $0.58$. Si comporta meglio PCA generando score che hanno come range $0.64$ - $0.71$.
+I risultati migliori però li abbiamo considerando i ``Totali'', in particolare i dataset ``Totali\_with\_DATA'' e ``Totali\_with\_DATA\_and\_BMI'' sono quelli che generano gli score migliori. In particolare lo score in assoluto più alto è generato usando ``Totali\_with\_DATA'' usando come scaler StandardScaler e RobustScaler con $0.77$.
+
 
 
 
