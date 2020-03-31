@@ -2,17 +2,18 @@
 \babel@toc {italian}{}
 \contentsline {chapter}{Ringraziamenti}{ii}{chapter*.1}% 
 \contentsline {chapter}{Indice}{iii}{chapter*.1}% 
+\contentsline {chapter}{Introduzione}{1}{chapter*.3}% 
 \contentsline {chapter}{\numberline {1}Machine Learning}{2}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Come funziona il Machine Learning}{2}{section.1.1}% 
 \contentsline {subsection}{\numberline {1.1.1}Apprendimento supervisionato}{3}{subsection.1.1.1}% 
 \contentsline {subsubsection}{\numberline {1.1.1.1}Support Vector Machine}{4}{subsubsection.1.1.1.1}% 
 \contentsline {subsubsection}{\numberline {1.1.1.2}Decision Tree Classifier}{8}{subsubsection.1.1.1.2}% 
-\contentsline {subsubsection}{\numberline {1.1.1.3}Random Forest Classifier}{9}{subsubsection.1.1.1.3}% 
+\contentsline {subsubsection}{\numberline {1.1.1.3}Random Forest Classifier}{10}{subsubsection.1.1.1.3}% 
 \contentsline {subsubsection}{\numberline {1.1.1.4}Gaussian Naive Bayes}{10}{subsubsection.1.1.1.4}% 
 \contentsline {subsubsection}{\numberline {1.1.1.5}Linear Discriminat Analysis}{11}{subsubsection.1.1.1.5}% 
-\contentsline {subsubsection}{\numberline {1.1.1.6}Reti Neurali Multi-Strato}{11}{subsubsection.1.1.1.6}% 
-\contentsline {subsection}{\numberline {1.1.2}Apprendimento non supervisionato}{13}{subsection.1.1.2}% 
-\contentsline {subsection}{\numberline {1.1.3}Apprendimento per rinforzo}{13}{subsection.1.1.3}% 
+\contentsline {subsubsection}{\numberline {1.1.1.6}Reti Neurali Multi-Strato}{12}{subsubsection.1.1.1.6}% 
+\contentsline {subsection}{\numberline {1.1.2}Apprendimento non supervisionato}{14}{subsection.1.1.2}% 
+\contentsline {subsection}{\numberline {1.1.3}Apprendimento per rinforzo}{14}{subsection.1.1.3}% 
 \contentsline {subsection}{\numberline {1.1.4}Apprendimento semi supervisionato}{14}{subsection.1.1.4}% 
 \contentsline {chapter}{\numberline {2}Dataset}{15}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Iris}{15}{section.2.1}% 
@@ -28,6 +29,7 @@
 \contentsline {section}{\numberline {3.3}Errore di Generalizzazione}{25}{section.3.3}% 
 \contentsline {section}{\numberline {3.4}Cross Validation}{26}{section.3.4}% 
 \contentsline {section}{\numberline {3.5}Risultati Ottenuti}{27}{section.3.5}% 
-\contentsline {section}{\numberline {3.6}Analisi dei Risultati}{31}{section.3.6}% 
-\contentsline {chapter}{\numberline {4}Conclusioni}{33}{chapter.4}% 
-\contentsline {chapter}{Bibliografia}{35}{chapter*.28}% 
+\contentsline {section}{\numberline {3.6}Analisi dei Risultati}{32}{section.3.6}% 
+\contentsline {section}{\numberline {3.7}Tecnologie Utilizzate}{32}{section.3.7}% 
+\contentsline {chapter}{Conclusioni}{33}{chapter*.29}% 
+\contentsline {chapter}{Bibliografia}{35}{chapter*.30}% 

@@ -117,6 +117,8 @@ Questa sezione, facoltativa, contiene i ringraziamenti.
 % 
 
 \chapter*{Introduzione}
+\addcontentsline{toc}{chapter}{Introduzione}
+\markboth{Introduzione}{Introduzione}
 \label{cap:introduzione}
 
 Questo documento ha una duplice funzione: da un lato mostra un esempio completo di elaborato finale redatto in \LaTeX\ e conforme allo standard PDF/A, e dall'altro contiene suggerimenti e risposte a domande frequenti poste dagli studenti. Se ne raccomanda, pertanto, un'attenta lettura.
@@ -297,6 +299,13 @@ Il Decision Tree Classifier è un metodo di apprendimento supervisionato usato s
 \end{itemize}
 
 Dato un insieme di dati è possibile costruire un numero esponenziale di alberi di decisione. Alcuni alberi sono più efficienti di altri ma trovare l'albero ottimo è una cosa computazionalmente infattibile a causa dello spazio esponenziale nel quale bisogna cercare. Tuttavia esistono algoritmi che riescono, in un tempo ragionevole, a trovare un albero efficiente anche se non corrisponde all'ottimo. Questi algoritmi spesso implementano una strategia greedy che crea l'albero facendo una serie di decisioni localmente ottime su quale caratteristica dei dati usare per partizionare i dati \cite{Introductiontodatamining}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 130mm]{immagini/Decision_Tree}
+	\caption{Visualizzazione di un albero di decisione}
+\end{figure}
+
 Uno di questi algoritmi è l'algoritmo di Hunt nel quale l'albero di decisione viene costruito ricorsivamente partizionando il training set in sottoinsiemi sempre più piccoli. Sia $D_t$ l'insieme dei dati di training che sono associati al nodo $t$ e sia $y = {y_1, y_2,...,y_c}$ le etichette. La definizione ricorsiva dell'algoritmo di Hunt è la seguente \cite{Introductiontodatamining}.
 \begin{itemize}
 	\item se tutti i dati in $D_t$ appartengono alla stessa classe $y_t$, allora $t$ è una foglia etichettata come $y_t$
@@ -306,7 +315,7 @@ Uno di questi algoritmi è l'algoritmo di Hunt nel quale l'albero di decisione v
 La misura di selezione degli attributi è un'euristica per selezionare il criterio di suddivisione che divide i dati in modo da massimizzare l'omogeneità dei sottoinsiemi di dati. I più famosi sono l'entropia e l'indice di Gini \cite{DataMiningandKnowledgeDiscoveryHandbook}.
 
 \subsubsection{Random Forest Classifier}
-Il Random Forest Classifier è un algoritmo di apprendimento supervisionato. Esso considera più alberi di decisione che operano come un insieme. Ogni albero della foresta genera una previsione e quella che compare più frequentemente diventa la previsione del modello \cite{RandomForest}.
+Il Random Forest Classifier è un algoritmo di apprendimento supervisionato. Esso considera più alberi di decisione che operano come un insieme (vedi. Figura 6). Ogni albero della foresta genera una previsione e quella che compare più frequentemente diventa la previsione del modello \cite{RandomForest}.
 
 \begin{figure}
 	\centering
@@ -416,7 +425,7 @@ Un dataset è una collezione di dati, comunemente corrisponde al contenuto di un
 \section{Iris}
 \label{iris}
 Per prendere familitarità con gli strumenti e gli algoritmi da utilizzare, ho fatto riferimento al dataset Iris. Esso è un dataset multivariato introdotto da Ronald Fisher nel 1936. Consiste in 150 istanze di fiori iris classificate secondo tre specie: Setosa, Virginica e Versicolor.
-Le variabili considerate sono lunghezza e larghezza di sepalo e petalo (cfr. Figura 8). 
+Le variabili considerate sono lunghezza e larghezza di sepalo e petalo (cfr. Figura 9). 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = \textwidth]{immagini/Iris}
@@ -460,7 +469,7 @@ Il dataset ha inoltre due ulteriori livelli di dettaglio. Esso contiene infatti 
 \end{itemize}
 In ultimo è registrato il mezzo che ha investito la persona. Questo è il label set, la y dei modelli descritti al capitolo precedente. Tutti gli esperimenti effettuati in fase di studio sono incentrati sul cercare di classificare il tipo di mezzo, leggero ovvero auto, etichettato con 0, o pesante, con etichetta 1, che ha investito l'individuo.
 
-Nel mio studio mi sono limitato a considerare le caratteristiche basilari, i totali e quelle riportate in Figura 9.
+Nel mio studio mi sono limitato a considerare le caratteristiche basilari, i totali e quelle riportate in Figura 10.
 \section{Riduzione della Dimensionalità}
 \label{sec:riduzione}
 Nei problemi di classificazione di Machine Learning ci sono spesso molte caratteristiche da tenere in considerazione, basti pensare che il dataset ``Incidenti Stradali'' al completo ha circa 350 caratteristiche. Per dataset con molte dimensioni la riduzione della dimensionalità è un pratica importante svolta prima di applicare algoritmi di Machine Learning per evitare l'effetto chiamato \textit{curse of dimensionality}, ``maledizione della dimensionalità''\cite{shalevshwartz2014understanding}. Il problema sorge nel momento in cui le caratteristiche sono molte e lo spazio aumenta così rapidamente che i dati disponibili diventano radi, sparsi. In ambito statistico questa scarsità è problematica in quanto i dati necessari a supportare il risultato aumentano in modo esponenziale.
@@ -533,7 +542,7 @@ t-SNE, o t-Distributed Stochastic Neighbor Embedding, è una tecnica di riduzion
 L'algoritmo prevede tre passi.
 \begin{itemize}
 	\item Il primo punto calcola una misura di similarità tra i punti nello spazio a molte dimensioni, e centra una distribuzione gaussiana sopra a ogni punto $x_i$. Viene poi calcolato il valore della densità corrispondente per tutti gli altri punti $x_j$. Dopo un processo di normalizzazione, si ottiene un insieme di valori di probabilità $P_{ij}$ che sono che sono proporzionali ai valori di similarità. La distribuzione può essere manipolata usando quella che viene chiamata perplessità, la quale influenza la varianza della distribuzione, ovvero quanto è ampia la curva, che a sua volta influenza  il numero dei vicini di ogni punto. Il normale range della perplessità è tra 5 e 50.
-	\item Il secondo punto è simile al primo, ma al posto di una distribuzione gaussiana fa riferimento ad una distribuzione t-Student. Essa ci fornisce un secondo set di probabilità $Q_{ij}$ in uno spazio ridotto. La distribuzione t-Student ha code più lunghe rispetto alla gaussiana(cfr. Figura 11), e questo permette una migliore visualizzazione delle distanze tra i punti.
+	\item Il secondo punto è simile al primo, ma al posto di una distribuzione gaussiana fa riferimento ad una distribuzione t-Student. Essa ci fornisce un secondo set di probabilità $Q_{ij}$ in uno spazio ridotto. La distribuzione t-Student ha code più lunghe rispetto alla gaussiana(cfr. Figura 12), e questo permette una migliore visualizzazione delle distanze tra i punti.
 	
 	\begin{figure}[h]
 		\centering
@@ -553,7 +562,7 @@ Nel \ref{cap3} verranno applicate PCA e t-SNE per cercare di aumentare le presta
 
 \chapter{Esperimenti}
 \label{cap3}
-Durante il tirocinio ho effettuato diversi esperimenti a partire dal dataset descritto al capitolo precedente prendendo in considerazione i diversi livelli di dettaglio \ref{incidentiStradali}, ho usato \emph{python} come linguaggio di programmazione, in particolare il pacchetto \emph{skikit-learn} \cite{scikit-learn} e \emph{Jupyter} come ambiente di lavoro \cite{jupyter}.
+Durante il tirocinio ho effettuato diversi esperimenti a partire dal dataset descritto al capitolo precedente prendendo in considerazione i diversi livelli di dettaglio \ref{incidentiStradali}.
 In questo capitolo verranno discussi i passaggi necessari per passare dal dataset ad una previsione dell'etichetta corrispondente il più precisa possibile.
 \section{Pre Processsing}
 \label{preprocessing}
@@ -561,7 +570,7 @@ In prima istanza quello che si compie avendo i dati è un processo di pre proces
 Consiste in diversi passaggi.
 \begin{itemize}
 	\item Gestione dei valori null, è necessario gestire i valori nulli prima di fornire i dati all'algoritmo poiché nessun modello è in grado di gestirli autonomamente.
-	\item Imputation, ovvero il processo nel quale vengono sostituiti i valori mancanti all'interno del dataset. Per fare questo \emph{sklearn} mette a disposizione la classe \emph{Imputer}.
+	\item Imputation, ovvero il processo nel quale vengono sostituiti i valori mancanti all'interno del dataset. Per fare questo \emph{n} mette a disposizione la classe \emph{Imputer}.
 	\item Standardizzazione, processo di trasformazione dei valori. Questo viene fatto poiché, all'interno del dataset, potrebbero esserci caratteristiche inserite con scale diverse. Prendiamo per esempio un dataset con all'interno due caratteristiche numeriche, ``metratura'' e ``costo'': non sono sulla stessa scala, ``metratura'' si misura in metri quadrati, mentre ``costo'' in euro. 
 	\item Gestire le variabili categoriche, variabili che indicano l'appartenenza ad una specifica categoria.
 \end{itemize}
@@ -653,7 +662,7 @@ L'errore di generalizzazione può essere  minimizzato evitando l'``overfitting''
 Per prevenire ``overfitting'' viene usata la ``cross-validation'' in modo che l'algoritmo non impari ad adattarsi all'input fornito.
 \section{Cross Validation}
 \label{cv}
-La cross-validation, o k-fold validation, è una tecnica che utilizza parte dei dati disponibili per addestrare il modello e una parte per testarlo \cite{TheElementsofStatisticalLearning}. Viene specificato il numero di ``fold'', ovvero in quante parti dividere il training set. Facciamo un esempio di come funziona, impostiamo a 3 il numero di fold.	Avremo come risultato set divisi come in Figura 12.
+La cross-validation, o k-fold validation, è una tecnica che utilizza parte dei dati disponibili per addestrare il modello e una parte per testarlo \cite{TheElementsofStatisticalLearning}. Viene specificato il numero di ``fold'', ovvero in quante parti dividere il training set. Facciamo un esempio di come funziona, impostiamo a 3 il numero di fold.	Avremo come risultato set divisi come in Figura 13.
 
 \begin{figure}[h]
 	\centering
@@ -669,10 +678,9 @@ Negli esperimenti di paragrafo \ref{sec:risultati} ho usato una cross-validation
 \section{Risultati Ottenuti}
 \label{sec:risultati}
 Visualizziamo ora i risultati ottenuti, ogni riga corrisponde ad un esperimento effettuato usando un algoritmo di apprendimento mentre ogni colonna corrisponde al tipo di dataset usato per effettuare l'addestramento. Il dataset ``Details'' ha una dimensione iniziale di 20. Il numero a fianco a ``PCA'' e ``t-SNE'' indica a quante dimensioni si è scesi. Il numero sta ad indicare la percentuale di successo del classificatore, se per esempio troviamo $0.77$ significa che nel $77\%$ dei casi il classificatore ha prodotto l'etichetta corretta.
-In azzurro vengono evidenziati gli score massimi del singolo modello mentre in arancione lo score massimo della tabella.
+In azzurro vengono evidenziati gli score massimi del singolo modello mentre in arancione lo score massimo della tabella. 
 
-Tabelle generate usando come scaler StandardScaler.
-\begin{table}[ht]
+\begin{table}[h]
 	\begin{center}
 		\begin{adjustbox}{max width=\textwidth, max totalheight= {3.3cm}}
 			\begin{tabular}{lrrrr}
@@ -707,6 +715,7 @@ Tabelle generate usando come scaler StandardScaler.
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
+\captionof{figure}{Risultati ottenuti usando come scaler StandardScaler, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
 \end{table}
 \begin{table}[h]
 	\begin{center}
@@ -730,11 +739,9 @@ Tabelle generate usando come scaler StandardScaler.
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
+\captionof{figure}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
 \end{table}
 
-\newpage
-
-Tabelle generate usando come scaler MinMaxScaler.
 \begin{table}[h]
 	\begin{center}
 		\begin{adjustbox}{max width=\textwidth, max totalheight= {3.3cm}}
@@ -771,6 +778,7 @@ Tabelle generate usando come scaler MinMaxScaler.
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
+\captionof{figure}{Risultati ottenuti usando come scaler MinMaxScaler, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
 \end{table}
 
 \begin{table}[h]
@@ -795,11 +803,9 @@ Tabelle generate usando come scaler MinMaxScaler.
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
+\captionof{figure}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
 \end{table}
 
-\newpage
-
-Tabelle generate usando come scaler RobustScaler.
 \begin{table}[h]
 	\begin{center}
 		\begin{adjustbox}{max width=\textwidth, max totalheight= {3.3cm}}
@@ -836,6 +842,7 @@ Tabelle generate usando come scaler RobustScaler.
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
+\captionof{figure}{Risultati ottenuti usando come scaler RobustScaler, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
 \end{table}
 
 \begin{table}[h]
@@ -860,13 +867,9 @@ Tabelle generate usando come scaler RobustScaler.
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
+\captionof{figure}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
 \end{table}
 
-
-
-\newpage
-
-Tabelle generate non usando uno scaler e usando direttamente la riduzione di dimensionalità.
 \begin{table}[h]
 	\begin{center}
 		\begin{adjustbox}{max width=\textwidth}
@@ -884,6 +887,7 @@ Tabelle generate non usando uno scaler e usando direttamente la riduzione di dim
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
+\captionof{figure}{Risultati ottenuti non usando uno scaler, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
 \end{table}
 
 \begin{table}[h]
@@ -903,10 +907,9 @@ Tabelle generate non usando uno scaler e usando direttamente la riduzione di dim
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
+\captionof{figure}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
 \end{table}
 
-\newpage
-Tabella riassuntiva generata prendendo le migliori prestazioni usando i dataset e i vari scaler. In arancione troviamo le prestazioni migliori.
 \begin{table}[h]
 	\begin{center}
 		\begin{adjustbox}{max width=\textwidth}
@@ -929,26 +932,35 @@ Tabella riassuntiva generata prendendo le migliori prestazioni usando i dataset 
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
+\captionof{figure}{Visualizzazione generale dei risultati massimi ottenuti tra tutti i modelli con i vari scaler e dataset}
 \end{table}
 
 
 
 
-		
-
+\clearpage
 \section{Analisi dei  Risultati}
 Osservando i risultati ci si accorge di come non ci sia uno scaler che si comporta meglio in maniera assoluta. 
 La riduzione della dimensionalità, eseguita con PCA e t-SNE non comporta un aumento delle prestazioni, anzi molto spesso genera un risultato meno prestante rispetto al dataset di partenza ``Details''. Si può inoltre notare che, all'interno delle tabelle, non sono presenti esperimenti effettuati usando ``Details'' con riduzione della dimensionalità a 5 e 10 dimensioni tramite t-SNE. Questo perché durante l'addestramento t-SNE non è riuscito a convergere e quindi l'addestramento non è riuscito.
 In ogni caso i risultati ottenuti usando t-SNE non superano mai lo $0.58$. Si comporta meglio PCA generando score che hanno come range $0.64$ - $0.71$.
-I risultati migliori però li abbiamo considerando i ``Totali'', in particolare i dataset ``Totali\_with\_DATA'' e ``Totali\_with\_DATA\_and\_BMI'' sono quelli che generano gli score migliori. In particolare lo score in assoluto più alto è generato usando ``Totali\_with\_DATA'' usando come scaler StandardScaler e RobustScaler con $0.77$.
+I risultati migliori però li abbiamo considerando i ``Totali'', in particolare i dataset ``Totali\_with\_DATA'' e ``Totali\_with\_DATA\_and\_BMI'' sono quelli che generano gli score migliori. In particolare lo score in assoluto più alto è $0.77$. generato usando ``Totali\_with\_DATA'' sia StandardScaler che RobustScaler.
 
 
-
+\section{Tecnologie Utilizzate}
+Durante il tirocinio ho usato \emph{Python} come linguaggio di programmazione, in particolare i pacchetti:
+\begin{itemize}
+	\item \emph{skikit-learn} \cite{scikit-learn}, versione $0.22.1$
+	\item \emph{numpy}, versione $1.18.1$
+	\item \emph{pandas}, versione $0.25.3$
+\end{itemize} 
+ Ho inoltre utlizzato \emph{Jupyter} come ambiente di lavoro \cite{jupyter}.
 
 % 
 %			CAPITOLO 4: Conclusioni e sviluppi futuri
 % 
-\chapter{Conclusioni}
+\chapter*{Conclusioni}
+\addcontentsline{toc}{chapter}{Conclusioni}
+\markboth{Conclusioni}{Conclusioni}
 
 Nelle conclusioni si tirano le somme di quanto realizzato, facendo un riassunto stringato del lavoro svolto. In particolare vanno dichiarati punti di forza e criticità della ricerca effettuata, nonché quali aspetti dello stato dell'arte siano stati superati dal lavoro in oggetto.
 
