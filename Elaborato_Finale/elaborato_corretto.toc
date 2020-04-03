@@ -22,14 +22,14 @@
 \contentsline {subsection}{\numberline {2.3.1}PCA}{18}{subsection.2.3.1}% 
 \contentsline {subsection}{\numberline {2.3.2}t-SNE}{20}{subsection.2.3.2}% 
 \contentsline {chapter}{\numberline {3}Esperimenti}{22}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Pre Processsing}{22}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}Preprocessing}{22}{section.3.1}% 
 \contentsline {subsection}{\numberline {3.1.1}Scalare i dati}{23}{subsection.3.1.1}% 
-\contentsline {section}{\numberline {3.2}Model Selection}{23}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Scelta degli Iperparametri}{24}{subsection.3.2.1}% 
+\contentsline {section}{\numberline {3.2}Model Selection}{24}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Scelta degli iperparametri}{24}{subsection.3.2.1}% 
 \contentsline {section}{\numberline {3.3}Errore di Generalizzazione}{25}{section.3.3}% 
 \contentsline {section}{\numberline {3.4}Cross Validation}{26}{section.3.4}% 
 \contentsline {section}{\numberline {3.5}Risultati Ottenuti}{27}{section.3.5}% 
 \contentsline {section}{\numberline {3.6}Analisi dei Risultati}{32}{section.3.6}% 
-\contentsline {section}{\numberline {3.7}Tecnologie Utilizzate}{32}{section.3.7}% 
-\contentsline {chapter}{Conclusioni}{33}{chapter*.29}% 
-\contentsline {chapter}{Bibliografia}{35}{chapter*.30}% 
+\contentsline {section}{\numberline {3.7}Tecnologie Utilizzate}{33}{section.3.7}% 
+\contentsline {chapter}{Conclusioni}{34}{chapter*.30}% 
+\contentsline {chapter}{Bibliografia}{36}{chapter*.31}% 

@@ -7,10 +7,10 @@
 %
 
 % CORSO DI LAUREA:
-\def\myCDL{Corso di Laurea triennale in\\Informatica}
+\def\myCDL{Corso di Laurea triennale in Informatica}
 
 % TITOLO TESI:
-\def\myTitle{ANALISI DEI DATI PER PROBLEMI DI\\ MEDICINA LEGALE}
+\def\myTitle{ANALISI DEI DATI PER\\  \vspace{0.4cm} PROBLEMI DI MEDICINA LEGALE}
 
 % AUTORE:
 \def\myName{Alessandro Beranti}
@@ -38,13 +38,13 @@
 \usepackage[a4paper]{geometry}		% Formato del foglio
 \usepackage[italian]{babel}			% Supporto per l'italiano
 \usepackage[utf8]{inputenc}			% Supporto per UTF-8
-%\usepackage[a-1b]{pdfx}			% File conforme allo standard PDF-A (obbligatorio per la consegna)
+\usepackage[a-1b]{pdfx}			% File conforme allo standard PDF-A (obbligatorio per la consegna)
 
 % Package per la grafica
 \usepackage{graphicx}				% Funzioni avanzate per le immagini
 \usepackage{hologo}					% Bibtex logo with \hologo{BibTeX}
 %\usepackage{epsfig}				% Permette immagini in EPS
-%\usepackage{xcolor}				% Gestione avanzata dei colori
+\usepackage{xcolor}				% Gestione avanzata dei colori
 
 % Package tipografici
 \usepackage{amssymb,amsmath,amsthm} % Simboli matematici
@@ -58,7 +58,7 @@
 \usepackage{verbatim}
 \usepackage{adjustbox}
 \usepackage{makecell}
-\usepackage{xcolor,colortbl}
+\usepackage{colortbl}
 \lstset{language=Python} 
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
@@ -120,10 +120,19 @@ Questa sezione, facoltativa, contiene i ringraziamenti.
 \addcontentsline{toc}{chapter}{Introduzione}
 \markboth{Introduzione}{Introduzione}
 \label{cap:introduzione}
+Il tirocinio è stato svolto internamente all'Università. Il lavoro si è concentrato inizialmente sull'apprendere le basi del Machine Learning e una volta consolidate si è spostato su classificare la tipologia di mezzo che avesse provocato il decesso di persone investite da questi partendo da caratteristiche del defunto. Le ragioni che mi hanno spinto a svolgere un tirocinio su questo argomento, e di conseguenza una tesi, sono principalmente due: la necessità da parte di medici legali di conoscere il prima possibile che tipo di veicolo, vettura o mezzo pesante, avesse investito il malcapitato, ma sopratutto sono sempre stato affascinato dallo studio dei dati e dal Machine Learning in generale.
 
-Questo documento ha una duplice funzione: da un lato mostra un esempio completo di elaborato finale redatto in \LaTeX\ e conforme allo standard PDF/A, e dall'altro contiene suggerimenti e risposte a domande frequenti poste dagli studenti. Se ne raccomanda, pertanto, un'attenta lettura.
+La tesi si compone di tre capitoli: nel Capitolo \ref{machinelearning} viene introdotto il concetto di Machine Learning, in particolare viene spiegato come funziona e quali sono gli approcci esistenti. Successivamente vengono trattati i modelli che ho usato durante il tirocinio, spiegando come funzionano nello specifico.
+
+Nel Capitolo \ref{dataset} viene inizialmente spiegato il dataset che ho usato per prendere conoscenza e familiarità con le tecniche e gli algoritmi del Machine Learning. Successivamente viene illustrato il dataset che ho utilizzato durante il tirocinio, raccolto dai medici legali, ovvero una raccolta di caratteristiche base dei deceduti più le indicazioni di quali ossa sono state interessate dall'impatto a seguito dell'investimento. Vengono poi spiegate due tecniche usate per ridurre la dimensionalità, pratica utile nel processo di Machine Learning per migliorare le performance degli algoritmi, usati in dataset di grandi dimensioni. 
+
+Infine nel Capitolo \ref{Esperimenti} si entra nello specifico del processo che ho usato per passare dal dataset ad un valore di accuratezza rappresentativo della percentuale di successo del classificatore registrato dai diversi algoritmi di apprendimento, discussi al Capitolo \ref{machinelearning}. Il lavoro si chiude con un'analisi dei risultati e un breve chiarimento delle tecnologie impiegate.
+
+
+
 
 \chapter{Machine Learning}
+\label{machinelearning}
 Il termine Machine Learning, o apprendimento automatico in italiano, si riferisce alla capacità dei computer di apprendere e agire senza essere programmati esplicitamente.
 Gli strumenti di machine learning si occupano di dotare i programmi della capacità di ``apprendere'' e adattarsi agli input forniti.
 Al giorno d'oggi siamo circondati da tecnologie basate sull'apprendimento automatico:
@@ -260,7 +269,7 @@ dove $z_{i,1}$ rappresenta la prima componente dell'i-vettore e $z_{i,2}$ la sec
 
 Se il vettore dei pesi è indicato da $w$ e $\parallel w \parallel$ è la sua norma, allora la dimensione del margine massimo è 
 \begin{center}
-	\[ \frac{1}{\left || w \right ||} + \frac{1}{\left || w \right ||} = \frac{2}{\left || w \right ||},\]
+	\[ \frac{1}{\left \Vert w \right \Vert} + \frac{1}{\left \Vert w \right \Vert} = \frac{2}{\left \Vert w \right \Vert},\]
 \end{center}
 ciò significa che minimizzando la norma del vettore peso $w$, avremo margine massimo che determina l'iperpiano ottimale.
 
@@ -327,7 +336,7 @@ Il concetto fondamentale dietro una foresta casuale risiede nel fatto che un gra
 
 La bassa correlazione è la chiave, modelli non correlati possono produrre previsioni d'insieme più accurate di qualsiasi singola previsione. La ragione risiede nel fatto che, anche se alcuni alberi potrebbero sbagliare, molti altri avranno ottenuto la previsione corretta.
 \subsubsection{Gaussian Naive Bayes}
-Il Gaussian Naive Bayes è uno dei più semplici algoritmi di apprendimento supervisionato, e si basa sul teorema di Bayes. L'algoritmo assume che l'effetto di una particolare caratteristica in una classe sia indipendente dalle altre caratteristiche. Anche se le caratteristiche sono interdipendenti, esse vengono comunque considerate in modo indipendente\cite{Mitchell97}. Questa ipotesi, a cui ci si riferisce come indipendenza condizionale di classe, semplifica il calcolo.
+Il Gaussian Naive Bayes è uno dei più semplici algoritmi di apprendimento supervisionato, e si basa sul teorema di Bayes. L'algoritmo assume che l'effetto di una particolare caratteristica in una classe sia indipendente dalle altre caratteristiche. Anche se le caratteristiche sono interdipendenti, esse vengono comunque considerate in modo indipendente \cite{Mitchell97}. Questa ipotesi, a cui ci si riferisce come indipendenza condizionale di classe, semplifica il calcolo.
 Applicando il teorema di Bayes si ha
 \begin{equation}
 P(y | X) = \frac{P(X | y) P(y)}{P(X)},
@@ -356,13 +365,13 @@ P(z_i|y) = \frac{1}{\sqrt{2\pi \sigma_y^2}} e^{-\frac{(z_i-\mu_y)^2}{2\sigma_y^2
 \end{equation}
 dove $\mu_y$ è la media e $\sigma_y$ la deviazione standard.
 \subsubsection{Linear Discriminat Analysis}
-Il Linear Discriminat Analysis è un algoritmo di apprendimento supervisionato il cui scopo è quello di trovare una combinazione lineare di caratteristiche che caratterizza o separa due o più classi di oggetti. La combinazione risultante può essere utilizzata come classificatore o anche per la riduzione della dimensionalità. \ref{sec:riduzione}
+Il Linear Discriminat Analysis è un algoritmo di apprendimento supervisionato il cui scopo è quello di trovare una combinazione lineare di caratteristiche che caratterizza o separa due o più classi di oggetti. La combinazione risultante può essere utilizzata come classificatore o anche per la riduzione della dimensionalità (vedi Paragrafo \ref{sec:riduzione}).
 
 Il processo prevede di proiettare i dati in input su un sottospazio lineare dalle direzioni che massimizzano la divisione tra le classi. La dimensione dell'output è necessariamente inferiore al numero di classi, quindi questa è, in generale, una riduzione della dimensionalità piuttosto forte, e ha senso solo in un ambiente multiclasse.
 
 \subsubsection{Reti Neurali Multi-Strato}
 \label{MLP}
-Le reti neurali multi-strato sono un modello che utilizza l'algoritmo ``backpropagation'', basato sulla minimizzazione dell'errore, per compiere apprendimento supervisionato. L'idea di base è quella del neurone umano e della rete di neuroni che compone il nostro cervello. Il componente principale di una rete neurale è detto neurone o percettrone. Esso è identificato da $n$ pesi reali $w_1, w_2,...,w_n$ e quando riceve una serie di input $x_1,x_2,...,x_n$ li moltiplica per i pesi corrispondenti, viene così prodotto un valore $v$ sommando i prodotti ottenuti a cui viene sommato un termine di bias \cite{multilayerPerceptron}.  L'output della rete è ottenuto calcolando una particolare funzione, detta funzione di attivazione, usando $v$ come argomento.
+Le Reti Neurali Multi-Strato sono un modello che utilizza l'algoritmo ``backpropagation'', basato sulla minimizzazione dell'errore, per compiere apprendimento supervisionato. L'idea di base è quella del neurone umano e della rete di neuroni che compone il nostro cervello. Il componente principale di una rete neurale è detto neurone o percettrone. Esso è identificato da $n$ pesi reali $w_1, w_2,...,w_n$ e quando riceve una serie di input $x_1,x_2,...,x_n$ li moltiplica per i pesi corrispondenti, viene così prodotto un valore $v$ sommando i prodotti ottenuti a cui viene sommato un termine di bias \cite{multilayerPerceptron}.  L'output della rete è ottenuto calcolando una particolare funzione, detta funzione di attivazione, usando $v$ come argomento.
 
 \begin{figure}[h]
 	\centering
@@ -420,11 +429,12 @@ Può essere visto come un quarto tipo di apprendimento automatico. In questo cas
 
 
 \chapter{Dataset}
+\label{dataset}
 Un dataset è una collezione di dati, comunemente corrisponde al contenuto di una singola tabella nella quale una colonna rappresenta una caratteristica e ogni riga una singola osservazione o istanza. Gli algoritmi di Machine Learning utilizzano i dataset per ``apprendere'', tanto più un dataset è ricco di osservazioni tanto più l'algoritmo che lo utilizza sarà in grado di fornire prestazioni e accuratezza in output. 
 
 \section{Iris}
 \label{iris}
-Per prendere familitarità con gli strumenti e gli algoritmi da utilizzare, ho fatto riferimento al dataset Iris. Esso è un dataset multivariato introdotto da Ronald Fisher nel 1936. Consiste in 150 istanze di fiori iris classificate secondo tre specie: Setosa, Virginica e Versicolor.
+Per prendere familiarità con gli strumenti e gli algoritmi da utilizzare, ho fatto riferimento al dataset Iris. Esso è un dataset multivariato introdotto da Ronald Fisher nel 1936. Consiste in 150 istanze di fiori iris classificate secondo tre specie: Setosa, Virginica e Versicolor.
 Le variabili considerate sono lunghezza e larghezza di sepalo e petalo (cfr. Figura 9). 
 \begin{figure}[h]
 	\centering
@@ -552,7 +562,7 @@ L'algoritmo prevede tre passi.
 	\item Nel terzo passo si finalizza il calcolo delle probabilità $Q_{ij}$ nello spazio ridotto in modo che riflettano il meglio possibile le probabilità $P_{ij}$ relative allo spazio con più dimensioni. Ciò viene effettuato misurando la differenza tra le due distribuzioni di probabilità usando la divergenza di Kullback-Liebler (KL) che confronta efficacemente valori di $P_{ij}$ e $Q_{ij}$ di grandi dimensioni. Per minimizzare la divergenza di KL tra le due dimensioni viene utilizzata la discesa del gradiente \cite{t-SNE}.
 \end{itemize}
 
-Nel \ref{cap3} verranno applicate PCA e t-SNE per cercare di aumentare le prestazioni di classificazione dei modelli usati.
+Nel Capitolo \ref{cap3} verranno applicate PCA e t-SNE per cercare di aumentare le prestazioni di classificazione dei modelli usati.
 
 
 
@@ -561,59 +571,59 @@ Nel \ref{cap3} verranno applicate PCA e t-SNE per cercare di aumentare le presta
 % 
 
 \chapter{Esperimenti}
-\label{cap3}
-Durante il tirocinio ho effettuato diversi esperimenti a partire dal dataset descritto al capitolo precedente prendendo in considerazione i diversi livelli di dettaglio \ref{incidentiStradali}.
+\label{Esperimenti}
+Durante il tirocinio ho effettuato diversi esperimenti a partire dal dataset descritto al capitolo precedente prendendo in considerazione i diversi livelli di dettaglio descritti nel Paragrafo \ref{incidentiStradali}.
 In questo capitolo verranno discussi i passaggi necessari per passare dal dataset ad una previsione dell'etichetta corrispondente il più precisa possibile.
-\section{Pre Processsing}
+\section{Preprocessing}
 \label{preprocessing}
-In prima istanza quello che si compie avendo i dati è un processo di pre processing. I dati vengono trasformati o codificati in modo tale che sia più facile per l'algoritmo, che verrà applicato in un secondo momento,  analizzarli e interpretarli.
-Consiste in diversi passaggi.
+La prima azione da svolgere su dati da analizzare consiste in un processo di preprocessing. I dati vengono trasformati o codificati in modo tale che sia più facile per l'algoritmo, che verrà applicato in un secondo momento,  analizzarli e interpretarli.
+Il preprocessing richiede normalmente diversi passaggi.
 \begin{itemize}
-	\item Gestione dei valori null, è necessario gestire i valori nulli prima di fornire i dati all'algoritmo poiché nessun modello è in grado di gestirli autonomamente.
-	\item Imputation, ovvero il processo nel quale vengono sostituiti i valori mancanti all'interno del dataset. Per fare questo \emph{n} mette a disposizione la classe \emph{Imputer}.
-	\item Standardizzazione, processo di trasformazione dei valori. Questo viene fatto poiché, all'interno del dataset, potrebbero esserci caratteristiche inserite con scale diverse. Prendiamo per esempio un dataset con all'interno due caratteristiche numeriche, ``metratura'' e ``costo'': non sono sulla stessa scala, ``metratura'' si misura in metri quadrati, mentre ``costo'' in euro. 
-	\item Gestire le variabili categoriche, variabili che indicano l'appartenenza ad una specifica categoria.
+	\item E' necessario gestire i valori nulli prima di fornire i dati all'algoritmo poiché nessun modello è in grado di gestirli autonomamente. Il pacchetto \emph{scikit-learn} mette a disposizione la classe \emph{Imputer} per sostituire i valori mancanti.
+	\item Standardizzazione dei valori. Questo viene fatto poiché all'interno del dataset potrebbero esserci caratteristiche inserite con scale diverse. Prendiamo per esempio un dataset con all'interno due caratteristiche numeriche, ``metratura'' e ``costo'': non sono sulla stessa scala, ``metratura'' si misura in metri quadrati, mentre ``costo'' in euro. 
+	\item Gestire le variabili categoriche, variabili che indicano l'appartenenza a una specifica categoria.
 \end{itemize}
-Durante il tirocinio come processo di pre-processing ho controllato che il numero del verbale di ogni istanza fosse univoco e che le caratteristiche basilari \ref{incidentiStradali} avessero un valore sensato con quello che stavano rappresentando. Successivamente ho scalato i dati usando tre diversi scaler del pacchetto \emph{preprocessing} di \emph{scikit-learn}:
+Le operazioni di preprocessing svolte durante il tirocinio hanno richiesto di controllare che il numero del verbale di ogni istanza fosse univoco e che le caratteristiche basilari descritte nel Paragrafo \ref{incidentiStradali} avessero un valore sensato con quello che stavano rappresentando, nello specifico ``Anni'' fosse compreso tra $1$ e $95$, estremi inclusi, ``Peso'' tra $30$ e $120$, ``Altezza'' tra $1$ metro e $2.10$ metri, ``BMI'' tra $10.0$, estrema magrezza, e $50.0$, obesità gravissima e infine che tutti i valori che rappresentavano la gravità della frattura avessero valori compresi tra $0$ e $4$.  Successivamente ho scalato i dati usando tre diversi scaler del pacchetto \emph{preprocessing} di \emph{scikit-learn}:
 \begin{itemize}
 	\item \emph{StandardScaler},
 	\item \emph{MinMaxScaler},
 	\item \emph{RobustScaler}.
 \end{itemize} 
 \subsection{Scalare i dati}
-Il processo di scalatura consente di standardizzare i dati. Questa pratica è importante, non solo per riuscire a confrontare caratteristiche con unità di misura diverse, come detto in \ref{preprocessing}, ma anche perché molti algoritmi lavorano meglio con dati impostati in questo modo.  
+Il processo di scalatura consente di standardizzare i dati. Questa pratica è importante, non solo per riuscire a confrontare caratteristiche con unità di misura diverse, come detto nel Paragrafo \ref{preprocessing}, ma anche perché molti algoritmi lavorano meglio con dati impostati in questo modo.  
 Analizziamo ora le tre diverse tecniche usate.
 
-\emph{StandardScaler}, standardizza i dati rimuovendo la media $\mu$ e sottraendo la varianza $\sigma$ \cite{scikit-learn}, ovvero:
+\emph{StandardScaler} standardizza i dati sottraendo la media $\mu$ e dividendo per la deviazione standard $\sigma$ \cite{scikit-learn}, ovvero:
 \begin{equation}
-z = \frac{x_i - \mu}{\sigma}.
+z_i = \frac{x_i - \mu}{\sigma}.
 \end{equation}
 Questo viene fatto poiché molti algoritmi assumono che tutte le caratteristiche siano centrate attorno a 0 e abbiano varianza dello stesso ordine. Se una caratteristica presenta una varianza di ordini di grandezza superiore rispetto ad altre, potrebbe influenzare troppo la funzione obiettivo dell'algoritmo usato e rendere lo stimatore incapace di apprendere correttamente da altre caratteristiche \cite{scikit-learn}.
 
-\emph{MinMaxScaler}, ridimensiona singolarmente ogni caratteristica in un determinato intervallo \cite{scikit-learn}, esempio tra 0 e 1. Si applica la seguente formula:
+\emph{MinMaxScaler} ridimensiona singolarmente ogni caratteristica in un determinato intervallo \cite{scikit-learn}, per esempio tra 0 e 1. Si applica la seguente formula:
 \begin{equation}
-X_{norm} = \frac{X - X_{min}}{X_{max} - X_{min}}
+X_{\mathrm{norm}} = \frac{X - X_{\mathrm{min}}}{X_{\mathrm{max}} - X_{\mathrm{norm}}},
 \end{equation}
-\emph{RobustScaler}, scala le caratteristiche usando statistiche robuste rispetto agli outlier \cite{scikit-learn}. Questo scaler rimuove la mediana e scala i dati in base all'intervallo quantile; è utile perché i valori anomali possono spesso influenzare la media e la  varianza del campione in modo negativo. In tali casi, l'intervallo mediano e quartile danno spesso risultati migliori.
+\emph{RobustScaler} scala le caratteristiche usando statistiche robuste rispetto agli outlier \cite{scikit-learn}. Questo scaler rimuove la mediana e scala i dati in base all'intervallo inter-quantile; è utile perché i valori anomali possono spesso influenzare la media e la  varianza del campione in modo negativo.
 
 \section{Model Selection}
+\label{modelselection}
 Il processo di \emph{model selection} è la ricerca del modello più performante dato un set di modelli prodotti da diverse scelte di iperparametri. \cite{Raschka2018ModelEM}.
-Durante il tirocinio ho avuto modo di lavorare con i modelli riportati al capitolo \ref{apprendimentoSupervisionato}, ognuno dei quali presenta diversi iperparametri con cui è possibile modificare il comportamento del modello. Vediamo nel dettaglio i vari iperparametri che ho usato durante lo studio sugli incidenti stradali.
+Durante il tirocinio ho avuto modo di lavorare con i modelli riportati nel Paragrafo \ref{apprendimentoSupervisionato}, dei quali molti presentano diversi iperparametri con cui è possibile modificare il comportamento del modello. 
  
-\subsection{Scelta degli Iperparametri}
+\subsection{Scelta degli iperparametri}
 \label{iperparametri}
-In ogni modello sono presenti diversi iperparametri, ognuno dei quali ha scopi ben precisi. Durante il tirocinio ho usato diversi iperparametri per rendere i modelli più efficienti.
-Iniziamo con gli iperparametri di SVC, in particolare di \emph{C}, per un valore di \emph{C} grande è assegnato un grande peso agli errori che risiedono sul margine, quindi diminuisce il bias e aumenta la varianza. Per valori di \emph{C} piccoli invece si ha un bias più grande e una minore varianza. 
+In ogni modello sono presenti diversi iperparametri, ognuno dei quali ha scopi ben precisi. 
+Iniziamo con gli iperparametri di SVC: per un valore grande di \emph{C} è assegnato un grande peso agli errori di classificazione, quindi diminuisce il bias e aumenta la varianza. Per valori di \emph{C} piccoli invece si ha un bias più grande e una minore varianza. 
 Un altro iperparametro di SVC è il \emph{Kernel} che può essere di diversi tipi: \emph{linear}, \emph{polynomial}, \emph{radial basis function}. Associato al kernel di tipo polinomiale c'è inoltre un altro iperparametro chiamato \emph{degree}. Esso consente un limite decisionale più flessibile 
-Associato invece ad un kernel di tipo gaussiano c'è \emph{gamma} usato per gestire la classificazione non lineare.
-Di seguito viene riportata la griglia con i valori degli iperparametri.
+ogni kernel può inoltre avere un proprio specifico parametro, come per esempio il grado relativo al kernel polinomiale o la deviazione standard relativa a quello gaussiano.
+Di seguito viene riportata la griglia con gli iperparametri valutati, unitamente ai valori presi in considerazione.
 
 \begin{lstlisting}[frame=single, basicstyle=\footnotesize]
 c_space = np.logspace(-4, 3, 10)
 gamma_space = np.logspace(-4, 3, 10)
 
 model_selection_grid_SVC = [
-{'C': c_space, 'kernel': ['linear'], 'gamma': ['auto']},
+{'C': c_space, 'kernel': ['linear']},
 {'C': c_space, 'gamma': gamma_space, 'kernel': ['rbf']},
 {'C': c_space, 'gamma': ['auto', 'scale'], 'kernel': ['rbf']},
 {'C': c_space, 'degree': [2, 3, 5, 9], 'kernel': ['poly'],
@@ -621,7 +631,8 @@ model_selection_grid_SVC = [
 ]
 \end{lstlisting}
 
-Per quanto riguarda Decision Tree abbiamo diversi iperparametri, \emph{criterion}, funzione che viene usata per misurare la qualità della divisione nell'albero e può essere di due tipi: ``gini'' o ``entropy'' \cite{scikit-learn}; \emph{max\_depth}, ovvero la profondità massima dell'albero \cite{scikit-learn}; \emph{max\_features}, il numero di caratteristiche da considerare quando si cerca la migliore divisione \cite{scikit-learn}; \emph{max\_leaf\_nodes}, imposta un limite massimo ai nodi foglia.
+Per quanto riguarda Decision Tree abbiamo diversi iperparametri: \emph{criterion}, funzione che viene usata per misurare la qualità della divisione nell'albero e può essere di due tipi (``gini'' o ``entropy'') \cite{scikit-learn}; \emph{max\_depth}, ovvero la profondità massima dell'albero \cite{scikit-learn}; \emph{max\_features}, il numero di caratteristiche da considerare quando si cerca la migliore divisione \cite{scikit-learn}; \emph{max\_leaf\_nodes}, imposta un limite massimo ai nodi foglia.
+
 \begin{lstlisting}[frame=single, basicstyle=\footnotesize]
 model_selection_grid_DT = {'criterion': ['gini', 'entropy'],
 'max_leaf_nodes': [None, 2, 5, 10, 50, 100],
@@ -643,7 +654,7 @@ model_selection_grid_RF = {'n_estimators': [5, 10, 50, 100, 200],
 
 In Guaussian Naive Bayes e Linear Discriminant Analysis non ho effettuato model selection.
 
-Infine nelle Reti Neurali Multi-Strato ho considerato tre iperparametri: \emph{max\_iter} che specifica il numero massimo di iterazioni; \emph{hidden\_layer\_sizes} rappresenta il numero di neuroni in un livello hidden, esempio: $hidden\_layer\_sizes=[2]$ significa che c'è un livello hidden con due neuroni, mentre $hidden\_layer\_sizes=[4, 4]$ significa che ci sono due livelli hidden ognuno composto da quattro neuroni; infine la funzione di attivazione: \emph{activation} \ref{MLP}.
+Infine nelle Reti Neurali Multi-Strato ho considerato tre iperparametri: \emph{max\_iter} che specifica il numero massimo di iterazioni nell'algoritmo di apprendimento; \emph{hidden\_layer\_sizes} che rappresenta il numero di neuroni in un livello hidden (ad esempio, $hidden\_layer\_sizes=[2]$ indica che c'è un livello hidden con due neuroni, mentre $hidden\_layer\_sizes=[4, 4]$ significa che ci sono due livelli hidden ognuno composto da quattro neuroni); \emph{activation}, che indica la funzione di attivazione (vedi Paragrafo \ref{MLP}).
 \begin{lstlisting}[frame=single, basicstyle=\footnotesize]
 model_selection_grid_MLP = {'max_iter': [5000],
 'hidden_layer_sizes': [[2], [4], [6], [10], [20], [4, 4], [10, 10]],
@@ -651,18 +662,18 @@ model_selection_grid_MLP = {'max_iter': [5000],
 \end{lstlisting}
 
 
-Per effettuare la model selection ho utilizzato \emph{GridSearchCV} fornito dal pacchetto \emph{scikit-learn}, esso effettua una ricerca esaustiva dei valori degli iperparametri del modello, selezionato tramite il parametro \emph{estimator}, specificati all'interno del parametro \emph{param\_grid}. La ricerca degli iperparametri del modello può essere ottimizzata effettuando una cross-validation \ref{cv} sulla griglia degli iperparametri passata in input.
+Per effettuare la model selection ho utilizzato \emph{GridSearchCV} fornito dal pacchetto \emph{scikit-learn}, esso effettua una ricerca esaustiva dei valori degli iperparametri del modello, selezionato tramite il parametro \emph{estimator}, specificati all'interno del parametro \emph{param\_grid}. La ricerca degli iperparametri del modello può essere ottimizzata effettuando una cross-validation (vedi Paragrafo \ref{cv}) sulla griglia degli iperparametri passata in input.
 
 \section{Errore di Generalizzazione}
 \label{sec:errore}
 L'errore di generalizzazione è una misura di quanto accuratamente un algoritmo è in grado di prevedere i valori delle etichette per nuovi dati.
-Il processo che si segue è il seguente: un algoritmo viene ``allenato'' usando degli esempi (\emph{training set}  \ref{ComefunzionailMachineLearning}) di cui è nota l'etichetta che si vuole predire. L'obiettivo è raggiungere uno stato in cui l'algoritmo sia in grado di predire le etichette per altri esempi che non ha avuto in input durante la fase di training. Si dice che così facendo l'algoritmo sarà in grado di \emph{generalizzare}.
+Un modello viene ``allenato'' usando degli esempi di cui è nota l'etichetta che si vuole predire. L'obiettivo è raggiungere uno stato in cui l'algoritmo sia in grado di predire le etichette per altri esempi che non ha avuto in input durante la fase di training. Si dice che così facendo l'algoritmo sarà in grado di \emph{generalizzare}.
 L'errore di generalizzazione può essere  minimizzato evitando l'``overfitting'' nell'algoritmo di apprendimento, ovvero il caso in cui l'algoritmo si adatta a caratteristiche che sono specifiche solo del training set e che non hanno riscontro nel resto dei dati. Questo fenomeno si verifica quando i dati di training non sono sufficienti, non sono rappresentativi della realtà oppure quando l'algoritmo prende in considerazione delle caratteristiche del training set irrilevanti con l'etichetta.  Perciò, in presenza di ``overfitting'', le prestazioni sui dati di allenamento aumenteranno, mentre quelle sui dati non visionati saranno peggiori. 
 
-Per prevenire ``overfitting'' viene usata la ``cross-validation'' in modo che l'algoritmo non impari ad adattarsi all'input fornito.
+Per valutare se i risultati di un algoritmo di apprendimento soffrano o meno di overfitting si può utilizzare la tecnica di cross-validation, descritta nel Paragrafo seguente.
 \section{Cross Validation}
 \label{cv}
-La cross-validation, o k-fold validation, è una tecnica che utilizza parte dei dati disponibili per addestrare il modello e una parte per testarlo \cite{TheElementsofStatisticalLearning}. Viene specificato il numero di ``fold'', ovvero in quante parti dividere il training set. Facciamo un esempio di come funziona, impostiamo a 3 il numero di fold.	Avremo come risultato set divisi come in Figura 13.
+La cross-validation, o k-fold validation, è una tecnica che utilizza parte dei dati disponibili per addestrare il modello e una parte per testarlo \cite{TheElementsofStatisticalLearning}. Viene specificato il numero di ``fold'', ovvero in quante parti dividere il training set. Se per esempio consideriamo tre fold, otterremo una divisione del training set come quella illustrata in Figura 13.
 
 \begin{figure}[h]
 	\centering
@@ -670,19 +681,19 @@ La cross-validation, o k-fold validation, è una tecnica che utilizza parte dei 
 	\caption{Cross validation con 3 fold}
 \end{figure}
 Un set viene assegnato a ``validation test'', mentre i restanti 2 compongono il ``training set''. L'algoritmo viene addestrato usando il training set così composto e testato sul  validation. Questo procedimento viene eseguito per tutte le combinazioni possibili dei set.
-Negli esperimenti di paragrafo \ref{sec:risultati} ho usato una cross-validation annidata per stimare l'errore di generalizzazione e fare la model selection usando in entrambi i casi 9 come numero di fold per tutti gli algoritmi nel quale era richiesta una model selection \ref{iperparametri}, quindi per Gaussian Naive Bayes e Linear Discriminant Analysis ho effettuato solo una cross-validation singola per stimare l'errore di generalizzazione.
+Negli esperimenti descritti nel Paragrafo \ref{sec:risultati} ho usato una cross-validation annidata per stimare l'errore di generalizzazione e fare la model selection, usando in entrambi i casi 9 come numero di fold per tutti gli algoritmi nel quale erano presenti degli iperparametri \ref{modelselection}, quindi per Gaussian Naive Bayes e Linear Discriminant Analysis ho effettuato solo una cross-validation singola per stimare l'errore di generalizzazione.
 
 
 
 
 \section{Risultati Ottenuti}
 \label{sec:risultati}
-Visualizziamo ora i risultati ottenuti, ogni riga corrisponde ad un esperimento effettuato usando un algoritmo di apprendimento mentre ogni colonna corrisponde al tipo di dataset usato per effettuare l'addestramento. Il dataset ``Details'' ha una dimensione iniziale di 20. Il numero a fianco a ``PCA'' e ``t-SNE'' indica a quante dimensioni si è scesi. Il numero sta ad indicare la percentuale di successo del classificatore, se per esempio troviamo $0.77$ significa che nel $77\%$ dei casi il classificatore ha prodotto l'etichetta corretta.
+Visualizziamo ora i risultati ottenuti: nelle tabelle che seguono, ogni riga corrisponde ad un esperimento effettuato usando un algoritmo di apprendimento diverso, mentre ogni colonna corrisponde al tipo di dataset usato per effettuare l'addestramento. Il dataset ``Details'' ha una dimensione iniziale di 20. Il numero affianco a ``PCA'' e ``t-SNE'' indica il numero di dimensioni dopo l'applicazione della relativa tecnica di riduzione della dimensionalità. I valori della tabella indicano l'accuratezza del classificatore: se per esempio troviamo $0.77$ significa che nel $77\%$ dei casi il classificatore ha prodotto l'etichetta corretta.
 In azzurro vengono evidenziati gli score massimi del singolo modello mentre in arancione lo score massimo della tabella. 
 
 \begin{table}[h]
 	\begin{center}
-		\begin{adjustbox}{max width=\textwidth, max totalheight= {3.3cm}}
+		\begin{adjustbox}{max width=\textwidth}
 			\begin{tabular}{lrrrr}
 				\toprule
 				{} &    Totali &  Totali\_with\_BMI &  Totali\_with\_DATA &  Totali\_with\_DATA\_and\_BMI \\
@@ -700,7 +711,7 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 \end{table}
 \begin{table}[h]
 	\begin{center}
-		\begin{adjustbox}{max width=\textwidth, max totalheight= {4cm}}
+		\begin{adjustbox}{max width=\textwidth}
 			\begin{tabular}{lrrrrrrr}
 				\toprule
 				{} &   Details &  \thead{Details\\PCA\_5} & \thead{Details\\ PCA\_10} &  \thead{Details\\ PCA\_13} &  \thead{Details\\PCA\_15} &  \thead{Details\\TSNE\_13} &  \thead{Details\\TSNE\_15} \\
@@ -715,11 +726,11 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
-\captionof{figure}{Risultati ottenuti usando come scaler StandardScaler, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
+\captionof{table}{Risultati ottenuti StandardScaler, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
 \end{table}
 \begin{table}[h]
 	\begin{center}
-		\begin{adjustbox}{max width=\textwidth, max totalheight= {5.5cm}}
+		\begin{adjustbox}{max width=\textwidth}
 			\begin{tabular}{lr}
 				\toprule
 				{} &  StandardScaler \\
@@ -739,12 +750,12 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
-\captionof{figure}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
+\captionof{table}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
 \end{table}
 
 \begin{table}[h]
 	\begin{center}
-		\begin{adjustbox}{max width=\textwidth, max totalheight= {3.3cm}}
+		\begin{adjustbox}{max width=\textwidth}
 			\begin{tabular}{lrrrr}
 				\toprule
 				{} &    Totali &  Totali\_BMI &  Totali\_DATA &  Totali\_DATA\_and\_BMI \\
@@ -763,7 +774,7 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 
 \begin{table}[h]
 	\begin{center}
-		\begin{adjustbox}{max width=\textwidth, max totalheight= {4cm}}
+		\begin{adjustbox}{max width=\textwidth}
 			\begin{tabular}{lrrrrrrr}
 				\toprule
 				{} &   Details &  \thead{Details\\PCA\_5} &  \thead{Details\\PCA\_10} &  \thead{Details\\PCA\_13} &  \thead{Details\\PCA\_15} &  \thead{Details\\TSNE\_13} &  \thead{Details\\TSNE\_15} \\
@@ -778,12 +789,12 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
-\captionof{figure}{Risultati ottenuti usando come scaler MinMaxScaler, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
+\captionof{table}{Risultati ottenuti usando MinMaxScaler, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
 \end{table}
 
 \begin{table}[h]
 	\begin{center}
-		\begin{adjustbox}{max width=\textwidth, max totalheight={5.5cm}}
+		\begin{adjustbox}{max width=\textwidth}
 			\begin{tabular}{lr}
 				\toprule
 				{} &  MinMaxScaler \\
@@ -803,12 +814,12 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
-\captionof{figure}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
+\captionof{table}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
 \end{table}
 
 \begin{table}[h]
 	\begin{center}
-		\begin{adjustbox}{max width=\textwidth, max totalheight= {3.3cm}}
+		\begin{adjustbox}{max width=\textwidth}
 			\begin{tabular}{lrrrr}
 				\toprule
 				{} &    Totali &  Totali\_BMI &  Totali\_DATA &  Totali\_DATA\_and\_BMI \\
@@ -827,7 +838,7 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 
 \begin{table}[h]
 	\begin{center}
-		\begin{adjustbox}{max width=\textwidth, max totalheight= {4cm}}
+		\begin{adjustbox}{max width=\textwidth}
 			\begin{tabular}{lrrrrrrr}
 				\toprule
 				{} &   Details &  \thead{Details\\PCA\_5} &  \thead{Details\\PCA\_10} &  \thead{Details\\PCA\_13} &  \thead{Details\\PCA\_15} &  \thead{Details\\TSNE\_13} &  \thead{Details\\TSNE\_15} \\
@@ -842,7 +853,7 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
-\captionof{figure}{Risultati ottenuti usando come scaler RobustScaler, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
+\captionof{table}{Risultati ottenuti usando RobustScaler, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
 \end{table}
 
 \begin{table}[h]
@@ -867,7 +878,7 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
-\captionof{figure}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
+\captionof{table}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
 \end{table}
 
 \begin{table}[h]
@@ -887,7 +898,7 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
-\captionof{figure}{Risultati ottenuti non usando uno scaler, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
+\captionof{table}{Risultati ottenuti senza usare uno scaler di dati, in azzurro vengono evidenziati gli score massimi ottenuti uno specifico modello usato come indice delle righe mentre in arancione lo score massimo assoluto}
 \end{table}
 
 \begin{table}[h]
@@ -907,7 +918,7 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
-\captionof{figure}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
+\captionof{table}{Risultati massimi, tra tutti i modelli utilizzati, ottenuti dai dataset usati come indice delle righe}
 \end{table}
 
 \begin{table}[h]
@@ -932,22 +943,41 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 			\end{tabular}
 		\end{adjustbox}
 	\end{center}
-\captionof{figure}{Visualizzazione generale dei risultati massimi ottenuti tra tutti i modelli con i vari scaler e dataset}
+\captionof{table}{Visualizzazione generale dei risultati massimi ottenuti tra tutti i dataset con i vari scaler}
+\end{table}
+\clearpage
+
+
+\begin{table}[h]
+	\begin{center}
+		\begin{adjustbox}{max width=\textwidth}
+			\begin{tabular}{lrrrrr}
+				\toprule
+				{} &  StandardScaler &  MinMaxScaler &  RobustScaler &  NoScaler &  Media \\
+				\midrule
+				SVC &        \cellcolor{orange}0.77 &      0.74 &      \cellcolor{orange}0.77 &  0.68 &   0.74 \\
+				DT  &        0.68 &      0.70 &      0.65 &  0.60 &   0.65 \\
+				RF  &        0.70 &      0.71 &      0.66 &  0.66 &   0.68 \\
+				NB  &        0.75 &      0.75 &      0.75 &  0.67 &   0.73 \\
+				LD  &        0.72 &      0.72 &      0.72 &  0.64 &   0.70 \\
+				MLP &        0.74 &      0.76 &      0.70 &  0.66 &   0.71 \\
+				\bottomrule
+			\end{tabular}
+		\end{adjustbox}
+	\end{center}
+	\captionof{table}{Visualizzazione generale dei risultati massimi ottenuti tra tutti i modelli con i vari scaler e la loro media}
 \end{table}
 
 
-
+\section{Analisi dei  Risultati}
+Osservando i risultati ci si accorge di come non ci sia uno scaler che si comporta meglio in maniera assoluta. Mentre si vede come SVC ha l'accuratezza media, tra tutti gli scaler, più alta con $0.74$, segue NB con $0.73$ e a seguire gli altri con accuratezza compresa tra $0.71$ e $0.65$.
+La riduzione della dimensionalità eseguita con PCA e t-SNE non comporta un aumento delle prestazioni, anzi molto spesso genera un risultato meno prestante rispetto al dataset di partenza ``Details''. Si può inoltre notare che, all'interno delle tabelle, non sono presenti esperimenti effettuati usando ``Details'' con riduzione della dimensionalità a 5 e 10 dimensioni tramite t-SNE. Questo perché durante l'addestramento t-SNE non è riuscito a convergere e quindi l'addestramento non è riuscito.
+In ogni caso l'accuratezza dei risultati ottenuti usando t-SNE non supera mai lo $0.58$. PCA si comporta meglio, generando accuratezze nel range $0.64$ - $0.71$.
+Si ottengono i risultati migliori considerando i dataset ``Totali'', in particolare i dataset ``Totali\_with\_DATA'' e ``Totali\_with\_DATA\_and\_BMI'' sono quelli che generano le accuratezze più elevate. In particolare l'accuratezza più alta in assoluta è $0.77$, generata usando ``Totali\_with\_DATA'' e indifferentemente StandardScaler o RobustScaler.
 
 \clearpage
-\section{Analisi dei  Risultati}
-Osservando i risultati ci si accorge di come non ci sia uno scaler che si comporta meglio in maniera assoluta. 
-La riduzione della dimensionalità, eseguita con PCA e t-SNE non comporta un aumento delle prestazioni, anzi molto spesso genera un risultato meno prestante rispetto al dataset di partenza ``Details''. Si può inoltre notare che, all'interno delle tabelle, non sono presenti esperimenti effettuati usando ``Details'' con riduzione della dimensionalità a 5 e 10 dimensioni tramite t-SNE. Questo perché durante l'addestramento t-SNE non è riuscito a convergere e quindi l'addestramento non è riuscito.
-In ogni caso i risultati ottenuti usando t-SNE non superano mai lo $0.58$. Si comporta meglio PCA generando score che hanno come range $0.64$ - $0.71$.
-I risultati migliori però li abbiamo considerando i ``Totali'', in particolare i dataset ``Totali\_with\_DATA'' e ``Totali\_with\_DATA\_and\_BMI'' sono quelli che generano gli score migliori. In particolare lo score in assoluto più alto è $0.77$. generato usando ``Totali\_with\_DATA'' sia StandardScaler che RobustScaler.
-
-
 \section{Tecnologie Utilizzate}
-Durante il tirocinio ho usato \emph{Python} come linguaggio di programmazione, in particolare i pacchetti:
+Il codice per eseguire gli esperimenti descritti in questo documento è stato scritto usando il linguaggio \emph{Python} $3.7.4$, unitamente ai seguenti pacchetti:
 \begin{itemize}
 	\item \emph{skikit-learn} \cite{scikit-learn}, versione $0.22.1$
 	\item \emph{numpy}, versione $1.18.1$
@@ -962,7 +992,10 @@ Durante il tirocinio ho usato \emph{Python} come linguaggio di programmazione, i
 \addcontentsline{toc}{chapter}{Conclusioni}
 \markboth{Conclusioni}{Conclusioni}
 
-Nelle conclusioni si tirano le somme di quanto realizzato, facendo un riassunto stringato del lavoro svolto. In particolare vanno dichiarati punti di forza e criticità della ricerca effettuata, nonché quali aspetti dello stato dell'arte siano stati superati dal lavoro in oggetto.
+Lo scopo del tirocinio era applicare il paradigma del Machine Learning per riuscire a classificare che tipo di mezzo avesse investito una persona deceduta a causa dell'impatto con un veicolo. Il lavoro si è inizialmente concentrato sull'apprendere le basi del Machine Learning per poi passare all'applicazione pratica usando un dataset fornito da medici legali. L'accuratezza ottenuta dai modelli non è altissima ma ho tenuto conto solo dei livelli di dettaglio meno specifici, come descritto al Capitolo \ref{incidentiStradali}. Un possibile sviluppo futuro potrebbe essere quello di includere tutti i livelli di dettaglio che rappresentano la rottura o meno di ossa del corpo molto specifiche in modo da estendere il numero delle dimensioni da 30, quelle usate durante il tirocinio, a tutte le 350 dimensioni presenti nel dataset fornito. 
+
+Un altro possibile sviluppo potrebbe essere quello di estendere la griglia di iperparametri dal quale \emph{GridSearchCV} possa ricercare quelli che meglio si adattano ai dati.
+Entrambi questi sviluppi comporterebbero un notevole aumento del tempo di calcolo a fronte di un non certo aumento di prestazioni in termini di accuratezza dei modelli.
 
 %
 %			BIBLIOGRAFIA
