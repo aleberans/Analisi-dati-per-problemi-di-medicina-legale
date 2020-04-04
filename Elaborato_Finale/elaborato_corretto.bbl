@@ -22,8 +22,9 @@ Oded Maimon and Lior Rokach.
 \newblock Springer-Verlag, Berlin, Heidelberg, 2005.
 
 \bibitem{RandomForest}
-Breiman Leo.
-\newblock {\em Random Forests}.
+Leo Breiman.
+\newblock Random forests.
+\newblock {\em Machine Learning}, 45(1):5--32, 2001.
 
 \bibitem{Mitchell97}
 Tom~M. Mitchell.
@@ -65,7 +66,7 @@ Matthias Scholz.
 \bibitem{t-SNE}
 Geoffrey~Hinton Laurens van~der Maaten.
 \newblock Visualizing data using t-sne.
-\newblock {\em JournalofMachineLearningResearch9}, 2008.
+\newblock {\em Journal of Machine Learning Research 9}, 2008.
 
 \bibitem{scikit-learn}
 F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
@@ -73,9 +74,6 @@ F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
   D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay.
 \newblock Scikit-learn: Machine learning in {P}ython.
 \newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
-
-\bibitem{jupyter}
-
 
 \bibitem{Raschka2018ModelEM}
 Sebastian Raschka.
@@ -86,6 +84,10 @@ Sebastian Raschka.
 \bibitem{TheElementsofStatisticalLearning}
 Jerome~Friedman Trevor~Hastie, Robert~Tibshirani.
 \newblock {\em The Elements of Statistical Learning}.
-\newblock Springer-Verlag New York.
+\newblock Springer-Verlag New York, 2009.
+
+\bibitem{jupyter}
+Jupyter.
+\newblock https://jupyter.org/.
 
 \end{thebibliography}

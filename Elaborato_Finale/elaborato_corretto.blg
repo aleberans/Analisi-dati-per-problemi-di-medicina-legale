@@ -3,60 +3,49 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: elaborato_corretto.aux
 The style file: unsrt.bst
 Database file #1: bibliografia.bib
-I was expecting a `,' or a `}'---line 75 of file bibliografia.bib
- : title = {Random Forests}
- :                         .
-I'm skipping whatever remains of this entry
 Too many commas in name 1 of "Andreas Lindholm, Niklas Wahlström,Fredrik Lindsten, Thomas B. Schön" for entry SupervisedMachineLearning
 while executing---line 944 of file unsrt.bst
-Warning--empty publisher in RandomForest
-Warning--empty year in RandomForest
 Warning--empty publisher in multilayerPerceptron
 Warning--empty publisher in shalevshwartz2014understanding
-Warning--empty author in jupyter
-Warning--empty title in jupyter
-Warning--empty journal in jupyter
-Warning--empty year in jupyter
-Warning--empty year in TheElementsofStatisticalLearning
 You've used 17 entries,
             1791 wiz_defined-function locations,
-            543 strings with 5911 characters,
-and the built_in function-call counts, 3001 in all, are:
-= -- 236
+            548 strings with 5954 characters,
+and the built_in function-call counts, 3042 in all, are:
+= -- 250
 > -- 133
 < -- 1
 + -- 54
 - -- 37
-* -- 159
-:= -- 485
-add.period$ -- 49
+* -- 150
+:= -- 498
+add.period$ -- 51
 call.type$ -- 17
-change.case$ -- 8
+change.case$ -- 10
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 163
-empty$ -- 324
+cite$ -- 19
+duplicate$ -- 159
+empty$ -- 330
 format.name$ -- 37
-if$ -- 670
+if$ -- 689
 int.to.chr$ -- 0
 int.to.str$ -- 17
-missing$ -- 24
-newline$ -- 85
+missing$ -- 22
+newline$ -- 87
 num.names$ -- 16
-pop$ -- 93
+pop$ -- 82
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 55
+skip$ -- 56
 stack$ -- 0
-substring$ -- 67
-swap$ -- 24
+substring$ -- 79
+swap$ -- 25
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 9
-while$ -- 22
+warning$ -- 2
+while$ -- 23
 width$ -- 19
-write$ -- 169
-(There were 2 error messages)
+write$ -- 177
+(There was 1 error message)

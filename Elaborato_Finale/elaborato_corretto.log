@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.13)  3 APR 2020 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.13)  4 APR 2020 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -680,27 +680,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 Capitolo 1.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 140.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 134.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 134.
  [2
 
 ] [3]
 <immagini/2e3dimensionisvc.jpeg, id=241, 340.27126pt x 149.55875pt>
 File: immagini/2e3dimensionisvc.jpeg Graphic file (type jpg)
 <use immagini/2e3dimensionisvc.jpeg>
-Package pdftex.def Info: immagini/2e3dimensionisvc.jpeg  used on input line 194
+Package pdftex.def Info: immagini/2e3dimensionisvc.jpeg  used on input line 188
 .
 (pdftex.def)             Requested size: 227.62204pt x 100.04637pt.
  [4 <./immagini/2e3dimensionisvc.jpeg>]
 <immagini/marginEhiperplane.png, id=249, 410.7979pt x 369.9083pt>
 File: immagini/marginEhiperplane.png Graphic file (type png)
 <use immagini/marginEhiperplane.png>
-Package pdftex.def Info: immagini/marginEhiperplane.png  used on input line 207
+Package pdftex.def Info: immagini/marginEhiperplane.png  used on input line 201
 .
 (pdftex.def)             Requested size: 199.16928pt x 179.34322pt.
  [5 <./immagini/marginEhiperplane.png>]
@@ -708,13 +708,13 @@ Package pdftex.def Info: immagini/marginEhiperplane.png  used on input line 207
 File: immagini/linearmente-separabili.png Graphic file (type png)
 <use immagini/linearmente-separabili.png>
 Package pdftex.def Info: immagini/linearmente-separabili.png  used on input lin
-e 222.
+e 216.
 (pdftex.def)             Requested size: 170.71652pt x 151.85701pt.
  [6 <./immagini/linearmente-separabili.png>]
 <immagini/nonLineare.png, id=266, 346.896pt x 325.215pt>
 File: immagini/nonLineare.png Graphic file (type png)
 <use immagini/nonLineare.png>
-Package pdftex.def Info: immagini/nonLineare.png  used on input line 280.
+Package pdftex.def Info: immagini/nonLineare.png  used on input line 274.
 (pdftex.def)             Requested size: 199.16928pt x 186.71927pt.
 
 
@@ -724,33 +724,33 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <immagini/Decision_Tree.png, id=285, 208.8603pt x 116.1138pt>
 File: immagini/Decision_Tree.png Graphic file (type png)
 <use immagini/Decision_Tree.png>
-Package pdftex.def Info: immagini/Decision_Tree.png  used on input line 314.
+Package pdftex.def Info: immagini/Decision_Tree.png  used on input line 308.
 (pdftex.def)             Requested size: 369.88582pt x 205.64897pt.
  [9 <./immagini/Decision_Tree.png>]
 <immagini/randomForest.png, id=295, 445.665pt x 334.24875pt>
 File: immagini/randomForest.png Graphic file (type png)
 <use immagini/randomForest.png>
-Package pdftex.def Info: immagini/randomForest.png  used on input line 331.
+Package pdftex.def Info: immagini/randomForest.png  used on input line 325.
 (pdftex.def)             Requested size: 284.52756pt x 213.39824pt.
  [10 <./immagini/randomForest.png>] [11]
 <immagini/Perceptron.png, id=320, 177.7842pt x 79.497pt>
 File: immagini/Perceptron.png Graphic file (type png)
 <use immagini/Perceptron.png>
-Package pdftex.def Info: immagini/Perceptron.png  used on input line 378.
+Package pdftex.def Info: immagini/Perceptron.png  used on input line 372.
 (pdftex.def)             Requested size: 418.25368pt x 187.02658pt.
  [12 <./immagini/Perceptron.png>]
 <immagini/Multilayer-Perceptron.jpg, id=328, 1008.92723pt x 463.09856pt>
 File: immagini/Multilayer-Perceptron.jpg Graphic file (type jpg)
 <use immagini/Multilayer-Perceptron.jpg>
 Package pdftex.def Info: immagini/Multilayer-Perceptron.jpg  used on input line
- 395.
+ 389.
 (pdftex.def)             Requested size: 227.62204pt x 104.47533pt.
  [13 <./immagini/Multilayer-Perceptron.jpg>] [14]
 Capitolo 2.
 <immagini/Iris.png, id=347, 228.855pt x 52.7571pt>
 File: immagini/Iris.png Graphic file (type png)
 <use immagini/Iris.png>
-Package pdftex.def Info: immagini/Iris.png  used on input line 441.
+Package pdftex.def Info: immagini/Iris.png  used on input line 435.
 (pdftex.def)             Requested size: 418.25368pt x 96.42215pt.
 [15
 
@@ -759,30 +759,30 @@ Package pdftex.def Info: immagini/Iris.png  used on input line 441.
 File: immagini/testa-torace-dataset.png Graphic file (type png)
 <use immagini/testa-torace-dataset.png>
 Package pdftex.def Info: immagini/testa-torace-dataset.png  used on input line 
-466.
+460.
 (pdftex.def)             Requested size: 418.25368pt x 50.19469pt.
 <immagini/addome-scheletro-dataset.png, id=355, 260.4129pt x 30.8352pt>
 File: immagini/addome-scheletro-dataset.png Graphic file (type png)
 <use immagini/addome-scheletro-dataset.png>
 Package pdftex.def Info: immagini/addome-scheletro-dataset.png  used on input l
-ine 467.
+ine 461.
 (pdftex.def)             Requested size: 418.25368pt x 49.52597pt.
  [16 <./immagini/testa-torace-dataset.png> <./immagini/addome-scheletro-dataset
 .png>] [17]
 <immagini/pca.png, id=370, 1083.04625pt x 429.605pt>
 File: immagini/pca.png Graphic file (type png)
 <use immagini/pca.png>
-Package pdftex.def Info: immagini/pca.png  used on input line 499.
+Package pdftex.def Info: immagini/pca.png  used on input line 493.
 (pdftex.def)             Requested size: 284.52756pt x 112.8615pt.
  [18 <./immagini/pca.png>] [19]
 <immagini/t-dist1.jpeg, id=389, 153.2124pt x 118.041pt>
 File: immagini/t-dist1.jpeg Graphic file (type jpg)
 <use immagini/t-dist1.jpeg>
-Package pdftex.def Info: immagini/t-dist1.jpeg  used on input line 559.
+Package pdftex.def Info: immagini/t-dist1.jpeg  used on input line 553.
 (pdftex.def)             Requested size: 224.77676pt x 173.18674pt.
  [20 <./immagini/t-dist1.jpeg>]
 
-LaTeX Warning: Reference `cap3' on page 21 undefined on input line 565.
+LaTeX Warning: Reference `cap3' on page 21 undefined on input line 559.
 
 [21]
 Capitolo 3.
@@ -790,9 +790,9 @@ Capitolo 3.
 
 ] [23]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 626.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 620.
  [24]
-Overfull \hbox (2.43227pt too wide) in paragraph at lines 657--658
+Overfull \hbox (2.43227pt too wide) in paragraph at lines 651--652
 []\OT1/cmr/m/n/12 Infine nel-le Re-ti Neu-ra-li Multi-Strato ho con-si-de-ra-to
  tre iper-pa-ra-me-tri: \OT1/cmr/m/it/12 max[]iter
  []
@@ -801,7 +801,7 @@ Overfull \hbox (2.43227pt too wide) in paragraph at lines 657--658
 <immagini/cross-validation.png, id=464, 511.15968pt x 559.33969pt>
 File: immagini/cross-validation.png Graphic file (type png)
 <use immagini/cross-validation.png>
-Package pdftex.def Info: immagini/cross-validation.png  used on input line 680.
+Package pdftex.def Info: immagini/cross-validation.png  used on input line 674.
 
 (pdftex.def)             Requested size: 224.77676pt x 245.95659pt.
  [26 <./immagini/cross-validation.png>]
@@ -844,13 +844,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ] [35
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1008.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1002.
 
 [36]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1008.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1002.
  (./elaborato_corretto.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1008.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1008.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1002.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1002.
 
 Package rerunfilecheck Info: File `elaborato_corretto.out' has not changed.
 (rerunfilecheck)             Checksum: B69CE16FD8EC322AEB074B6DDE76CD44;2352.
@@ -860,13 +860,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19118 strings out of 492609
- 269696 string characters out of 6131462
- 593200 words of memory out of 5000000
- 22610 multiletter control sequences out of 15000+600000
+ 19117 strings out of 492609
+ 269680 string characters out of 6131462
+ 592200 words of memory out of 5000000
+ 22609 multiletter control sequences out of 15000+600000
  13759 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,19n,77p,887b,2327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,19n,77p,900b,2327s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
@@ -883,7 +883,7 @@ r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on elaborato_corretto.pdf (41 pages, 829034 bytes).
+Output written on elaborato_corretto.pdf (41 pages, 827127 bytes).
 PDF statistics:
  640 PDF objects out of 1000 (max. 8388607)
  158 named destinations out of 1000 (max. 500000)
