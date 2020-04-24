@@ -39,6 +39,7 @@
 \usepackage[italian]{babel}			% Supporto per l'italiano
 \usepackage[utf8]{inputenc}			% Supporto per UTF-8
 \usepackage[a-1b]{pdfx}			% File conforme allo standard PDF-A (obbligatorio per la consegna)
+\usepackage[pdfa]{hyperref}
 
 % Package per la grafica
 \usepackage{graphicx}				% Funzioni avanzate per le immagini
@@ -259,7 +260,7 @@ L'algoritmo di apprendimento per SVM, in realtà, riscrive queste condizioni in 
 	\ t.c.
 	\ y_i = -1,\]
 \end{center}
-dove $z_{i,1}$ rappresenta la prima componente dell'i-vettore e $z_{i,2}$ la seconda componente dell'i-esimo vettore.
+dove $z_{i,1}$ rappresenta la prima componente dell'i-esimo vettore e $z_{i,2}$ la seconda componente dell'i-esimo vettore.
 
 Se il vettore dei pesi è indicato da $w$ e $\parallel w \parallel$ è la sua norma, allora la dimensione del margine massimo è 
 \begin{center}
@@ -305,13 +306,13 @@ Dato un insieme di dati è possibile costruire un numero esponenziale di alberi 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width = 130mm]{immagini/Decision_Tree}
+	\includegraphics[width = \textwidth]{immagini/Decision_Tree}
 	\caption{Visualizzazione di un albero di decisione}
 \end{figure}
 
 Uno di questi algoritmi è l'algoritmo di Hunt nel quale l'albero di decisione viene costruito ricorsivamente partizionando il training set in sottoinsiemi sempre più piccoli. Sia $D_t$ l'insieme dei dati di training che sono associati al nodo $t$ e sia $y = {y_1, y_2,...,y_c}$ le etichette. La definizione ricorsiva dell'algoritmo di Hunt è la seguente \cite{Introductiontodatamining}.
 \begin{itemize}
-	\item se tutti i dati in $D_t$ appartengono alla stessa classe $y_t$, allora $t$ è una foglia etichettata come $y_t$
+	\item se tutti i dati in $D_t$ appartengono alla stessa classe $y_t$, allora $t$ è una foglia etichettata come $y_t$,
 	\item se $D_t$ contiene dati che appartengono a più di una classe, viene selezionata una caratteristica per eseguire un test per partizionare i dati in sottoinsiemi più piccoli. Viene creato un nodo figlio per ogni risultato della condizione del test e i dati in $D_t$ vengono divisi in base al risultato del test. L'algoritmo viene applicato in modo ricorsivo ad ogni nodo figlio.
 \end{itemize}
 
@@ -320,9 +321,9 @@ La misura di selezione degli attributi è un'euristica per selezionare il criter
 \subsubsection{Random Forest Classifier}
 Il Random Forest Classifier è un algoritmo di apprendimento supervisionato. Esso considera più alberi di decisione che operano come un insieme (vedi. Figura 6). Ogni albero della foresta genera una previsione e quella che compare più frequentemente diventa la previsione del modello \cite{RandomForest}.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
-	\includegraphics[width = 100mm]{immagini/randomForest}
+	\includegraphics[width = \textwidth]{immagini/randomForest}
 	\caption{Random Forest composto da più alberi di decisione}
 \end{figure}
 
@@ -369,16 +370,16 @@ Le Reti Neurali Multi-Strato sono un modello che utilizza l'algoritmo ``backprop
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width = \textwidth]{immagini/Perceptron}
+	\includegraphics[width = 120mm]{immagini/Perceptron}
 	\caption{Visualizzazione di un percettrone}
 \end{figure}
 
 
-Una rete con un solo percettrone è chiamata a singolo livello. Esistono poi le reti multistrato, sono reti i cui percettroni sono disposti su più livelli, come indicato in Fgigura 8. Esistono tre tipi di livelli: 
+Una rete con un solo percettrone è chiamata a singolo livello. Esistono poi le reti multistrato, sono reti i cui percettroni sono disposti su più livelli, come indicato in Figura 8. Esistono tre tipi di livelli: 
 \begin{itemize}
 	\item livello input: costituito da un insieme di neuroni che rappresentano le caratteristiche in input,
 	\item livello output: riceve i valori dall'ultimo livello hidden presente e li trasforma in valori di output, 
-	\item livello hidden: livelli intermedi tra input e output, 
+	\item livello hidden: livelli intermedi tra input e output.
 \end{itemize}
 
 
@@ -402,10 +403,10 @@ y = \Phi \left ( \sum_{i=1}^{n}w_ix_i + b \right ) = \Phi (w^{T}x + b),
 \end{equation}
 dove $w$ è il vettore di pesi, $x$ è il vettore di input, $b$ è il bias e $\Phi$ è la funzione di attivazione.
 
-Il processo di addestramento del Multi-Layer Perceptron avviene mediante una continua regolazione dei pesi delle connessioni dopo l'elaborazione di ogni oggetti nel dataset a disposizione. Questa regolazione si basa sull'errore nell'output ed dà vita ad un processo di apprendimento chiamato ``backpropagation''. Tale processo continua fino a che non si verifica un criterio di fine apprendimento (per esempio, dopo un numero finito di iterazioni, o quando l'errore non scende sotto una soglia prefissata).
+Il processo di addestramento del Multi-Layer Perceptron avviene mediante una continua regolazione dei pesi delle connessioni dopo l'elaborazione di ogni oggetti nel dataset a disposizione. Questa regolazione si basa sull'errore nell'output e dà vita a un processo di apprendimento chiamato ``backpropagation''. Tale processo continua fino a che non si verifica un criterio di fine apprendimento (per esempio, dopo un numero finito di iterazioni, o quando l'errore non scende sotto una soglia prefissata).
 Il processo continua fino a quando l'errore non raggiunge il valore più basso \cite{multilayerPerceptron}.
 \subsection{Apprendimento non supervisionato}
-Nell’apprendimento non supervisionato, al contrario di quello supervisionato abbiamo dei dati senza etichetta. Le tecniche di apprendimento non supervisionato mirano a estrarre, in modo automatico, della conoscenza a partire da basi di dati, e questo avviene senza una specifica conoscenza dei contenuti da analizzare. Un esempio tipico di questi algoritmi lo si ha nei motori di ricerca. Questi programmi, data una o più parole chiave, sono in grado di creare una lista di link rimandanti alle pagine che l'algoritmo di ricerca ritiene attinenti alla ricerca effettuata \cite{unsupervisedlearning}.
+Nell’apprendimento non supervisionato, al contrario di quello supervisionato si hanno dei dati senza etichetta. Le tecniche di apprendimento non supervisionato mirano a estrarre, in modo automatico, della conoscenza a partire da basi di dati, e questo avviene senza una specifica conoscenza dei contenuti da analizzare. Un esempio tipico di questi algoritmi lo si ha nei motori di ricerca. Questi programmi, data una o più parole chiave, sono in grado di creare una lista di link rimandanti alle pagine che l'algoritmo di ricerca ritiene attinenti alla ricerca effettuata \cite{unsupervisedlearning}.
 I principali algoritmi utilizzati in ambito non supervisionato fanno riferimento a tecniche di clustering e a regole di associazione.
 \subsection{Apprendimento per rinforzo}
 Il terzo tipo di apprendimento automatico è l’apprendimento per rinforzo. L’obiettivo di questo tipo di apprendimento è quello di costruire un sistema che attraverso le interazioni con l’ambiente migliori le proprie performance \cite{unsupervisedlearning}.
@@ -454,7 +455,7 @@ Successivamente sono descritti i totali delle rotture avvenute nei distretti di:
 	\item addome,
 	\item scheletro.
 \end{itemize}
-Ogni distretto è poi diviso più nello specifico in singole ossa, ognuna con etichetta che va da 0, nessuna lesione, a 4, lesione massima (cfr. Figura 9).
+Ogni distretto è poi diviso più nello specifico in singole ossa (cfr. Figura 10), ognuna con etichetta che va da 0, nessuna lesione, a 4, lesione massima .
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = \textwidth]{immagini/testa-torace-dataset}
@@ -473,7 +474,7 @@ Il dataset ha inoltre due ulteriori livelli di dettaglio. Esso contiene infatti 
 \end{itemize}
 In ultimo è registrato il mezzo che ha investito la persona. Questo è il label set, la y dei modelli descritti al capitolo precedente. Tutti gli esperimenti effettuati in fase di studio sono incentrati sul cercare di classificare il tipo di mezzo, leggero ovvero auto, etichettato con 0, o pesante, con etichetta 1, che ha investito l'individuo.
 
-Nel mio studio mi sono limitato a considerare le caratteristiche basilari, i totali e quelle riportate in Figura 10.
+Durante il tirocinio mi sono limitato a considerare le caratteristiche basilari, i totali e quelle riportate in Figura 10.
 \section{Riduzione della Dimensionalità}
 \label{sec:riduzione}
 Nei problemi di classificazione di Machine Learning ci sono spesso molte caratteristiche da tenere in considerazione, basti pensare che il dataset ``Incidenti Stradali'' al completo ha circa 350 caratteristiche. Per dataset con molte dimensioni la riduzione della dimensionalità è un pratica importante svolta prima di applicare algoritmi di Machine Learning per evitare l'effetto chiamato \textit{curse of dimensionality}, ``maledizione della dimensionalità''\cite{shalevshwartz2014understanding}. Il problema sorge nel momento in cui le caratteristiche sono molte e lo spazio aumenta così rapidamente che i dati disponibili diventano radi, sparsi. In ambito statistico questa scarsità è problematica in quanto i dati necessari a supportare il risultato aumentano in modo esponenziale.
@@ -538,7 +539,7 @@ CP = W^{T} \cdot B^{T},
 dove $CP$ è la matrice costituita dalle componenti principali, $W^{T}$ è la matrice formata usando gli autovettori che abbiamo scelto di mantenere precedentementee di cui consideriamo la trasposta, $B^{T}$ è la trasposta della matrice B precedentemente calcolata.
 Quello che si ottiene sono i dati originali ma inseriti nello spazio considerando come assi di riferimento gli autovettori calcolati.
 
-Sebbene PCA sia uno degli algoritmi più famosi e usati poiché è veloce, facile da usare e intuitivo ha un problema: è una tecnica lineare, presuppone cioè che i componenti principali siano una combinazione lineare delle caratteristiche originali. Nel caso non sia così non fornirà risultati efficienti. 
+Sebbene PCA sia uno degli algoritmi più famosi e usati poiché è veloce, facile da usare e intuitivo ha un problema: è una tecnica lineare, presuppone cioè che le componenti principali siano una combinazione lineare delle caratteristiche originali. Nel caso non sia così non fornirà risultati efficienti. 
 Il paragrafo seguente illustra una tecnica non lineare di riduzione della dimensionalità che tende ad adattarsi meglio ai dataset disponibili.
 \subsection{t-SNE}
 t-SNE, o t-Distributed Stochastic Neighbor Embedding, è una tecnica di riduzione della dimensionalità non lineare \cite{t-SNE}. Utilizza una struttura locale nella quale punti aventi molte dimensioni vengono mappati nello spazio usando un numero inferiore di dimensioni, ciò avviene in modo che punti vicini nello spazio originale vengano trasformati in punti vicini nello spazio con dimensione minore.
@@ -556,7 +557,7 @@ L'algoritmo prevede tre passi.
 	\item Nel terzo passo si finalizza il calcolo delle probabilità $Q_{ij}$ nello spazio ridotto in modo che riflettano il meglio possibile le probabilità $P_{ij}$ relative allo spazio con più dimensioni. Ciò viene effettuato misurando la differenza tra le due distribuzioni di probabilità usando la divergenza di Kullback-Liebler (KL) che confronta efficacemente valori di $P_{ij}$ e $Q_{ij}$ di grandi dimensioni. Per minimizzare la divergenza di KL tra le due dimensioni viene utilizzata la discesa del gradiente \cite{t-SNE}.
 \end{itemize}
 
-Nel Capitolo \ref{cap3} verranno applicate PCA e t-SNE per cercare di aumentare le prestazioni di classificazione dei modelli usati.
+Nel Capitolo \ref{Esperimenti} verranno applicate PCA e t-SNE per cercare di aumentare le prestazioni di classificazione dei modelli usati.
 
 
 
@@ -595,7 +596,7 @@ Questo viene fatto poiché molti algoritmi assumono che tutte le caratteristiche
 
 \emph{MinMaxScaler} ridimensiona singolarmente ogni caratteristica in un determinato intervallo \cite{scikit-learn}, per esempio tra 0 e 1. Si applica la seguente formula:
 \begin{equation}
-X_{\mathrm{norm}} = \frac{X - X_{\mathrm{min}}}{X_{\mathrm{max}} - X_{\mathrm{norm}}},
+X_{\mathrm{norm}} = \frac{X - X_{\mathrm{min}}}{X_{\mathrm{max}} - X_{\mathrm{norm}}}.
 \end{equation}
 \emph{RobustScaler} scala le caratteristiche usando statistiche robuste rispetto agli outlier \cite{scikit-learn}. Questo scaler rimuove la mediana e scala i dati in base all'intervallo inter-quantile; è utile perché i valori anomali possono spesso influenzare la media e la  varianza del campione in modo negativo.
 
@@ -608,8 +609,7 @@ Durante il tirocinio ho avuto modo di lavorare con i modelli riportati nel Parag
 \label{iperparametri}
 In ogni modello sono presenti diversi iperparametri, ognuno dei quali ha scopi ben precisi. 
 Iniziamo con gli iperparametri di SVC: per un valore grande di \emph{C} è assegnato un grande peso agli errori di classificazione, quindi diminuisce il bias e aumenta la varianza. Per valori di \emph{C} piccoli invece si ha un bias più grande e una minore varianza. 
-Un altro iperparametro di SVC è il \emph{Kernel} che può essere di diversi tipi: \emph{linear}, \emph{polynomial}, \emph{radial basis function}. Associato al kernel di tipo polinomiale c'è inoltre un altro iperparametro chiamato \emph{degree}. Esso consente un limite decisionale più flessibile 
-ogni kernel può inoltre avere un proprio specifico parametro, come per esempio il grado relativo al kernel polinomiale o la deviazione standard relativa a quello gaussiano.
+Un altro iperparametro di SVC è il \emph{Kernel} che può essere di diversi tipi: \emph{linear}, \emph{polynomial}, \emph{radial basis function}. Associato al kernel di tipo polinomiale c'è inoltre un altro iperparametro chiamato \emph{degree}. Oni kernel può inoltre avere un proprio specifico parametro, come per esempio il grado relativo al kernel polinomiale o la deviazione standard relativa a quello gaussiano.
 Di seguito viene riportata la griglia con gli iperparametri valutati, unitamente ai valori presi in considerazione.
 
 \begin{lstlisting}[frame=single, basicstyle=\footnotesize]
@@ -967,7 +967,7 @@ In azzurro vengono evidenziati gli score massimi del singolo modello mentre in a
 Osservando i risultati ci si accorge di come non ci sia uno scaler che si comporta meglio in maniera assoluta. Mentre si vede come SVC ha l'accuratezza media, tra tutti gli scaler, più alta con $0.74$, segue NB con $0.73$ e a seguire gli altri con accuratezza compresa tra $0.71$ e $0.65$.
 La riduzione della dimensionalità eseguita con PCA e t-SNE non comporta un aumento delle prestazioni, anzi molto spesso genera un risultato meno prestante rispetto al dataset di partenza ``Details''. Si può inoltre notare che, all'interno delle tabelle, non sono presenti esperimenti effettuati usando ``Details'' con riduzione della dimensionalità a 5 e 10 dimensioni tramite t-SNE. Questo perché durante l'addestramento t-SNE non è riuscito a convergere e quindi l'addestramento non è riuscito.
 In ogni caso l'accuratezza dei risultati ottenuti usando t-SNE non supera mai lo $0.58$. PCA si comporta meglio, generando accuratezze nel range $0.64$ - $0.71$.
-Si ottengono i risultati migliori considerando i dataset ``Totali'', in particolare i dataset ``Totali\_with\_DATA'' e ``Totali\_with\_DATA\_and\_BMI'' sono quelli che generano le accuratezze più elevate. In particolare l'accuratezza più alta in assoluta è $0.77$, generata usando ``Totali\_with\_DATA'' e indifferentemente StandardScaler o RobustScaler.
+Si ottengono i risultati migliori considerando i dataset ``Totali'', in particolare i dataset ``Totali\_with\_DATA'' e ``Totali\_with\_DATA\_and\_BMI'' sono quelli che generano le accuratezze più elevate. In particolare l'accuratezza più alta in assoluto è $0.77$, generata usando ``Totali\_with\_DATA'' e indifferentemente StandardScaler o RobustScaler.
 
 \clearpage
 \section{Tecnologie Utilizzate}

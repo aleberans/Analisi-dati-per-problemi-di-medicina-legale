@@ -9,27 +9,27 @@
 \contentsline {subsubsection}{\numberline {1.1.1.1}Support Vector Machine}{4}{subsubsection.1.1.1.1}% 
 \contentsline {subsubsection}{\numberline {1.1.1.2}Decision Tree Classifier}{8}{subsubsection.1.1.1.2}% 
 \contentsline {subsubsection}{\numberline {1.1.1.3}Random Forest Classifier}{10}{subsubsection.1.1.1.3}% 
-\contentsline {subsubsection}{\numberline {1.1.1.4}Gaussian Naive Bayes}{10}{subsubsection.1.1.1.4}% 
-\contentsline {subsubsection}{\numberline {1.1.1.5}Linear Discriminat Analysis}{11}{subsubsection.1.1.1.5}% 
+\contentsline {subsubsection}{\numberline {1.1.1.4}Gaussian Naive Bayes}{11}{subsubsection.1.1.1.4}% 
+\contentsline {subsubsection}{\numberline {1.1.1.5}Linear Discriminat Analysis}{12}{subsubsection.1.1.1.5}% 
 \contentsline {subsubsection}{\numberline {1.1.1.6}Reti Neurali Multi-Strato}{12}{subsubsection.1.1.1.6}% 
 \contentsline {subsection}{\numberline {1.1.2}Apprendimento non supervisionato}{14}{subsection.1.1.2}% 
 \contentsline {subsection}{\numberline {1.1.3}Apprendimento per rinforzo}{14}{subsection.1.1.3}% 
-\contentsline {subsection}{\numberline {1.1.4}Apprendimento semi supervisionato}{14}{subsection.1.1.4}% 
-\contentsline {chapter}{\numberline {2}Dataset}{15}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Iris}{15}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Incidenti Stradali}{16}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Riduzione della Dimensionalit\IeC {\`a}}{17}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}PCA}{18}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}t-SNE}{20}{subsection.2.3.2}% 
-\contentsline {chapter}{\numberline {3}Esperimenti}{22}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Preprocessing}{22}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Scalare i dati}{23}{subsection.3.1.1}% 
-\contentsline {section}{\numberline {3.2}Model Selection}{24}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Scelta degli iperparametri}{24}{subsection.3.2.1}% 
-\contentsline {section}{\numberline {3.3}Errore di Generalizzazione}{25}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Cross Validation}{26}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}Risultati Ottenuti}{27}{section.3.5}% 
-\contentsline {section}{\numberline {3.6}Analisi dei Risultati}{32}{section.3.6}% 
-\contentsline {section}{\numberline {3.7}Tecnologie Utilizzate}{33}{section.3.7}% 
-\contentsline {chapter}{Conclusioni}{34}{chapter*.30}% 
-\contentsline {chapter}{Bibliografia}{36}{chapter*.31}% 
+\contentsline {subsection}{\numberline {1.1.4}Apprendimento semi supervisionato}{15}{subsection.1.1.4}% 
+\contentsline {chapter}{\numberline {2}Dataset}{16}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Iris}{16}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Incidenti Stradali}{17}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Riduzione della Dimensionalit\IeC {\`a}}{18}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}PCA}{19}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}t-SNE}{21}{subsection.2.3.2}% 
+\contentsline {chapter}{\numberline {3}Esperimenti}{23}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Preprocessing}{23}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Scalare i dati}{24}{subsection.3.1.1}% 
+\contentsline {section}{\numberline {3.2}Model Selection}{25}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Scelta degli iperparametri}{25}{subsection.3.2.1}% 
+\contentsline {section}{\numberline {3.3}Errore di Generalizzazione}{26}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Cross Validation}{27}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Risultati Ottenuti}{28}{section.3.5}% 
+\contentsline {section}{\numberline {3.6}Analisi dei Risultati}{33}{section.3.6}% 
+\contentsline {section}{\numberline {3.7}Tecnologie Utilizzate}{34}{section.3.7}% 
+\contentsline {chapter}{Conclusioni}{35}{chapter*.30}% 
+\contentsline {chapter}{Bibliografia}{37}{chapter*.31}% 
